@@ -1,0 +1,46 @@
+.wrapThemeHome{
+    height: 90px;
+}
+
+.wrapThemeHome div{
+    height: 35px;
+    width: 65px;
+    margin-right: 60px;
+}
+
+.wrapThemeHome div div{
+    width: 28px;
+    height: 28px;
+    left: 50%;
+    transition: 0.5s;
+}
+
+.wrapThemeHome div div.light{
+    left: 5%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+}
+  
+@media only screen and (max-width: 767px){
+    .wrapThemeHome div{
+        height: 33px;
+        width: 70px;
+        margin-right: 30px;
+    }
+    
+    .wrapThemeHome div div{
+        width: 25px;
+        height: 25px;
+        left: 58%;
+        transition: 0.5s;
+    }
+
+    .wrapThemeHome div div.light{
+        left: 4%;
+    }
+}
+
+@media only screen and (max-width: 280px){
+
+}

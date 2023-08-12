@@ -10,11 +10,11 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/simple" element={<Simple />} />
-        <Route exact path="/interaktif" element={<Interaktif />} />
-        <Route exact path="/animasi" element={<Animasi />} />
-        <Route path="/*" element={<NotFound />} />
+        <Route exact path="" element={<Home />} />
+        <Route exact path="simple" element={<Simple />} />
+        <Route exact path="interaktif" element={<Interaktif />} />
+        <Route exact path="animasi" element={<Animasi />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </HashRouter>
   );

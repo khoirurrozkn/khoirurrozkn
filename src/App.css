@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  font-weight: 400;
+} 
+
+/* INI TEMA GELAP */
+:root{
+  --background-color: rgb(19, 19, 19);
+  --title-color: rgba(255,255,255,0.9);
+  --body-color: rgba(255,255,255,0.75);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* INI TEMA CERAH */
+[data-theme='light']{
+  --background-color: rgb(243,242,241);
+  --title-color: rgba(0,0,0,0.9);
+  --body-color: rgba(0,0,0,0.75);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-fluid{
+  background-color: var(--background-color);
+  color: var(--body-color);
 }
