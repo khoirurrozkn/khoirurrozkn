@@ -11,7 +11,7 @@ function App() {
     <HashRouter>
       <Routes>
         <Route exact path="" element={<Home />} />
-        <Route exact path="simple" element={<Simple />} />
+        <Route exact path="simpel" element={<Simple />} />
         <Route exact path="interaktif" element={<Interaktif />} />
         <Route exact path="animasi" element={<Animasi />} />
         <Route path="*" element={<NotFound />} />

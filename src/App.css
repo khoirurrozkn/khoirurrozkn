@@ -7,20 +7,45 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   font-weight: 400;
-} 
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background-color); 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--title-color);
+  border-radius: 20px;
+}
+
+::-moz-scrollbar {
+  width: 0px;
+}
+
+::-moz-scrollbar-track {
+  background-color: #f1f1f1; 
+}
+
+::-moz-scrollbar-thumb {
+  background-color: transparent; 
+}
 
 /* INI TEMA GELAP */
 :root{
-  --background-color: rgb(19, 19, 19);
-  --title-color: rgba(255,255,255,0.9);
-  --body-color: rgba(255,255,255,0.75);
+  --background-color: rgb(15, 15, 15);
+  --title-color: white;
+  --body-color: rgba(255,255,255,0.8);
 }
 
 /* INI TEMA CERAH */
 [data-theme='light']{
-  --background-color: rgb(243,242,241);
-  --title-color: rgba(0,0,0,0.9);
-  --body-color: rgba(0,0,0,0.75);
+  --background-color: rgb(242, 242, 242);
+  --title-color: black;
+  --body-color: rgba(0,0,0,0.8);
 }
 
 .container-fluid{
