@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/khoirurrozkn/static/css/main.db4229b1.css",
-    "main.js": "/khoirurrozkn/static/js/main.4db3e73b.js",
+    "main.css": "/khoirurrozkn/static/css/main.e94ebcee.css",
+    "main.js": "/khoirurrozkn/static/js/main.780c4115.js",
+    "static/media/interaktifLogo.webp": "/khoirurrozkn/static/media/interaktifLogo.d19df61b2f0722634db0.webp",
+    "static/media/simpleLogo.webp": "/khoirurrozkn/static/media/simpleLogo.c55d34b62afc41eb584c.webp",
+    "static/media/animasiLogo.webp": "/khoirurrozkn/static/media/animasiLogo.d181c669b79920d202f5.webp",
     "static/media/moon.png": "/khoirurrozkn/static/media/moon.61e00084d41c80b7d1de.png",
     "static/media/sun.png": "/khoirurrozkn/static/media/sun.9b12db98b8dc0f1ec7af.png",
     "index.html": "/khoirurrozkn/index.html",
-    "main.db4229b1.css.map": "/khoirurrozkn/static/css/main.db4229b1.css.map",
-    "main.4db3e73b.js.map": "/khoirurrozkn/static/js/main.4db3e73b.js.map"
+    "main.e94ebcee.css.map": "/khoirurrozkn/static/css/main.e94ebcee.css.map",
+    "main.780c4115.js.map": "/khoirurrozkn/static/js/main.780c4115.js.map"
   },
   "entrypoints": [
-    "static/css/main.db4229b1.css",
-    "static/js/main.4db3e73b.js"
+    "static/css/main.e94ebcee.css",
+    "static/js/main.780c4115.js"
   ]
 }
