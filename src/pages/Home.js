@@ -26,6 +26,7 @@ const Home = () => {
     };
     
     return (
+        <>
         <div className='container-fluid position-relative overflow-hidden vh-100 d-flex align-items-center justify-content-center'>
             <div className='wrapThemeHome d-flex align-items-center justify-content-between position-fixed top-0 w-100'>
                 <div>
@@ -77,8 +78,9 @@ const Home = () => {
                     </a>
                 </div>
             </div>
-            <Footer bootstrap='position-absolute bottom-0'/>
         </div>
+        <Footer />
+        </>
     )
 }
 
