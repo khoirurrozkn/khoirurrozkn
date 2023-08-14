@@ -33,22 +33,3 @@
 ::-moz-scrollbar-thumb {
   background-color: transparent; 
 }
-
-/* INI TEMA GELAP */
-:root{
-  --background-color: rgb(16,24,32);
-  --title-color: white;
-  --body-color: rgba(255,255,255,0.8);
-}
-
-/* INI TEMA CERAH */
-[data-theme='light']{
-  --background-color: rgb(242, 242, 242);
-  --title-color: black;
-  --body-color: rgba(0,0,0,0.8);
-}
-
-.container-fluid{
-  background-color: var(--background-color);
-  color: var(--body-color);
-}
