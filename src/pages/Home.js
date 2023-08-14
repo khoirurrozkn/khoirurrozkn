@@ -3,10 +3,10 @@ import Footer from '../components/Footer'
 import './Home.css';
 import LightMode from '../components/LightMode';
 import bingung from '../img/bingung.json';
-import Lottie from '../components/Lottie';
 import animasiLogo from '../img/animasiLogo.webp';
 import interaktifLogo from '../img/interaktifLogo.webp';
 import simpleLogo from '../img/simpleLogo.webp';
+import Lottie from 'react-lottie';
 
 const Home = () => {
     const [ isLight, setIsLight ] = useState(false);
@@ -24,6 +24,12 @@ const Home = () => {
         maxHeight: '150px',
         cursor: 'arrow',
     };
+
+    const optionsLottie = {
+        loop: true,
+        autoplay: true,
+        animationData: bingung,
+    };
     
     return (
         <>
@@ -32,7 +38,7 @@ const Home = () => {
                 <div>
                     <h4><b>Khoirurrozkn</b></h4>
                 </div>
-                <div style={isLight? {backgroundColor: 'rgb(131, 168, 190)'} : {backgroundColor: 'rgb(121, 72, 153)'}} className='position-relative d-flex align-items-center shadow border rounded-5'>
+                <div style={isLight? {backgroundColor: 'rgb(131, 168, 190)'} : {backgroundColor: 'aqua'}} className='position-relative d-flex align-items-center shadow rounded-5'>
                     <div onClick={() => toggleTheme()} className={`position-absolute ${isLight? 'light' : null} `}>
                         <LightMode />
                     </div>
@@ -41,8 +47,8 @@ const Home = () => {
 
             <div className='wrapHome text-center'>
                 <Lottie
+                    options={optionsLottie}
                     style={styleLottie}
-                    animasi={bingung}
                 />
                 <h1>
                     <b>Selamat datang...</b>

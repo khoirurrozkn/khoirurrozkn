@@ -1,0 +1,213 @@
+#berandaSimpel .svg .coloring{
+    height: 510px;
+    background-color: #a2d9ff;
+}
+
+#berandaSimpel .nama{
+    width: 40%;
+    margin-right: 20px;
+}
+
+#berandaSimpel .nama h1{
+    color: black;
+}
+
+#berandaSimpel .nama div{
+    width: 55%;
+}
+
+#berandaSimpel .nama p{
+    color: rgba(0,0,0,0.8);
+}
+
+#berandaSimpel .nickname{
+    font-size: 60px;
+}
+
+#berandaSimpel .nickname::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(219, 219, 13);
+    height: 5px;
+    width: 55%;
+}
+
+#berandaSimpel .fotoProfil .bg{
+    top: 25%;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.696);
+}
+
+#berandaSimpel .fotoProfil img{
+    max-width: 200px;
+}
+
+#berandaSimpel .fotoProfil p{
+    display: block;
+    width: 270px;
+    height: auto;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.696);
+    color: white;
+}
+
+#berandaSimpel .visi{
+    width: 40%;
+}
+
+#berandaSimpel .visi div{
+    width: 50%;
+    margin-right: 145px;
+    margin-bottom: 150px;
+}
+
+#berandaSimpel .visi h5{
+    color: rgb(255, 255, 255);
+}
+
+#berandaSimpel .visi p{
+    color: rgba(255,255,255,0.8);
+}
+
+#sayaSimpel{
+    height: 780px;
+}
+
+#sayaSimpel .bg{
+    background-color: rgb(162,217,255);
+    box-shadow: 0px 0px 20px rgb(162,217,255);
+}
+
+#sayaSimpel .bg1{
+    width: 500px;
+    height: 500px;
+    left: -25%;
+    top: 0;
+}
+
+/* #sayaSimpel .bg2{
+    width: 250px;
+    height: 250px;
+    left: 25%;
+    top: 60%;
+}
+
+#sayaSimpel .bg3{
+    width: 350px;
+    height: 350px;
+    right: 35%;
+    top: 10%;
+} */
+
+#sayaSimpel .bg4{
+    width: 350px;
+    height: 350px;
+    right: 0;
+    bottom: 10%;
+}
+
+#sayaSimpel .foto img{
+    width: 350px;
+    filter: brightness(80%);
+}
+
+#sayaSimpel .deskripsi{
+    width: 40%;
+}
+
+#sayaSimpel .bgText{
+    background-color: rgb(50,66,78);
+    padding: 20px 30px;
+    margin-bottom: 10px;
+}
+
+#sayaSimpel h3{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#sayaSimpel p{
+    color: rgba(255,255,255,0.8)
+}
+
+#sayaSimpel .paragraf{
+    margin-left: 40px;
+}
+
+#sayaSimpel .nomer{
+    width: 40px;
+    height: 40px;
+    background-color: #a2d9ff;
+    margin-right: 20px;
+}
+
+#sayaSimpel .nomer h3{
+    color: black;
+}
+
+#portofolioSimpel{
+    padding-top: 60px;
+}
+
+#portofolioSimpel h2{
+    text-decoration: underline;
+}
+
+#portofolioSimpel .bg{
+    background-color: rgb(162,217,255);
+    box-shadow: 0px 0px 20px rgb(162,217,255);
+}
+
+#portofolioSimpel .bg1{
+    width: 300px;
+    height: 300px;
+    transform: rotate(-20deg);
+    left: 0;
+    top: 20%;
+}
+
+#portofolioSimpel .bg2{
+    width: 400px;
+    height: 400px;
+    transform: rotate(15deg);
+    right: -15%;
+}
+
+#portofolioSimpel h2,
+#portofolioSimpel h5{
+    color: var(--title-color);
+    font-weight: bold;
+}
+
+#portofolioSimpel .text{
+    padding: 0px 300px;
+}
+
+#portofolioSimpel .wrapPortofolio{
+    flex-wrap: wrap;
+    height: 450px;
+}
+
+#portofolioSimpel a{
+    width: 400px;
+    flex-wrap: wrap;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#portofolioSimpel a:hover{
+    transform: scale(1.02);
+}
+
+#portofolioSimpel a p{
+    color: var(--body-color);
+}
+
+#portofolioSimpel .foto{
+    width: 100%;
+}

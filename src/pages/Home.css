@@ -11,10 +11,12 @@
     height: 35px;
     width: 65px;
     margin-right: 60px;
+    transform: scale(0.8);
 }
 
 .wrapThemeHome h4{
     margin-left: 60px;
+    font-size: 30px;
 }
 
 .wrapThemeHome div div{
@@ -83,11 +85,12 @@
 
     .wrapThemeHome h4{
         margin-left: 30px;
+        font-size: 25px;
     }
     
     .wrapThemeHome div div{
-        width: 25px;
-        height: 25px;
+        width: 28px;
+        height: 28px;
         left: 58%;
         transition: 0.5s;
     }

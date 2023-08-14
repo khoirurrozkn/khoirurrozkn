@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
 
 *{
   font-family: 'Poppins', sans-serif;
@@ -36,7 +36,7 @@
 
 /* INI TEMA GELAP */
 :root{
-  --background-color: rgb(15, 15, 15);
+  --background-color: rgb(16,24,32);
   --title-color: white;
   --body-color: rgba(255,255,255,0.8);
 }
