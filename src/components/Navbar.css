@@ -17,12 +17,19 @@
   transition: 0.5s;
 }
 
-#navbar li:hover{
-  transform: scale(1.1);
+#navbar li:hover,
+#navbar li.active{
+  transform: scale(1.2);
 }
 
-#navbar li::before,
-#navbar li::after {
+#navbar a{
+  position: relative;
+  text-decoration: none;
+  color: rgba(255,255,255,0.8);
+}
+
+#navbar a::before,
+#navbar a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -32,28 +39,23 @@
   transition: width 0.3s;
 }
 
-#navbar li::before {
+#navbar a::before {
   left: 50%;
   transform: translateX(-50%);
 }
 
-#navbar li::after {
+#navbar a::after {
   right: 50%;
   transform: translateX(50%);
 }
 
-#navbar li:hover::before,
-#navbar li:hover::after{
+#navbar a:hover::before,
+#navbar a:hover::after,
+#navbar a.active::before,
+#navbar a.active::after,
+#navbar a:hover,
+#navbar a.active{
   width: 80%;
-}
-
-#navbar a{
-  position: relative;
-  text-decoration: none;
-  color: rgba(255,255,255,0.8);
-}
-
-#navbar a:hover{
   color: white;
 }
 

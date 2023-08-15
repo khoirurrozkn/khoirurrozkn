@@ -3,7 +3,7 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [ toggle, setToggle ] = useState(false);
 
   const handleToggle = () => {
@@ -22,10 +22,18 @@ const Navbar = () => {
         <div className={`wrapNav ${toggle && 'active'} d-flex align-items-center justify-content-center`}>
           <FontAwesomeIcon onClick={() => handleToggle()} className='icon position-absolute top-0 end-0 text-light m-4 fs-2' icon={faXmark} />
           <ul type='none' className='m-0 p-0'>
-            <li><a href='#home'><b>Home</b></a></li>
-            <li><a href='#about'><b>About me</b></a></li>
-            <li><a href='#porto'><b>Portofolio</b></a></li>
-            <li><a href='#contact'><b>Contact</b></a></li>
+            <li className={`${props.navActive === 'home' && 'active'}`}>
+              <a href='#home' className={`${props.navActive === 'home' && 'active'}`}>Home</a>
+            </li>
+            <li className={`${props.navActive === 'about' && 'active'}`}>
+              <a href='#about' className={`${props.navActive === 'about' && 'active'}`}>About me</a>
+            </li>
+            <li className={`${props.navActive === 'porto' && 'active'}`}>
+              <a href='#porto' className={`${props.navActive === 'porto' && 'active'}`}>Portofolio</a>
+            </li>
+            <li className={`${props.navActive === 'contact' && 'active'}`}>
+              <a href='#contact' className={`${props.navActive === 'contact' && 'active'}`}>Contact</a>
+            </li>
           </ul>
         </div>
       </div>
