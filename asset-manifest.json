@@ -1,18 +1,16 @@
 {
   "files": {
-    "main.css": "/khoirurrozkn/static/css/main.e94ebcee.css",
-    "main.js": "/khoirurrozkn/static/js/main.780c4115.js",
-    "static/media/interaktifLogo.webp": "/khoirurrozkn/static/media/interaktifLogo.d19df61b2f0722634db0.webp",
-    "static/media/simpleLogo.webp": "/khoirurrozkn/static/media/simpleLogo.c55d34b62afc41eb584c.webp",
-    "static/media/animasiLogo.webp": "/khoirurrozkn/static/media/animasiLogo.d181c669b79920d202f5.webp",
-    "static/media/moon.png": "/khoirurrozkn/static/media/moon.61e00084d41c80b7d1de.png",
-    "static/media/sun.png": "/khoirurrozkn/static/media/sun.9b12db98b8dc0f1ec7af.png",
+    "main.css": "/khoirurrozkn/static/css/main.277dc91c.css",
+    "main.js": "/khoirurrozkn/static/js/main.54a1ac22.js",
+    "static/media/bgHeader.jpg": "/khoirurrozkn/static/media/bgHeader.474d6b9f697a729551c8.jpg",
+    "static/media/kukigames.webp": "/khoirurrozkn/static/media/kukigames.deffc69b4fb634c3c804.webp",
+    "static/media/weatherapp.jpg": "/khoirurrozkn/static/media/weatherapp.9b0f55048f88fdc8dc26.jpg",
     "index.html": "/khoirurrozkn/index.html",
-    "main.e94ebcee.css.map": "/khoirurrozkn/static/css/main.e94ebcee.css.map",
-    "main.780c4115.js.map": "/khoirurrozkn/static/js/main.780c4115.js.map"
+    "main.277dc91c.css.map": "/khoirurrozkn/static/css/main.277dc91c.css.map",
+    "main.54a1ac22.js.map": "/khoirurrozkn/static/js/main.54a1ac22.js.map"
   },
   "entrypoints": [
-    "static/css/main.e94ebcee.css",
-    "static/js/main.780c4115.js"
+    "static/css/main.277dc91c.css",
+    "static/js/main.54a1ac22.js"
   ]
 }
