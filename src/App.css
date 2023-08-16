@@ -83,6 +83,63 @@
   width: 40%;
 }
 
+#porto{
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  background-color: rgb(25,36,48);
+  padding: 70px 0px;
+}
+
+#porto .wrapPorto{
+  width: 100%;
+}
+
+#porto .box{
+  padding: 40px 30px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  text-decoration: none;
+}
+
+#porto img{
+  width: 320px;
+}
+
+#porto .desc{
+  width: 320px;
+}
+
+#contact{
+  padding: 40px 0px;
+}
+
+#contact .left{
+  width: 30%;
+}
+
+#contact .icon{
+  font-size: 35px;
+}
+
+#contact .maps{
+  width: 450px;
+  height: 250px;
+}
+
+#contact a{
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#contact a:hover{
+  transform: scale(1.1);
+}
+
+#contact a{
+  color: white;
+  text-decoration: none;
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
   #home h1{
     font-weight: bold;
@@ -130,6 +187,24 @@
     margin-top: 40px;
     width: 90%;
   }
+
+  #porto{
+    margin-top: 60px;
+  }
+
+  #contact .left{
+    margin-bottom: 30px;
+    width: 40%;
+  }
+
+  #contact .icon{
+    font-size: 50px;
+  }
+
+  #contact .maps{
+    width: 50%;
+    height: 230px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -164,7 +239,7 @@
   }
 
   #about h1{
-    padding-top: 100px;
+    padding-top: 70px;
   }
 
   #about .wrapAbout{
@@ -183,8 +258,57 @@
     width: 90%;
   }
 
+  #porto{
+    border-radius: 40px;
+    padding: 70px 0px;
+    margin-top: 40px;
+  }
+
+  #porto .info{
+    width: 90%;
+  }
+  
+  #porto .wrapPorto{
+    width: 90%;
+  }
+  
+  #porto .box{
+    padding: 30px 0px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+  
+  #porto img{
+    width: 90%;
+  }
+  
+  #porto .desc{
+    width: auto;
+  }
+
+  #contact .left{
+    width: 100%;
+  }
+  
+  #contact .maps{
+    width: 80%;
+    height: 170px;
+    margin-top: 30px;
+  }
+  
+  #contact a{
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  #contact a:hover{
+    transform: scale(1.1);
+  }
+  
+  #contact a{
+    color: white;
+    text-decoration: none;
+  }  
+
 }
-
-@media only screen and (min-device-width: 280px){
-
-}   
