@@ -132,10 +132,12 @@ function App() {
         <div style={{flexWrap: 'wrap'}} className='wrapPorto d-flex justify-content-evenly'>
 
           {dataPorto.map((v,i) => (
-            <a key={i} href={v.href} target='blank' className='box text-center rounded-4 bg-secondary bg-opacity-25 shadow'>
-              <img src={v.img} className='rounded-2 shadow' alt={v.title}></img>
-              <p className='m-0 mt-1 text-light'><b>{v.title}</b></p>
-              <p className='desc m-0 text-light text-opacity-75'>{v.body}</p>
+            <a key={i} href={v.href} target='blank' className='box text-center rounded-4'>
+              <img src={v.img} className='rounded-4 shadow' alt={v.title}></img>
+              <p className='m-0 mt-3 text-light'><b>{v.title}</b></p>
+              <div className='desc d-flex justify-content-center'>
+                <p className='m-0 mt-1 text-light text-opacity-75'>{v.body}</p>
+              </div>
             </a>
           ))}
 

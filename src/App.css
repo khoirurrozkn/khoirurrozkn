@@ -95,18 +95,15 @@
 }
 
 #porto .box{
-  padding: 40px 30px;
-  padding-bottom: 20px;
-  margin-top: 40px;
   text-decoration: none;
 }
 
 #porto img{
-  width: 320px;
+  width: 400px;
 }
 
-#porto .desc{
-  width: 320px;
+#porto .desc p{
+  width: 80%;
 }
 
 #contact{
@@ -192,6 +189,14 @@
     margin-top: 60px;
   }
 
+  #porto img{
+    width: 350px;
+  }
+
+  #porto .box{
+    margin-top: 30px;
+  }
+
   #contact .left{
     margin-bottom: 30px;
     width: 40%;
@@ -275,16 +280,16 @@
   #porto .box{
     padding: 30px 0px;
     padding-bottom: 20px;
-    margin-top: 20px;
     text-decoration: none;
+    text-align: start !important;
   }
   
   #porto img{
-    width: 90%;
+    width: 100%;
   }
   
-  #porto .desc{
-    width: auto;
+  #porto .desc p{
+    width: 100%;
   }
 
   #contact .left{
