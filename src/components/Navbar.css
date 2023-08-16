@@ -61,17 +61,17 @@
 
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
-
-}
-
-@media only screen and (max-width: 767px){
   #navbar{
-    height: 90px;
-    padding: 0px 20px;
+    height: 120px;
+    padding: 0px 60px;
+  }
+
+  #navbar h4{
+    transform: scale(1.2);
   }
 
   #navbar .icon{
-    font-size: 25px;
+    font-size: 35px;
     color: white;
     display: block;
   }
@@ -98,7 +98,56 @@
   #navbar li{
     display: block;
     margin-left: 0px;
+    margin-bottom: 50%;
     transition: 0.5s;
+    text-align: center;
+  }
+
+  #navbar a{
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  #navbar{
+    height: 90px;
+    padding: 0px 20px;
+  }
+
+  #navbar .icon{
+    font-size: 25px;
+    color: white;
+    display: block;
+  }
+
+  #navbar .wrapNav{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(16,24,32);
+    transition: 0.5s;
+  }
+
+  #navbar .wrapNav.active{
+    right: 0;
+  }
+
+  #navbar ul{
+    display: block !important;
+  }
+
+  #navbar li{
+    display: block;
+    margin-left: 0px;
+    margin-bottom: 50%;
+    transition: 0.5s;
+    text-align: center;
+  }
+
+  #navbar a{
+    font-size: 18px;
   }
 }
 

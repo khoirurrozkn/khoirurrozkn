@@ -35,8 +35,10 @@
 }
 
 #home{
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1616004655123-818cbd4b3143?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80");
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./img/bgHeader.jpg");
+  background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #home h1{
@@ -44,21 +46,6 @@
   font-size: 60px;
 }
 
-#home .wrapFoto{
-  width: 400px;
-  height: 370px;
-}
-
-#home .bg{
-  width: 350px;
-  height: 350px;
-  background-color: chocolate;
-}
-
-#home img{
-  width: 170px;
-  filter: brightness(90%);
-}
 
 #home .col2{
   padding: 0px 100px;
@@ -76,10 +63,72 @@
   font-size: 35px;
 }
 
+#about h1{
+  padding-top: 70px;
+}
+
+#about .wrapAbout{
+  height: 70vh;
+}
+
+#about .foto{
+  width: 400px;
+  height: 300px;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./img/bgHeader.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#about .description{
+  width: 40%;
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  #home h1{
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  #home .row{
+    height: auto !important;
+  }
+
+  #home .wrapFoto{
+    width: 40vw;
+  }
+
   #home .col1{
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  #home .col2 div{
+    width: 100vw;
+    text-align: center;
+  }
+  
+  #home .icon{
+    font-size: 35px;
+  }
+
+  #about h1{
+    padding-top: 100px;
+  }
+
+  #about .wrapAbout{
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  #about .foto{
+    margin-top: 40px;
+    width: 400px;
+    height: 300px;
+  }
+
+  #about .description{
+    margin-top: 40px;
+    width: 90%;
   }
 }
 
@@ -92,21 +141,9 @@
   #home .row{
     height: auto !important;
   }
-  
+
   #home .wrapFoto{
-    width: 400px;
-    height: 290px;
-  }
-  
-  #home .bg{
-    width: 250px;
-    height: 250px;
-    background-color: rgb(16,24,32);
-  }
-  
-  #home img{
-    width: 150px;
-    filter: brightness(90%);
+    width: 30%;
   }
 
   #home .col1{
@@ -125,8 +162,29 @@
   #home .icon{
     font-size: 35px;
   }
+
+  #about h1{
+    padding-top: 100px;
+  }
+
+  #about .wrapAbout{
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  #about .foto{
+    margin-top: 40px;
+    width: 90%;
+    height: 250px;
+  }
+
+  #about .description{
+    margin-top: 40px;
+    width: 90%;
+  }
+
 }
 
 @media only screen and (min-device-width: 280px){
 
-}
+}   
