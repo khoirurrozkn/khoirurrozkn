@@ -5,7 +5,8 @@ const Home = (props) => {
   return (
     <div>
       <h1 className='text-light'>Hallo</h1>
-      <p className='text-danger'>auhwuahuw</p>
+      <p className='text-success'>auhwuahuw</p>
+      <h2 className='text-light'>aiwauhwuhauhw</h2>
     </div>
   )
 }
