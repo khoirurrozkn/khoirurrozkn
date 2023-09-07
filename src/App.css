@@ -1,319 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
 
 *{
-  font-family: 'Poppins', sans-serif;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 ::-webkit-scrollbar {
-  width: 3px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--background-color); 
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--title-color);
-  border-radius: 20px;
-}
-
-::-moz-scrollbar {
-  width: 0px;
-}
-
-::-moz-scrollbar-track {
-  background-color: #f1f1f1; 
-}
-
-::-moz-scrollbar-thumb {
   background-color: transparent; 
 }
 
-#home{
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./img/bgHeader.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff3b;
+  border-radius: 10px;
 }
 
-#home h1{
-  font-weight: bold;
-  font-size: 60px;
+::-moz-scrollbar {
+  width: 5px;
 }
 
-
-#home .col2{
-  padding: 0px 100px;
+::-moz-scrollbar-track {
+  background-color: transparent; 
 }
 
-#home .col1 p{
-  background-color: rgb(16,24,32);
-  width: 220px;
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+::-moz-scrollbar-thumb {
+  background-color: #ffffff3b;
+  border-radius: 10px;
 }
 
-#home .icon{
-  font-size: 35px;
-}
-
-#about h1{
-  padding-top: 70px;
-}
-
-#about .wrapAbout{
-  height: 70vh;
-}
-
-#about .foto{
-  width: 400px;
-  height: 300px;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./img/bgHeader.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-#about .description{
-  width: 40%;
-}
-
-#porto{
-  border-top-left-radius: 80px;
-  border-top-right-radius: 80px;
-  background-color: rgb(25,36,48);
-  padding: 70px 0px;
-}
-
-#porto .wrapPorto{
-  width: 100%;
-}
-
-#porto .box{
-  text-decoration: none;
-}
-
-#porto img{
-  width: 400px;
-}
-
-#porto .desc p{
-  width: 80%;
-}
-
-#contact{
-  padding: 40px 0px;
-}
-
-#contact .left{
-  width: 30%;
-}
-
-#contact .icon{
-  font-size: 35px;
-}
-
-#contact .maps{
-  width: 450px;
-  height: 250px;
-}
-
-#contact a{
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-#contact a:hover{
-  transform: scale(1.1);
-}
-
-#contact a{
-  color: white;
-  text-decoration: none;
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
-  #home h1{
-    font-weight: bold;
-    font-size: 50px;
-  }
-
-  #home .row{
-    height: auto !important;
-  }
-
-  #home .wrapFoto{
-    width: 40vw;
-  }
-
-  #home .col1{
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-
-  #home .col2 div{
-    width: 100vw;
-    text-align: center;
-  }
-  
-  #home .icon{
-    font-size: 35px;
-  }
-
-  #about h1{
-    padding-top: 100px;
-  }
-
-  #about .wrapAbout{
-    height: auto;
-    flex-wrap: wrap;
-  }
-
-  #about .foto{
-    margin-top: 40px;
-    width: 400px;
-    height: 300px;
-  }
-
-  #about .description{
-    margin-top: 40px;
-    width: 90%;
-  }
-
-  #porto{
-    margin-top: 60px;
-  }
-
-  #porto img{
-    width: 350px;
-  }
-
-  #porto .box{
-    margin-top: 30px;
-  }
-
-  #contact .left{
-    margin-bottom: 30px;
-    width: 40%;
-  }
-
-  #contact .icon{
-    font-size: 50px;
-  }
-
-  #contact .maps{
-    width: 50%;
-    height: 230px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  #home h1{
-    font-weight: bold;
-    font-size: 40px;
-  }
-
-  #home .row{
-    height: auto !important;
-  }
-
-  #home .wrapFoto{
-    width: 30%;
-  }
-
-  #home .col1{
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-
-  #home .col2 div{
-    text-align: center;
-  }
-
-  #home .col2{
-    padding: 0px 10px;
-  }
-  
-  #home .icon{
-    font-size: 35px;
-  }
-
-  #about h1{
-    padding-top: 70px;
-  }
-
-  #about .wrapAbout{
-    height: auto;
-    flex-wrap: wrap;
-  }
-
-  #about .foto{
-    margin-top: 40px;
-    width: 90%;
-    height: 250px;
-  }
-
-  #about .description{
-    margin-top: 40px;
-    width: 90%;
-  }
-
-  #porto{
-    border-radius: 40px;
-    padding: 70px 0px;
-    margin-top: 40px;
-  }
-
-  #porto .info{
-    width: 90%;
-  }
-  
-  #porto .wrapPorto{
-    width: 90%;
-  }
-  
-  #porto .box{
-    padding: 30px 0px;
-    padding-bottom: 20px;
-    text-decoration: none;
-    text-align: start !important;
-  }
-  
-  #porto img{
-    width: 100%;
-  }
-  
-  #porto .desc p{
-    width: 100%;
-  }
-
-  #contact .left{
-    width: 100%;
-  }
-  
-  #contact .maps{
-    width: 80%;
-    height: 170px;
-    margin-top: 30px;
-  }
-  
-  #contact a{
-    transition: 0.5s;
-    cursor: pointer;
-  }
-  
-  #contact a:hover{
-    transform: scale(1.1);
-  }
-  
-  #contact a{
-    color: white;
-    text-decoration: none;
-  }  
-
+::-webkit-scrollbar-corner {
+  background: none;
 }
