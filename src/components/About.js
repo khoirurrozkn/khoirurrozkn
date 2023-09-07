@@ -2,9 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>
-
-    </div>
+    <>
+      <div className='text-light'>
+        About
+      </div>
+    </>
   )
 }
 

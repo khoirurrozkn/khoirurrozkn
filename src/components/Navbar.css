@@ -1,0 +1,71 @@
+#nav{
+  height: 9vh;
+  z-index: 900;
+  top: -100%;
+  transition: ease 1s;
+  padding: 0 60px;
+  backdrop-filter: blur(5px);
+}
+
+#nav.active{
+  top: 0;
+}
+
+#nav h4{
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+#nav a{
+  letter-spacing: 1.5px;
+  font-weight: 200;
+  transition: 0.5s;
+}
+
+#nav a:hover{
+  transform: scale(1.2);
+}
+
+#nav li:not(:last-child){
+  margin-right: 30px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+
+}
+
+@media only screen and (max-device-width: 767px){
+  #nav{
+    padding: 4%;
+  }
+
+  #nav .wrapOptions{
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.250);
+    backdrop-filter: blur(5px);
+  }
+
+  #nav .wrapOptions.active{
+    right: 0;
+  }
+
+  #nav ul{
+    display: block !important;
+  }
+
+  #nav li:not(:last-child){
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-device-width: 280px){
+
+}
