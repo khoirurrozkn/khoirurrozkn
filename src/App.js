@@ -70,14 +70,14 @@ function App(){
         <Navbar navActive={navActive} section={section}/>
 
         <div id='header' ref={header} className='vh-100 position-relative overflow-hidden d-flex justify-content-center align-items-center'>
-          <Header />
+          <Header/>
         </div>
 
         <div id='about' ref={about} style={{ minHeight: '100vh' }} className='overflow-hidden'>
-          <About />
+          <About about={about} />
         </div>
 
-        <div id='porto' ref={porto} className='vh-100 position-relative border'>
+        <div id='porto' ref={porto} style={{ minHeight: '100vh' }} className='position-relative border'>
           <Porto />
         </div>
         

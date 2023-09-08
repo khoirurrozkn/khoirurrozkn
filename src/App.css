@@ -71,6 +71,10 @@ font-family: 'Poppins', sans-serif;
   padding: 12vh 0px;
 }
 
+#porto{
+  padding: 12vh 0px;
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
   .hideSp{
     display: none;
@@ -81,6 +85,10 @@ font-family: 'Poppins', sans-serif;
   }
 
   #about{
+    padding: 20vh 0px;
+  }
+
+  #porto{
     padding: 20vh 0px;
   }
 }
@@ -95,6 +103,10 @@ font-family: 'Poppins', sans-serif;
   }
 
   #about{
+    padding: 12vh 0px;
+  }
+
+  #porto{
     padding: 12vh 0px;
   }
 }
