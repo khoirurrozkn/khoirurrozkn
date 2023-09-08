@@ -10,12 +10,12 @@
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   letter-spacing: 0.1em;
-  user-select: none;
 }
 
 #header .img{
   width: 550px;
   filter: brightness(60%);
+  user-select: none;
 }
 
 #header .img-1{

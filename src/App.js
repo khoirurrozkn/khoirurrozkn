@@ -73,11 +73,11 @@ function App(){
           <Header />
         </div>
 
-        <div id='about' ref={about} className='vh-100'>
+        <div id='about' ref={about} style={{ minHeight: '100vh' }} className='overflow-hidden'>
           <About />
         </div>
 
-        <div id='porto' ref={porto} className='vh-100'>
+        <div id='porto' ref={porto} className='vh-100 position-relative border'>
           <Porto />
         </div>
         

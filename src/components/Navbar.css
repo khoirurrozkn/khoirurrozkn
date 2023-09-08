@@ -15,12 +15,14 @@
   font-family: 'Abril Fatface', cursive;
   letter-spacing: 1.5px;
   font-weight: 500;
+  transition: 1.5s;
+  left: 0;
 }
 
 #nav a{
   letter-spacing: 1.5px;
   font-weight: 200;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 #nav a:hover{
@@ -32,12 +34,20 @@
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  #nav.activeSp{
+    height: 100vh;
+  }
 
-}
+  #nav h4{
+    margin-left: 5% !important;
+  }
 
-@media only screen and (max-device-width: 767px){
-  #nav{
-    padding: 4%;
+  #nav h4.deactive{
+    left: -100%;
+  }
+
+  #nav div.deactive{
+    right: -100% !important;
   }
 
   #nav .wrapOptions{
@@ -45,15 +55,19 @@
     z-index: 999;
     width: 100vw;
     height: 100vh;
-    top: 0;
-    right: -100%;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.250);
-    backdrop-filter: blur(5px);
+    bottom: 100%;
+    right: 0;
+    opacity: 0;
+    transition: ease 1s;
   }
 
   #nav .wrapOptions.active{
-    right: 0;
+    bottom: 0;
+    opacity: 100;
+  }
+
+  #nav a{
+    font-size: 22px;
   }
 
   #nav ul{
@@ -63,6 +77,70 @@
   #nav li:not(:last-child){
     margin-right: 0px;
     margin-bottom: 30px;
+  }
+
+  #nav .bi-list{
+    margin-right: 20px;
+    font-size: 220%;
+  }
+
+  #nav .bi-x-lg{
+    margin-top: 4%;
+    margin-right: 4.5%;
+    font-size: 160%;
+  }
+}
+
+@media only screen and (max-device-width: 767px){
+  #nav.activeSp{
+    height: 100vh;
+  }
+
+  #nav h4.deactive{
+    left: -100%;
+  }
+
+  #nav div.deactive{
+    right: -100% !important;
+  }
+
+  #nav .wrapOptions{
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    bottom: 100%;
+    right: 0;
+    opacity: 0;
+    transition: ease 1s;
+  }
+
+  #nav .wrapOptions.active{
+    bottom: 0;
+    opacity: 100;
+  }
+
+  #nav a{
+    font-size: 16px;
+  }
+
+  #nav ul{
+    display: block !important;
+  }
+
+  #nav li:not(:last-child){
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  #nav .bi-list{
+    font-size: 190%;
+  }
+
+  #nav .bi-x-lg{
+    margin-top: 4%;
+    margin-right: 4.5%;
+    font-size: 160%;
   }
 }
 

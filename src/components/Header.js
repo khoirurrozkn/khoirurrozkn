@@ -40,7 +40,7 @@ const Header = () => {
         
         
         <span className='position-absolute text-center bottom-0 mb-5 text-light text-opacity-75'>
-          Moch Khoirur Rozikin / Freelancer / Web developer
+          Moch Khoirur Rozikin <span style={{ userSelect: 'none' }}>/ Freelancer / Web developer</span>
         </span>
 
         <div className='img img-1 position-absolute'>
