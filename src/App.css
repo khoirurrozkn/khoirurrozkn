@@ -103,10 +103,14 @@ font-family: 'Poppins', sans-serif;
   }
 
   #about{
-    padding: 12vh 0px;
+    padding: 0vh;
+    padding-top: 12vh;
+    min-height: auto !important;
+    margin-bottom: 70px;
   }
 
   #porto{
-    padding: 12vh 0px;
+    padding: 0vh;
+    padding-top: 12vh;
   }
 }

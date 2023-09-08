@@ -1,13 +1,12 @@
 import React,{ useState, useEffect, useRef } from 'react';
 import './App.css';
-import Navbar from './Components/Navbar';
-import Header from './Components/Header';
-import About from './Components/About';
-import Porto from './Components/Porto';
-import Recent from './Components/Recent';
-import Contact from './Components/Contact';
-import Footer from './Components/Footer';
-import bgHeader from './img/bgHeader.jpg';
+import Navbar from './Sections/Navbar';
+import Header from './Sections/Header';
+import About from './Sections/About';
+import Porto from './Sections/Porto';
+import Recent from './Sections/Recent';
+import Contact from './Sections/Contact';
+import Footer from './Sections/Footer';
 
 function App(){
   const [scroll, setScroll] = useState(0);
@@ -60,7 +59,6 @@ function App(){
         setNavActive(false);
       }
     }
-    console.log(section);
   }, [scroll]);
 
   return(
@@ -77,8 +75,8 @@ function App(){
           <About about={about} />
         </div>
 
-        <div id='porto' ref={porto} style={{ minHeight: '100vh' }} className='position-relative border'>
-          <Porto />
+        <div id='porto' ref={porto} style={{ minHeight: '100vh' }} className='position-relative overflow-hidden'>
+          <Porto/>
         </div>
         
         <div id='recent' ref={recent} className='vh-100'>

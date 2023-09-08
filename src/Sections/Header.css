@@ -3,6 +3,9 @@
   font-family: 'Abril Fatface', cursive;
   cursor: pointer;
   transition: 0.5s;
+}
+
+#header a:not(:first-child){
   opacity: 0.75;
 }
 

@@ -24,63 +24,65 @@ const Header = () => {
         && imgHeader2.current
       ) {
 
-      gsap.fromTo(navHeader.current,  {
-          y: 0,
-        },
-        {
-          y: 150,
-          duration: 4,
-          scrollTrigger: {
-            trigger: descHeader.current,
-            start: 'top 90%',
-            end: 'top 20%',
-            scrub: 4,
-            toggleActions: 'restart none none none',
+      if (window.innerWidth > 768) {
+        gsap.fromTo(navHeader.current,  {
+            y: 0,
           },
-        }
-      );
+          {
+            y: 150,
+            duration: 8,
+            scrollTrigger: {
+              trigger: descHeader.current,
+              start: 'top 90%',
+              end: 'top 20%',
+              scrub: 4,
+              toggleActions: 'restart none none none',
+            },
+          }
+        );
 
-      gsap.fromTo(imgHeader1.current,  {
-          y: 0,
-        },
-        {
-          y: 80,
-          duration: 4,
-          scrollTrigger: {
-            trigger: descHeader.current,
-            start: 'top 90%',
-            end: 'top 20%',
-            scrub: 4,
-            toggleActions: 'restart none none none',
+        gsap.fromTo(imgHeader1.current,  {
+            y: 0,
           },
-        }
-      );
+          {
+            y: 80,
+            duration: 4,
+            scrollTrigger: {
+              trigger: descHeader.current,
+              start: 'top 90%',
+              end: 'top 20%',
+              scrub: 4,
+              toggleActions: 'restart none none none',
+            },
+          }
+        );
 
-      gsap.fromTo(imgHeader2.current,  {
-          y: 0,
-        },
-        {
-          y: 70,
-          duration: 4,
-          scrollTrigger: {
-            trigger: descHeader.current,
-            start: 'top 90%',
-            end: 'top 20%',
-            scrub: 4,
-            toggleActions: 'restart none none none',
+        gsap.fromTo(imgHeader2.current,  {
+            y: 0,
           },
-        }
-      );
+          {
+            y: 70,
+            duration: 4,
+            scrollTrigger: {
+              trigger: descHeader.current,
+              start: 'top 90%',
+              end: 'top 20%',
+              scrub: 4,
+              toggleActions: 'restart none none none',
+            },
+          }
+        );
+      }
     }
 
   },[]);
 
   return (
     <>
-    
+  
         <div ref={navHeader} style={{ zIndex: '1' }} className='text-center'>
           <div data-aos="fade-right" style={{marginTop: '-5%'}}>
-            <a className='text-light position-relative btn border-0 p-0' href='#about'>
+            <a style={{ opacity: '100' }} className='text-light position-relative btn border-0 p-0' href='#about'>
               KHOIRUR ROZKN
             </a>
           </div>
@@ -113,7 +115,6 @@ const Header = () => {
         <div ref={imgHeader2} className='img img-2 position-absolute'>
           <img data-aos="fade-down-left" data-aos-delay="600" src={bgHeader} alt='1' width='100%'/>
         </div>
-        
     
     </>
   )
