@@ -1,5 +1,5 @@
 import React from 'react';
-import bgHeader from '../img/weatherapp.jpg'
+import bgHeader from '../img/bgHeader.webp'
 
 const Porto = () => {
   return(
@@ -53,6 +53,10 @@ const Porto = () => {
             font-size: 35px;
           }
 
+          #porto .wrap-field .accord .desc .message{
+            font-size: 19px;
+          }
+
           #porto .wrap-field .accord .photo{
             width: 50%;
             padding: 10px 0px;
@@ -66,6 +70,25 @@ const Porto = () => {
           @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
             #porto .wrap-title h1{
               margin-bottom: 0% !important;
+            }
+
+            #porto .wrap-field{
+              padding-left: 0%;
+              padding-right: 0%;
+            }
+
+            #porto .wrap-field .accord .desc .message{
+              font-size: 22px;
+              margin: 0;
+            }
+
+            #porto .wrap-field .accord .photo img{
+              width: 90%;
+            }
+
+            #porto .wrap-field .accord{
+              margin-bottom: 30px !important;
+              transition: 0.5s;
             }
           }
 
@@ -90,7 +113,7 @@ const Porto = () => {
             }
             
             #porto .wrap-field .accord{
-              margin-bottom: 30px;
+              margin-bottom: 40px !important;
               border: none !important;
             }
             
@@ -103,6 +126,10 @@ const Porto = () => {
             
             #porto .wrap-field .accord .desc h5{
               font-size: 30px;
+            }
+
+            #porto .wrap-field .accord .desc .message{
+              font-size: 15px;
             }
             
             #porto .wrap-field .accord .photo{
@@ -132,16 +159,52 @@ const Porto = () => {
 
       <div className='wrap-field'>
 
-        <div className='accord border-top border-bottom d-flex align-items-center justify-content-between flex-wrap border-secondary border-opacity-50'>
+        <div className='accord row m-0 p-0 border-top border-bottom d-flex align-items-center justify-content-between flex-wrap border-secondary border-opacity-50'>
+          <div className='desc col col-12 order-2 order-lg-1 order-md-1'>
+            <h5 className='text-light'>
+              Weather app
+            </h5>
+            <p className='message text-light'>
+              awdaw dawg dayw gduawduaw fduaw fdyawt fdytaw dytawdytawdytaw fdyta dta
+               uawyduawy duaw dtua6wdua6w dua6 wdu6aw du6a wdu6a wrdu6a d6arw
+            </p>
+            <p className='text-light text-opacity-75 m-0'>
+              React Js | open meteo API
+            </p>
+          </div>
+          <div className='photo col col-12 order-1 order-lg-2 order-md-2 text-end border-danger'>
+            <img src={bgHeader} alt='Portofolio ss'></img>
+          </div>
+        </div>
+
+        <div className='accord row m-0 p-0 border-top border-bottom d-flex align-items-center justify-content-between flex-wrap border-secondary border-opacity-50'>
+          <div className='desc col col-12 order-2 order-lg-1 order-md-1'>
+            <h5 className='text-light'>
+              Weather app
+            </h5>
+            <p className='message text-light'>
+              awdaw dawg dayw gduawduaw fduaw fdyawt fdytaw dytawdytawdytaw fdyta dta
+               uawyduawy duaw dtua6wdua6w dua6 wdu6aw du6a wdu6a wrdu6a d6arw
+            </p>
+            <p className='text-light text-opacity-75 m-0'>
+              React Js | open meteo API
+            </p>
+          </div>
+          <div className='photo col col-12 order-1 order-lg-2 order-md-2 text-end border-danger'>
+            <img src={bgHeader} alt='Portofolio ss'></img>
+          </div>
+        </div>
+
+        {/* <div className='accord border-top border-bottom d-flex align-items-center justify-content-between flex-wrap border-secondary border-opacity-50'>
           <div className='desc'>
             <h5 className='text-light'>
               Weather app
             </h5>
-            <p className='text-light text-opacity-75'>
+            <p className='message text-light'>
               awdaw dawg dayw gduawduaw fduaw fdyawt fdytaw dytawdytawdytaw fdyta dta
                uawyduawy duaw dtua6wdua6w dua6 wdu6aw du6a wdu6a wrdu6a d6arw
             </p>
-            <p className='text-light text-opacity-50'>
+            <p className='text-light text-opacity-75 m-0'>
               React Js | open meteo API
             </p>
           </div>
@@ -155,36 +218,18 @@ const Porto = () => {
             <h5 className='text-light'>
               Weather app
             </h5>
-            <p className='text-light text-opacity-75'>
+            <p className='message text-light'>
               awdaw dawg dayw gduawduaw fduaw fdyawt fdytaw dytawdytawdytaw fdyta dta
                uawyduawy duaw dtua6wdua6w dua6 wdu6aw du6a wdu6a wrdu6a d6arw
             </p>
-            <p className='text-light text-opacity-50'>
-              React Js | open meteo API
+            <p className='text-light text-opacity-75 m-0'>
+              Portfolio that I am currently developing with React Js | open meteo API
             </p>
           </div>
           <div className='photo text-end border-danger'>
             <img src={bgHeader} alt='Portofolio ss'></img>
           </div>
-        </div>
-
-        <div className='accord border-top border-bottom d-flex align-items-center justify-content-between flex-wrap border-secondary border-opacity-50'>
-          <div className='desc'>
-            <h5 className='text-light'>
-              Weather app
-            </h5>
-            <p className='text-light text-opacity-75'>
-              awdaw dawg dayw gduawduaw fduaw fdyawt fdytaw dytawdytawdytaw fdyta dta
-               uawyduawy duaw dtua6wdua6w dua6 wdu6aw du6a wdu6a wrdu6a d6arw
-            </p>
-            <p className='text-light text-opacity-50'>
-              React Js | open meteo API
-            </p>
-          </div>
-          <div className='photo text-end border-danger'>
-            <img src={bgHeader} alt='Portofolio ss'></img>
-          </div>
-        </div>
+        </div> */}
 
       </div>
     </>

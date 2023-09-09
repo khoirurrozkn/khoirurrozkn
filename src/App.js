@@ -1,11 +1,11 @@
 import React,{ useState, useEffect, useRef } from 'react';
-import Navbar from './Sections/Navbar';
+import Navbar from './Components/Navbar';
 import Header from './Sections/Header';
 import About from './Sections/About';
 import Porto from './Sections/Porto';
-import Recent from './Sections/Recent';
 import Contact from './Sections/Contact';
 import Footer from './Sections/Footer';
+import Aos from 'aos';
 
 function App(){
   const [scroll, setScroll] = useState(0);
@@ -14,7 +14,6 @@ function App(){
   const header = useRef(null);
   const about = useRef(null);
   const porto = useRef(null);
-  const recent = useRef(null);
   const contact = useRef(null);
 
   useEffect(() => {
@@ -35,16 +34,19 @@ function App(){
   }, []);
 
   useEffect(() => {
+    Aos.init({
+      duration: 1500,
+    });
+  },[])
+
+  useEffect(() => {
     if (
       header.current &&
       about.current &&
       porto.current &&
-      recent.current &&
       contact.current
     ) {
       if (scroll >= contact.current.offsetTop) {
-        setSection(5);
-      } else if (scroll >= recent.current.offsetTop) {
         setSection(4);
       } else if (scroll >= porto.current.offsetTop) {
         setSection(3);
@@ -129,10 +131,17 @@ function App(){
 
         #about{
           padding-top: 12vh;
+          padding-bottom: 40px;
         }
 
         #porto{
           padding-top: 12vh;
+          padding-bottom: 1vh;
+        }
+
+        #contact{
+          padding-top: 12vh;
+          padding-bottom: 4vh;
         }
 
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
@@ -151,6 +160,10 @@ function App(){
           #porto{
             padding-top: 20vh;
           }
+
+          #contact{
+            padding-top: 20vh;
+          }
         }
 
         @media only screen and (max-device-width: 767px){
@@ -163,12 +176,15 @@ function App(){
           }
 
           #about{
-            padding-top: 12vh;
-            margin-bottom: 70px;
+            padding-top: 10vh;
           }
 
           #porto{
             padding-top: 12vh;
+          }
+
+          #contact{
+            padding-top: 10vh;
           }
         }
       `}
@@ -182,19 +198,15 @@ function App(){
           <Header/>
         </div>
 
-        <div id='about' ref={about} className='overflow-hidden'>
+        <div data-aos='fade-up' data-aos-delay={window.innerWidth > 780 && '200' } id='about' ref={about} className='overflow-hidden rounded-5'>
           <About about={about} />
         </div>
 
-        <div id='porto' ref={porto} className='position-relative overflow-hidden'>
+        <div data-aos='fade-up' style={{ userSelect: 'none' }} data-aos-delay={window.innerWidth > 780 && '200' } id='porto' ref={porto} className='overflow-hidden'>
           <Porto/>
         </div>
-        
-        <div id='recent' ref={recent} className='vh-100'>
-          <Recent />
-        </div>
 
-        <div id='contact' ref={contact} className='vh-100'>
+        <div id='contact' ref={contact}>
           <Contact />
         </div>
 

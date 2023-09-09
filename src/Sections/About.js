@@ -1,5 +1,5 @@
 import React from 'react'
-import WeatherApp from './../img/weatherapp.jpg';
+import bgHeader from './../img/bgHeader.webp';
 
 const About = () => {
   return (
@@ -7,9 +7,9 @@ const About = () => {
     <style>
       {`
         #about h1{
-          font-family: 'Abril Fatface', cursive;
           user-select: none;
-          padding: 0px 45vh;
+          font-weight: 200;
+          padding: 0px 60vh;
         }
 
         #about h1 span{
@@ -26,13 +26,14 @@ const About = () => {
           z-index: 5;
         }
 
-        #about .box-1 h5{
+        #about .box-1 .desc{
           font-weight: 200;
           letter-spacing: 1px;
           position: relative;
+          font-size: 21px;
         }
 
-        #about .box-1 h5::before{
+        #about .box-1 .desc::before{
           content: '';
           position: absolute;
           bottom: -3%;
@@ -67,8 +68,8 @@ const About = () => {
         }
 
         #about .box-2 img{
-          width: 550px;
-          height: 342px;
+          width: 65%;
+          height: 100%;
         }
 
         #about .box-2 img:not(:last-child){
@@ -93,11 +94,11 @@ const About = () => {
             padding-top: 3vh;
           }
 
-          #about .box-1 h5{
-            font-size: 22px;
+          #about .box-1 .desc{
+            font-size: 25px;
           }
 
-          #about .box-1 h5::before{
+          #about .box-1 .desc::before{
             left: 2%;
           }
 
@@ -142,7 +143,7 @@ const About = () => {
           #about h1{
             font-family: 'Abril Fatface', cursive;
             user-select: none;
-            padding: 0px 0vh;
+            padding: 0px 3vh;
           }
 
           #about h1 span{
@@ -159,11 +160,11 @@ const About = () => {
             padding-top: 3vh;
           }
 
-          #about .box-1 h5{
+          #about .box-1 .desc{
             font-size: 15px;
           }
 
-          #about .box-1 h5::before{
+          #about .box-1 .desc::before{
             left: 2%;
           }
 
@@ -207,19 +208,14 @@ const About = () => {
     </style>
       <div>
         <h1 className='text-center text-light text-opacity-75'>
-          A passionate <span className='text-light'>web developer</span> from Indonesia, surabaya
+          A passionate <span className='text-light'>web developer</span> from Surabaya
         </h1>
       </div>
 
-      <p style={{ userSelect: 'none' }} 
-        className='hidePc text-center text-light text-opacity-75'
-      >
-          Coding & Hiking
-      </p>
       <div className='wrapBox d-flex flex-wrap justify-content-center align-items-center'>
 
         <div className='box-1 position-relative text-light text-end me-4'>
-          <h5>
+          <p className='m-0 desc'>
             Hello, I'm <b>Moch Khoirur Rozikin.</b>       
               <span style={{ userSelect: 'none' }} className='ms-1'>
                 I'm an Freelancer. 
@@ -227,7 +223,7 @@ const About = () => {
                 you with unique and innovative solutions. Welcome to my world of 
                 work, and let's embark on an amazing digital journey together.
             </span>
-          </h5>
+          </p>
 
           <div className='text-light text-opacity-75 mt-5 info-slide'>Slide the image to the right.</div>
         </div>
@@ -235,10 +231,9 @@ const About = () => {
         <div className='box-2 d-flex justify-content-center position-relative text-light'>
           <div className='circle-top bg-black position-absolute rounded-circle'></div>
           <div className='scroll'>
-            <img src={WeatherApp} alt='Weather App'></img>
-            <img src={WeatherApp} alt='Weather App'></img>
-            <img src={WeatherApp} alt='Weather App'></img>
-            <img src={WeatherApp} alt='Weather App'></img>
+            <img src={bgHeader} alt='Weather App'></img>
+            <img src={bgHeader} alt='Weather App'></img>
+            <img src={bgHeader} alt='Weather App'></img>
           </div>
           <div className='circle-bottom bg-black position-absolute rounded-circle'></div>
         </div>

@@ -194,18 +194,9 @@ const Navbar = (props) => {
                   Protofolio
                 </a>
               </li>
-  
-              <li className='d-flex justify-content-center'>
-                <a className={`text-light position-relative btn d-flex align-items-center border-0 ${props.section === 4? 'active' : ''}`} 
-                  href='#recent'
-                  onClick={() => setOpenOptions(false)}
-                >
-                  Recent Porto
-                </a>
-              </li>
 
               <li className='d-flex justify-content-center'>
-                <a className={`text-light position-relative btn d-flex align-items-center border-0 ${props.section === 5? 'active' : ''}`} 
+                <a className={`text-light position-relative btn d-flex align-items-center border-0 ${props.section === 4? 'active' : ''}`} 
                   href='#contact'
                   onClick={() => setOpenOptions(false)}
                 >

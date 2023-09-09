@@ -81,7 +81,7 @@ const Header = () => {
       <style>
         {`
           #header a{
-          font-size: 4em;
+          font-size: 63px;
           font-family: 'Abril Fatface', cursive;
           cursor: pointer;
           transition: 0.5s;
