@@ -1,5 +1,4 @@
 import React,{ useState, useEffect, useRef } from 'react';
-import './App.css';
 import Navbar from './Sections/Navbar';
 import Header from './Sections/Header';
 import About from './Sections/About';
@@ -63,6 +62,118 @@ function App(){
 
   return(
     <>
+    <style>
+      {`
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald:wght@200;300;500&display=swap');
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+        *{
+          font-family: 'Oswald', sans-serif;
+          font-weight: 200;
+        }
+
+        ::-webkit-scrollbar {
+          width: 5px;
+          height: 0px;
+        }
+
+        ::-webkit-scrollbar-track {
+          background-color: transparent; 
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background-color: #ffffff3b;
+          border-radius: 10px;
+        }
+
+        ::-moz-scrollbar {
+          width: 5px;
+          height: 0px;
+        }
+
+        ::-moz-scrollbar-track {
+          background-color: transparent; 
+        }
+
+        ::-moz-scrollbar-thumb {
+          background-color: #ffffff3b;
+          border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-corner {
+          background: none;
+        }
+
+        a{
+          text-decoration: none !important;
+        }
+
+        .btn{
+          opacity: 0.75;
+          transition: 0.5s;
+        }
+
+        .btn:hover{
+          transform: scale(1.1);
+          opacity: 100 !important;
+        }
+
+        .btn.active{
+          opacity: 1;
+          transform: scale(1.1);
+        }
+
+        .hidePc{
+          display: none;
+        }
+
+        #about{
+          padding-top: 12vh;
+        }
+
+        #porto{
+          padding-top: 12vh;
+        }
+
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+          .hideSp{
+            display: none;
+          }
+
+          .hidePc{
+            display: block;
+          }
+
+          #about{
+            padding-top: 20vh;
+          }
+
+          #porto{
+            padding-top: 20vh;
+          }
+        }
+
+        @media only screen and (max-device-width: 767px){
+          .hideSp{
+            display: none;
+          }
+
+          .hidePc{
+            display: block;
+          }
+
+          #about{
+            padding-top: 12vh;
+            margin-bottom: 70px;
+          }
+
+          #porto{
+            padding-top: 12vh;
+          }
+        }
+      `}
+    </style>
+
       <div className='container-fluid position-relative m-0 p-0'>
 
         <Navbar navActive={navActive} section={section}/>
@@ -71,11 +182,11 @@ function App(){
           <Header/>
         </div>
 
-        <div id='about' ref={about} style={{ minHeight: '100vh' }} className='overflow-hidden'>
+        <div id='about' ref={about} className='overflow-hidden'>
           <About about={about} />
         </div>
 
-        <div id='porto' ref={porto} style={{ minHeight: '100vh' }} className='position-relative overflow-hidden'>
+        <div id='porto' ref={porto} className='position-relative overflow-hidden'>
           <Porto/>
         </div>
         

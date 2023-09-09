@@ -1,30 +1,128 @@
-import React, { useEffect } from 'react';
-import './Porto.css';
-import Aos from 'aos';
-import gsap from 'gsap';
-import bgHeader from '../img/weatherapp.jpg';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
+import React from 'react';
+import bgHeader from '../img/weatherapp.jpg'
 
 const Porto = () => {
-
-  useEffect(() => {
-    // inisialisasi AOS
-    Aos.init({
-      duration: 1500,
-    });
-
-
-  });
-
   return(
     <>
-    
+      <style>
+        {`
+          #porto .wrap-title h1{
+            font-family: 'Oswald', sans-serif;
+            user-select: none;
+            font-weight: 200;
+            padding-left: 5%;
+            letter-spacing: 2px;
+            margin-bottom: -20px !important;
+          }
+
+          #porto .wrap-title h5{
+            font-family: 'Abril Fatface', cursive;
+            font-size: 70px;
+            padding-left: 9%;
+          }
+
+          #porto .wrap-title p{
+            letter-spacing: 1px;
+            padding-left: 7%;
+          }
+
+          #porto .wrap-field{
+            padding-top: 40px !important;
+            padding-left: 10%;
+            padding-right: 10%;
+          }
+
+          #porto .wrap-field .accord{
+            margin-bottom: 20px;
+            transition: 0.5s;
+          }
+
+          #porto .wrap-field .accord:hover{
+            transform: scale(1.03);
+            cursor: pointer;
+          }
+
+          #porto .wrap-field .accord .desc{
+            width: 50%;
+            height: 100%;
+            padding-left: 5%;
+            letter-spacing: 1px;
+          }
+
+          #porto .wrap-field .accord .desc h5{
+            font-size: 35px;
+          }
+
+          #porto .wrap-field .accord .photo{
+            width: 50%;
+            padding: 10px 0px;
+            padding-right: 5%;
+          }
+
+          #porto .wrap-field .accord .photo img{
+            width: 60%;
+          }
+
+          @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+            #porto .wrap-title h1{
+              margin-bottom: 0% !important;
+            }
+          }
+
+          @media only screen and (max-device-width: 767px){
+            #porto .wrap-title h1{
+              margin-bottom: 0% !important;
+            }
+            
+            #porto .wrap-title h5{
+              font-size: 40px;
+            }
+            
+            #porto .wrap-title p{
+              padding-left: 0%;
+              text-align: center;
+            }
+            
+            #porto .wrap-field{
+              padding-top: 40px !important;
+              padding-left: 0%;
+              padding-right: 0%;
+            }
+            
+            #porto .wrap-field .accord{
+              margin-bottom: 30px;
+              border: none !important;
+            }
+            
+            #porto .wrap-field .accord .desc{
+              width: 90%;
+              height: auto;
+              padding-left: 4%;
+              letter-spacing: 1px;
+            }
+            
+            #porto .wrap-field .accord .desc h5{
+              font-size: 30px;
+            }
+            
+            #porto .wrap-field .accord .photo{
+              width: 100%;
+              text-align: center !important;
+              padding: 10px 0px;
+              padding-right: 0%;
+            }
+            
+            #porto .wrap-field .accord .photo img{
+              width: 90%;
+            }
+          }
+        `}
+      </style>
       <div className='wrap-title position-relative'>
-        <h1 data-aos="fade-left" className='text-light text-opacity-75 m-0'>
+        <h1 className='text-light text-opacity-75 m-0'>
           Digital
         </h1>
-        <h5 data-aos="fade-right" className='m-0 text-light'>
+        <h5 className='m-0 text-light'>
           Portofolio
         </h5>
         <p className='m-0 text-light text-opacity-75'>
