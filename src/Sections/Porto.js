@@ -1,5 +1,6 @@
 import React from 'react';
-import bgHeader from '../img/bgHeader.webp'
+import weatherApp from '../img/weatherApp.webp';
+import kukiGames from '../img/kukiGames.png';
 
 const Porto = () => {
   return(
@@ -33,13 +34,12 @@ const Porto = () => {
           }
 
           #porto .wrap-field .accord{
-            margin-bottom: 20px;
+            margin: 0px;
             transition: 0.5s;
           }
 
           #porto .wrap-field .accord:hover{
             transform: scale(1.03);
-            cursor: pointer;
           }
 
           #porto .wrap-field .accord .desc{
@@ -113,8 +113,7 @@ const Porto = () => {
             }
             
             #porto .wrap-field .accord{
-              margin-bottom: 40px !important;
-              border: none !important;
+              margin-bottom: 40px;
             }
             
             #porto .wrap-field .accord .desc{
@@ -159,77 +158,51 @@ const Porto = () => {
 
       <div className='wrap-field'>
 
-        <div className='accord row m-0 p-0 border-top border-bottom d-flex align-items-center justify-content-between flex-wrap border-secondary border-opacity-50'>
+        <div className='accord row p-0 border-top rounded-4 d-flex align-items-center justify-content-between flex-wrap border-secondary border-opacity-50'>
           <div className='desc col col-12 order-2 order-lg-1 order-md-1'>
             <h5 className='text-light'>
               Weather app
             </h5>
             <p className='message text-light'>
-              awdaw dawg dayw gduawduaw fduaw fdyawt fdytaw dytawdytawdytaw fdyta dta
-               uawyduawy duaw dtua6wdua6w dua6 wdu6aw du6a wdu6a wrdu6a d6arw
+              The weather information, including temperature and forecasts.
             </p>
             <p className='text-light text-opacity-75 m-0'>
               React Js | open meteo API
+              <a href='https://weather-git-master-khoirurrozkn.vercel.app/' target='blank' className='ms-2'>
+                Go <i class="bi bi-box-arrow-up-right"></i>
+              </a>
             </p>
           </div>
           <div className='photo col col-12 order-1 order-lg-2 order-md-2 text-end border-danger'>
-            <img src={bgHeader} alt='Portofolio ss'></img>
+            <img src={weatherApp} alt='Portofolio ss'></img>
           </div>
         </div>
 
-        <div className='accord row m-0 p-0 border-top border-bottom d-flex align-items-center justify-content-between flex-wrap border-secondary border-opacity-50'>
+        <div className='accord row m-0 p-0 border-top rounded-4 d-flex align-items-center justify-content-between flex-wrap border-secondary border-opacity-50'>
           <div className='desc col col-12 order-2 order-lg-1 order-md-1'>
             <h5 className='text-light'>
-              Weather app
+              Donload games
             </h5>
             <p className='message text-light'>
-              awdaw dawg dayw gduawduaw fduaw fdyawt fdytaw dytawdytawdytaw fdyta dta
-               uawyduawy duaw dtua6wdua6w dua6 wdu6aw du6a wdu6a wrdu6a d6arw
+              Providing game download links and game recommendations.
             </p>
             <p className='text-light text-opacity-75 m-0'>
               React Js | open meteo API
+              <a href='https://kukigames.vercel.app/' target='blank' className='ms-2'>
+                Go <i class="bi bi-box-arrow-up-right"></i>
+              </a>
             </p>
           </div>
           <div className='photo col col-12 order-1 order-lg-2 order-md-2 text-end border-danger'>
-            <img src={bgHeader} alt='Portofolio ss'></img>
+            <img src={kukiGames} alt='Portofolio ss'></img>
           </div>
         </div>
 
-        {/* <div className='accord border-top border-bottom d-flex align-items-center justify-content-between flex-wrap border-secondary border-opacity-50'>
-          <div className='desc'>
-            <h5 className='text-light'>
-              Weather app
-            </h5>
-            <p className='message text-light'>
-              awdaw dawg dayw gduawduaw fduaw fdyawt fdytaw dytawdytawdytaw fdyta dta
-               uawyduawy duaw dtua6wdua6w dua6 wdu6aw du6a wdu6a wrdu6a d6arw
-            </p>
-            <p className='text-light text-opacity-75 m-0'>
-              React Js | open meteo API
-            </p>
-          </div>
-          <div className='photo text-end border-danger'>
-            <img src={bgHeader} alt='Portofolio ss'></img>
-          </div>
-        </div>
-
-        <div className='accord border-top border-bottom d-flex align-items-center justify-content-between flex-wrap border-secondary border-opacity-50'>
-          <div className='desc'>
-            <h5 className='text-light'>
-              Weather app
-            </h5>
-            <p className='message text-light'>
-              awdaw dawg dayw gduawduaw fduaw fdyawt fdytaw dytawdytawdytaw fdyta dta
-               uawyduawy duaw dtua6wdua6w dua6 wdu6aw du6a wdu6a wrdu6a d6arw
-            </p>
-            <p className='text-light text-opacity-75 m-0'>
-              Portfolio that I am currently developing with React Js | open meteo API
-            </p>
-          </div>
-          <div className='photo text-end border-danger'>
-            <img src={bgHeader} alt='Portofolio ss'></img>
-          </div>
-        </div> */}
+        <p style={{ userSelect: 'none', letterSpacing: '1px' }} className='bottom-0 m-0 mt-5 fs-5 text-center w-100 text-light'>
+          <a href='awdawd'>
+            View more Portofolio <i class="bi bi-box-arrow-up-right ms-2"></i>
+          </a>
+        </p>
 
       </div>
     </>

@@ -194,12 +194,7 @@ const Header = () => {
               PORTOFOLIO
             </a>
           </div>
-          <div data-aos="fade-right" data-aos-delay="200" style={{marginTop: '-5%'}}>
-            <a className='text-light position-relative btn border-0 p-0' href='#recent'>
-              RECENT PORTO
-            </a>
-          </div>
-          <div data-aos="fade-left" data-aos-delay="300" style={{marginTop: '-5%'}}>
+          <div data-aos="fade-right" data-aos-delay="300" style={{marginTop: '-5%'}}>
             <a className='text-light position-relative btn border-0 p-0' href='#contact'>
               MY CONTACT
             </a>

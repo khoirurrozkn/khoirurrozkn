@@ -131,16 +131,15 @@ function App(){
 
         #about{
           padding-top: 12vh;
-          padding-bottom: 40px;
         }
 
         #porto{
           padding-top: 12vh;
-          padding-bottom: 1vh;
+          padding-bottom: 6vh;
         }
 
         #contact{
-          padding-top: 12vh;
+          padding-top: 6vh;
           padding-bottom: 4vh;
         }
 
@@ -183,9 +182,6 @@ function App(){
             padding-top: 12vh;
           }
 
-          #contact{
-            padding-top: 10vh;
-          }
         }
       `}
     </style>
@@ -198,7 +194,7 @@ function App(){
           <Header/>
         </div>
 
-        <div data-aos='fade-up' data-aos-delay={window.innerWidth > 780 && '200' } id='about' ref={about} className='overflow-hidden rounded-5'>
+        <div data-aos='fade-up' data-aos-delay={window.innerWidth > 780 && '200' } id='about' ref={about} className='overflow-hidden'>
           <About about={about} />
         </div>
 

@@ -12,6 +12,15 @@ const Contact = () => {
 
         #contact h5{
           font-weight: 200;
+          
+        }
+
+        #contact h5{
+          transition: 0.5s;
+        }
+
+        #contact h5:hover{
+          transform: scale(1.1);
         }
 
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
@@ -33,7 +42,7 @@ const Contact = () => {
           }
 
           #contact .map{
-            width: 90%;
+            width: 80%;
             height: 100px;
           }
 
@@ -58,37 +67,42 @@ const Contact = () => {
         </p>
         <h5>
           Tenggilis lama III / 35
+          <i class="bi bi-house ms-1"></i>
         </h5>
       </div>
 
       <div className='box-1'>
-        <p style={{ userSelect: 'none' }} className='text-light text-opacity-75'>
-          Contact
-        </p>
-        <h5>
-          <a href="mailto:irurkampus@gmail.com?subject=Tentang%20portofolio" target='blank' className='text-light'>
-            irurkampus@gmail.com
-          </a>    
-        </h5>
-        <h5>
-          <a href="https://api.whatsapp.com/send?phone=nomor-telepon-anda&text=Hallo%20Khoirur" target='blank' className='text-light'>
-            +62 821 3930 6484
-          </a>
-        </h5>
-      </div>
-
-      <div className='box-2'>
         <p style={{ userSelect: 'none' }} className='text-light text-opacity-75'>
           FOLLOW
         </p>
         <h5>
           <a href='https://www.instagram.com/' target='blank' className='text-light'>
             khoirurrozkn
+            <i class="bi bi-instagram ms-1"></i>
           </a>
         </h5>
         <h5>
           <a href='https://github.com/' target='blank' className='text-light'>
             khoirurrozkn
+            <i class="bi bi-github ms-1"></i>
+          </a>
+        </h5>
+      </div>
+
+      <div className='box-2'>
+        <p style={{ userSelect: 'none' }} className='text-light text-opacity-75'>
+          Contact
+        </p>
+        <h5>
+          <a href="mailto:irurkampus@gmail.com?subject=Tentang%20portofolio" target='blank' className='text-light'>
+            irurkampus@gmail.com
+            <i class="bi bi-envelope-at ms-1"></i>
+          </a>    
+        </h5>
+        <h5>
+          <a href="https://api.whatsapp.com/send?phone=nomor-telepon-anda&text=Hallo%20Khoirur" target='blank' className='text-light'>
+            +62 821 3930 6484
+            <i class="bi bi-whatsapp ms-1"></i>
           </a>
         </h5>
       </div>
@@ -100,6 +114,7 @@ const Contact = () => {
           style={{ userSelect: 'none' }}
           referrerpolicy="no-referrer-when-downgrade"
           className='border-0 map'
+          title='map'
         ></iframe>
       </div>
 

@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <div className='py-3 d-flex align-items-center justify-content-center'>
           <div>
-              <p className='m-0 text-secondary text-opacity-75'>@2023 Khoirurrozkn</p>
+              <p className='m-0 text-light text-opacity-75'>@2023 Khoirurrozkn</p>
           </div>
       </div>
     </>

@@ -1,5 +1,7 @@
 import React from 'react'
-import bgHeader from './../img/bgHeader.webp';
+import bgHeader from '../img/bgHeader.webp';
+import hikingAbout from '../img/hikingAbout.webp';
+import snorkelingAbout from '../img/snorkelingAbout.webp';
 
 const About = () => {
   return (
@@ -231,14 +233,21 @@ const About = () => {
         <div className='box-2 d-flex justify-content-center position-relative text-light'>
           <div className='circle-top bg-black position-absolute rounded-circle'></div>
           <div className='scroll'>
+            <img src={hikingAbout} alt='Weather App'></img>
             <img src={bgHeader} alt='Weather App'></img>
-            <img src={bgHeader} alt='Weather App'></img>
-            <img src={bgHeader} alt='Weather App'></img>
+            <img src={snorkelingAbout} alt='Weather App'></img>
           </div>
           <div className='circle-bottom bg-black position-absolute rounded-circle'></div>
         </div>
 
       </div>
+
+      <p style={{ userSelect: 'none', letterSpacing: '1px' }} className='bottom-0 m-0 mt-5 fs-5 text-center w-100 text-light'>
+        
+        <a href='awdawd'>
+          View more Photos <i class="bi bi-box-arrow-up-right ms-2"></i>
+        </a>
+      </p>
     </>
   )
 }
