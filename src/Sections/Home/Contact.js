@@ -12,7 +12,6 @@ const Contact = () => {
 
         #contact h5{
           font-weight: 200;
-          
         }
 
         #contact h5{
@@ -62,26 +61,26 @@ const Contact = () => {
     <div className='text-light d-flex flex-wrap align-items-center justify-content-evenly'>
 
       <div className='box-1'>
-        <p style={{ userSelect: 'none' }} className='text-light text-opacity-75'>
+        <p style={{ userSelect: 'none' }} className='text-light fs-6 text-opacity-75'>
           ADDRESS
         </p>
-        <h5>
+        <h5 className='fs-6'>
           Tenggilis lama III / 35
           <i class="bi bi-house ms-1"></i>
         </h5>
       </div>
 
       <div className='box-1'>
-        <p style={{ userSelect: 'none' }} className='text-light text-opacity-75'>
+        <p style={{ userSelect: 'none' }} className='text-light fs-6 text-opacity-75'>
           FOLLOW
         </p>
-        <h5>
+        <h5 className='fs-6'>
           <a href='https://www.instagram.com/' target='blank' className='text-light'>
             khoirurrozkn
             <i class="bi bi-instagram ms-1"></i>
           </a>
         </h5>
-        <h5>
+        <h5 className='fs-6'>
           <a href='https://github.com/' target='blank' className='text-light'>
             khoirurrozkn
             <i class="bi bi-github ms-1"></i>
@@ -90,16 +89,16 @@ const Contact = () => {
       </div>
 
       <div className='box-2'>
-        <p style={{ userSelect: 'none' }} className='text-light text-opacity-75'>
+        <p style={{ userSelect: 'none' }} className='text-light fs-6 text-opacity-75'>
           CONTACT
         </p>
-        <h5>
+        <h5 className='fs-6'>
           <a href="mailto:irurkampus@gmail.com?subject=Tentang%20portofolio" target='blank' className='text-light'>
             irurkampus@gmail.com
             <i class="bi bi-envelope-at ms-1"></i>
           </a>    
         </h5>
-        <h5>
+        <h5 className='fs-6'>
           <a href="https://api.whatsapp.com/send?phone=nomor-telepon-anda&text=Hallo%20Khoirur" target='blank' className='text-light'>
             +62 821 3930 6484
             <i class="bi bi-whatsapp ms-1"></i>

@@ -39,8 +39,9 @@ const Photos = () => {
   return (
     <div id='photos' className='overflow-hidden'>
 
-      <a href='khoirurrozkn' className='text-black'>
-        <i style={{ zIndex: '999' }} class="bi bi-arrow-left position-fixed top-0 left-0 fs-4 bg-danger bg-opacity-75 rounded-4 shadow"></i>
+      <a href='http://localhost:3000/khoirurrozkn/' className='text-black back'>
+      {/* <a href='https://khoirurrozkn.github.io/khoirurrozkn/' className='text-black'> */}
+        <i style={{ zIndex: '999' }} class="bi bi-arrow-left position-fixed top-0 left-0 fs-4 bg-black text-light bg-opacity-75 rounded-4 shadow"></i>
       </a>
 
       <div className='header position-relative overflow-hidden vh-100'>
@@ -59,7 +60,7 @@ const Photos = () => {
 
       <div style={{ background: '#C6AC8F' }} className='content position-relative pb-5 overflow-hidden'>
         <div className='w-100 d-flex flex-wrap justify-content-center align-items-center position-relative overflow-hidden'>
-          <div className='position-absolute border left-0 circle-1 hideSp shadow rounded-circle'></div>
+          <div className='position-absolute border left-0 circle-1 shadow rounded-circle'></div>
           <div ref={titleHiking1} className='title-hiking desc-photos-1 text-light'>
               <p>
                 Hiking
@@ -73,12 +74,11 @@ const Photos = () => {
         <div className='w-100 mt-4 d-flex justify-content-end position-relative'>
 
           <div ref={circle2} className='position-absolute border circle-2 shadow rounded-circle'></div>
-          {/* <div ref={circle2} className='position-absolute border circle-2 hideSp shadow rounded-circle'></div> */}
 
-          <img data-aos='fade-up' className='img-photos-2 shadow-lg' src={hiking2} alt='My Photos'></img>
+          <img style={{ zIndex: '2' }} data-aos='fade-up' className='img-photos-2 position-relative shadow-lg' src={hiking2} alt='My Photos'></img>
         </div>
         <div className='w-100 mt-5 d-flex flex-wrap justify-content-evenly align-items-center position-relative'>
-          <div ref={circle3} className='position-absolute border circle-3 hideSp shadow rounded-circle'></div>
+          <div ref={circle3} className='position-absolute border circle-3 shadow rounded-circle'></div>
             <div ref={titleHiking2} className='desc-photos-3 text-end text-light'>
                 <p>
                   Snorkeling
@@ -87,14 +87,14 @@ const Photos = () => {
                   Photos
                 </p>
               </div>
-            <img ref={img3} data-aos='fade-up' className='img-photos-3 shadow-lg' src={diving1} alt='My Photos'></img>
+            <img style={{ zIndex: '2' }} ref={img3} data-aos='fade-up' className='img-photos-3 position-relative shadow-lg' src={diving1} alt='My Photos'></img>
           </div>
         <div className='w-100 mt-4 d-flex justify-content-center'>
-          <img data-aos='fade-up' className='img-photos-4 shadow-lg' src={diving2} alt='My Photos'></img>
+          <img style={{ zIndex: '2' }} data-aos='fade-up' className='img-photos-4 position-relative shadow-lg' src={diving2} alt='My Photos'></img>
         </div>
 
 
-        <div className='circle-4 position-absolute rounded-circle shadow hideSp'></div>
+        <div className='circle-4 position-absolute rounded-circle shadow'></div>
       </div>
 
     </div>

@@ -12,27 +12,24 @@ const Porto = () => {
             border-bottom-left-radius: 20%;
           }
 
-          #porto .wrap-title{
-
-          }
-
           #porto .wrap-title h1{
             font-family: 'Oswald', sans-serif;
             user-select: none;
             font-weight: 200;
-            padding-right: 15%;
+            padding-right: 17%;
             letter-spacing: 2px;
-            margin-bottom: -20px !important;
+            margin-bottom: -8px !important;
           }
 
           #porto .wrap-title h5{
             font-family: 'Abril Fatface', cursive;
-            font-size: 70px;
+            font-size: 50px;
           }
 
           #porto .wrap-title p{
             letter-spacing: 1px;
             padding-left: 10%;
+            font-size: 15px;
           }
 
           #porto .wrap-field{
@@ -63,7 +60,11 @@ const Porto = () => {
           }
 
           #porto .wrap-field .accord .desc .message{
-            font-size: 20px;
+            font-size: 18px;
+          }
+
+          #porto .wrap-field .accord .desc .tech{
+            font-size: 15px;
           }
 
           #porto .wrap-field .accord .photo{
@@ -82,9 +83,13 @@ const Porto = () => {
               padding-right: 0%;
               padding-top: 40% !important;
             }
+            
+            #porto .wrap-porto-radius{
+              border-bottom-left-radius: 100px;
+            }
 
             #porto .wrap-field .accord .desc .message{
-              font-size: 22px;
+              font-size: 20px;
               margin: 0;
               margin-bottom: 10px;
             }
@@ -117,14 +122,12 @@ const Porto = () => {
             }
             
             #porto .wrap-title h5{
-              font-size: 40px;
-              padding-left: 5%;
+              font-size: 35px;
+              padding-left: 7%;
             }
             
             #porto .wrap-title p{
-              padding-left: 0%;
-              text-align: center;
-              font-size: 15px;
+              font-size: 14px;
             }
             
             #porto .wrap-field{
@@ -145,11 +148,16 @@ const Porto = () => {
             }
             
             #porto .wrap-field .accord .desc h5{
-              font-size: 30px;
+              font-size: 25px;
             }
 
             #porto .wrap-field .accord .desc .message{
-              font-size: 18px;
+              font-size: 15px;
+              letter-spacing: 1px;
+            }
+
+            #porto .wrap-field .accord .desc .tech{
+              font-size: 14px;
               letter-spacing: 1px;
             }
             
@@ -179,14 +187,14 @@ const Porto = () => {
           <h5 className='m-0 text-black text-opacity-75'>
             Portofolio
           </h5>
-          <p className='m-0 fs-6 text-black'>
+          <p className='m-0 text-black'>
             Click the 'Porto' option to proceed to the website.
           </p>
         </div>
 
         <div className='wrap-field'>
 
-          <div className='accord row p-0 border-top d-flex align-items-center justify-content-between flex-wrap border-black border-opacity-75'>
+          <div className='accord row p-0 border-top d-flex align-items-center justify-content-between flex-wrap border-black border-opacity-25'>
             <div className='desc col col-12 order-2 order-lg-1 order-md-1'>
               <h5 className='text-black text-opacity-75'>
                 Weather app
@@ -194,9 +202,9 @@ const Porto = () => {
               <p className='message text-black'>
                 The weather information, including temperature and forecasts.
               </p>
-              <p className='text-black text-opacity-75 m-0'>
+              <p className='tech text-black text-opacity-75 m-0'>
                 React Js | open meteo API
-                <a href='https://weather-git-master-khoirurrozkn.vercel.app/' target='blank' className='ms-2 text-black text-opacity-75 border border-black border-opacity-75 rounded-circle px-3 py-1 shadow'>
+                <a href='https://weather-git-master-khoirurrozkn.vercel.app/' target='blank' className='ms-2 text-black text-opacity-75 border border-black border-opacity-25 rounded-circle px-3 py-1 shadow'>
                   Go <i class="bi bi-box-arrow-up-right"></i>
                 </a>
               </p>
@@ -206,7 +214,7 @@ const Porto = () => {
             </div>
           </div>
 
-          <div className='accord row m-0 p-0 border-top d-flex align-items-center justify-content-between flex-wrap border-black border-opacity-75'>
+          <div className='accord row m-0 p-0 border-top d-flex align-items-center justify-content-between flex-wrap border-black border-opacity-25'>
             <div className='desc col col-12 order-2 order-lg-1 order-md-1'>
               <h5 className='text-black text-opacity-75'>
                 Download games
@@ -214,9 +222,9 @@ const Porto = () => {
               <p className='message text-black'>
                 Providing game download links and game recommendations.
               </p>
-              <p className='text-black text-opacity-75 m-0'>
+              <p className='tech text-black text-opacity-75 m-0'>
                 React Js | open meteo API
-                <a href='https://kukigames.vercel.app/' target='blank' className='ms-2 text-black text-opacity-75 border border-black border-opacity-75 rounded-circle px-3 py-1 shadow'>
+                <a href='https://kukigames.vercel.app/' target='blank' className='ms-2 text-black text-opacity-75 border border-black border-opacity-25 rounded-circle px-3 py-1 shadow'>
                   Go <i class="bi bi-box-arrow-up-right"></i>
                 </a>
               </p>
@@ -227,7 +235,7 @@ const Porto = () => {
           </div>
 
           <p style={{ userSelect: 'none', letterSpacing: '1px' }} className='bottom-0 m-0 mt-5 fs-5 text-center w-100'>
-            <a href='awdawd' className='text-black btn border border-black border-opacity-75 shadow rounded-circle p-3' >
+            <a href='awdawd' className='text-black btn border border-black border-opacity-25 shadow rounded-circle p-3' >
               <span>View more Portofolio</span> <i class="bi bi-box-arrow-up-right ms-2"></i>
             </a>
           </p>

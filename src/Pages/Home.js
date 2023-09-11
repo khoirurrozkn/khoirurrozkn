@@ -110,7 +110,7 @@ function Home(){
       `}
     </style>
 
-      <div className='container-fluid position-relative m-0 p-0'>
+      <div className='container-fluid position-relative m-0 p-0 overflow-hidden'>
 
         <Navbar navActive={navActive} section={section} header={header} about={about} porto={porto} contact={contact}/>
 

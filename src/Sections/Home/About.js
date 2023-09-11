@@ -97,7 +97,7 @@ const About = () => {
           }
 
           #about .box-1 .desc{
-            font-size: 18px;
+            font-size: 20px;
           }
 
           #about .box-1 .desc::before{
@@ -148,7 +148,7 @@ const About = () => {
           }
 
           #about h1 span{
-            font-size: 40px;
+            font-size: 35px;
           }
 
           #about .box-1{
@@ -162,7 +162,7 @@ const About = () => {
           }
 
           #about .box-1 .desc{
-            font-size: 18px;
+            font-size: 15px;
           }
 
           #about .box-1 .desc::before{
@@ -208,7 +208,7 @@ const About = () => {
       `}
     </style>
       <h1 className='text-center text-black text-opacity-75'>
-        A passionate <span>web developer</span> from Surabaya
+        A passionate <span>web<br/> developer</span> from Surabaya
       </h1>    
 
       <div className='wrapBox d-flex flex-wrap justify-content-center align-items-center'>
@@ -239,7 +239,8 @@ const About = () => {
 
       <p style={{ userSelect: 'none', letterSpacing: '1px' }} className='bottom-0 m-0 mt-5 fs-5 text-center w-100 text-light'>
         
-        <a href='#photos' style={{ opacity: '100' }} className='text-black btn border border-black border-opacity-75 shadow rounded-circle p-3'>
+        {/* <a href='https://khoirurrozkn.github.io/khoirurrozkn/#photos' style={{ opacity: '100' }} className='text-black btn border border-black border-opacity-75 shadow rounded-circle p-3'> */}
+        <a href='http://localhost:3000/khoirurrozkn/#photos' style={{ opacity: '100' }} className='goto text-black btn border border-black border-opacity-25 shadow rounded-circle p-3'>
           <span>View more Photos</span> <i class="bi bi-box-arrow-up-right ms-2"></i>
         </a>
       </p>
