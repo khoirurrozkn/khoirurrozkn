@@ -1,7 +1,9 @@
 import React,{ useState } from 'react'
+import handleSection from './../Utils/handleSection.js';
 
 const Navbar = (props) => {
   const [openOptions, setOpenOptions] = useState(false);
+  
   return (
     <>
     <style>
@@ -21,19 +23,21 @@ const Navbar = (props) => {
 
         #nav h4{
           font-family: 'Abril Fatface', cursive;
-          letter-spacing: 1.5px;
+          letter-spacing: 1px;
           font-weight: 500;
           transition: 1.5s;
           left: 0;
+          font-size: 25px;
         }
 
-        #nav a{
+        #nav .section{
           letter-spacing: 1.5px;
           font-weight: 200;
           transition: 1s;
+          font-size: 18px;
         }
 
-        #nav a:hover{
+        #nav .section:hover{
           transform: scale(1.2);
         }
 
@@ -44,6 +48,7 @@ const Navbar = (props) => {
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
           #nav.activeSp{
             height: 100vh;
+            background-color: #EAE0D5;
           }
 
           #nav h4{
@@ -74,7 +79,7 @@ const Navbar = (props) => {
             opacity: 100;
           }
 
-          #nav a{
+          #nav .section{
             font-size: 22px;
           }
 
@@ -102,6 +107,7 @@ const Navbar = (props) => {
         @media only screen and (max-device-width: 767px){
           #nav.activeSp{
             height: 100vh;
+            background-color: #EAE0D5;
           }
 
           #nav h4.deactive{
@@ -128,8 +134,8 @@ const Navbar = (props) => {
             opacity: 100;
           }
 
-          #nav a{
-            font-size: 16px;
+          #nav .section{
+            font-size: 130%;
           }
 
           #nav ul{
@@ -138,7 +144,7 @@ const Navbar = (props) => {
 
           #nav li:not(:last-child){
             margin-right: 0px;
-            margin-bottom: 30px;
+            margin-bottom: 5%;
           }
 
           #nav .bi-list{
@@ -155,53 +161,61 @@ const Navbar = (props) => {
     </style>
       <div id='nav' className={`position-fixed start-0 d-flex align-items-center justify-content-between end-0 ${openOptions? 'activeSp' : ''} ${props.navActive? 'active' : ''}`}>
 
-          <div className='wrapName d-flex align-items-center text-light'>
+          <div className='wrapName d-flex align-items-center text-black text-opacity-75'>
             <h4 className={`m-0 position-absolute ms-3 ${openOptions? 'deactive' : ''}`}>Khoirurrozkn</h4>
           </div>
 
           <div style={{ transition: '1.5s' }} className={`hidePc position-absolute end-0 me-3 ${openOptions? 'deactive' : ''}`}>
-            <i onClick={() => setOpenOptions(true)} className="bi bi-list text-light text-opacity-75"></i>
+            <i onClick={() => setOpenOptions(true)} className="bi bi-list text-black text-opacity-75"></i>
           </div>
 
           <div className={`wrapOptions ${openOptions? 'active' : ''} d-flex align-items-center justify-content-evenly`}>
           
-            <i onClick={() => setOpenOptions(false)} className="bi bi-x-lg position-absolute top-0 end-0 text-light text-opacity-75 hidePc"></i>
+            <i onClick={() => setOpenOptions(false)} className="bi bi-x-lg position-absolute top-0 end-0 text-black text-opacity-75 hidePc"></i>
 
             <ul type='none' className='d-flex align-items-center justify-content-center m-0 p-0'>
               <li className='d-flex justify-content-center'>
-                <a className={`text-light position-relative btn d-flex align-items-center border-0 ${props.section === 1? 'active' : ''}`} 
-                    href='#header'
-                    onClick={() => setOpenOptions(false)}
+                <p className={`text-black section position-relative m-0 btn d-flex align-items-center border-0 ${props.section === 1? 'active' : ''}`} 
+                  onClick={() => {
+                    setOpenOptions(false);
+                    handleSection(props.header);
+                  }}
                 >
                   Home
-                </a>
+                </p>
               </li>
   
               <li className='d-flex justify-content-center'>
-                <a className={`text-light position-relative btn d-flex align-items-center border-0 ${props.section === 2? 'active' : ''}`} 
-                  href='#about'
-                  onClick={() => setOpenOptions(false)}
+                <p className={`text-black section m-0 position-relative btn d-flex align-items-center border-0 ${props.section === 2? 'active' : ''}`} 
+                  onClick={() => {
+                    setOpenOptions(false);
+                    handleSection(props.about);
+                  }}
                 >
                   About
-                </a>
+                </p>
               </li>
 
               <li className='d-flex justify-content-center'>
-                <a className={`text-light position-relative btn d-flex align-items-center border-0 ${props.section === 3? 'active' : ''}`} 
-                  href='#porto'
-                  onClick={() => setOpenOptions(false)}
+                <p className={`text-black section m-0 position-relative btn d-flex align-items-center border-0 ${props.section === 3? 'active' : ''}`} 
+                  onClick={() => {
+                    setOpenOptions(false);
+                    handleSection(props.porto);
+                  }}
                 >
                   Protofolio
-                </a>
+                </p>
               </li>
 
               <li className='d-flex justify-content-center'>
-                <a className={`text-light position-relative btn d-flex align-items-center border-0 ${props.section === 4? 'active' : ''}`} 
-                  href='#contact'
-                  onClick={() => setOpenOptions(false)}
+                <p className={`text-black section m-0 position-relative btn d-flex align-items-center border-0 ${props.section === 4? 'active' : ''}`} 
+                  onClick={() => {
+                    setOpenOptions(false);
+                    handleSection(props.contact);
+                  }}
                 >
                   My Contact
-                </a>
+                </p>
               </li>
             </ul>
 

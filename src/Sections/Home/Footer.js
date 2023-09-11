@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-      <div className='py-3 d-flex align-items-center justify-content-center'>
+      <div style={{ background: '#5E503F' }} className='py-3 d-flex align-items-center justify-content-center'>
           <div>
               <p className='m-0 text-light text-opacity-75'>@2023 Khoirurrozkn</p>
           </div>

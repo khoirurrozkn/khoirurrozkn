@@ -91,7 +91,7 @@ const Contact = () => {
 
       <div className='box-2'>
         <p style={{ userSelect: 'none' }} className='text-light text-opacity-75'>
-          Contact
+          CONTACT
         </p>
         <h5>
           <a href="mailto:irurkampus@gmail.com?subject=Tentang%20portofolio" target='blank' className='text-light'>

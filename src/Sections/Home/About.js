@@ -1,7 +1,7 @@
 import React from 'react'
-import bgHeader from '../img/bgHeader.webp';
-import hikingAbout from '../img/hikingAbout.webp';
-import snorkelingAbout from '../img/snorkelingAbout.webp';
+import bgHeader from '../../img/bgHeader.webp';
+import hikingAbout from '../../img/hikingAbout.webp';
+import snorkelingAbout from '../../img/snorkelingAbout.webp';
 
 const About = () => {
   return (
@@ -24,7 +24,7 @@ const About = () => {
         }
 
         #about .box-1{
-          width: 20%;
+          width: 25%;
           z-index: 5;
         }
 
@@ -32,7 +32,7 @@ const About = () => {
           font-weight: 200;
           letter-spacing: 1px;
           position: relative;
-          font-size: 21px;
+          font-size: 20px;
         }
 
         #about .box-1 .desc::before{
@@ -41,7 +41,7 @@ const About = () => {
           bottom: -3%;
           height: 2px;
           right: 0;
-          background-color: gold;
+          background-color: black;
           width: 80%;
         }
 
@@ -82,12 +82,12 @@ const About = () => {
           #about h1{
             font-family: 'Abril Fatface', cursive;
             user-select: none;
-            padding: 0px 5vh;
+            padding: 0px 10vh;
             font-size: 40px;
           }
 
           #about .box-1{
-            width: 70%;
+            width: 90%;
             text-align: start !important;
             margin-bottom: 10%;
           }
@@ -97,7 +97,7 @@ const About = () => {
           }
 
           #about .box-1 .desc{
-            font-size: 25px;
+            font-size: 18px;
           }
 
           #about .box-1 .desc::before{
@@ -143,9 +143,8 @@ const About = () => {
 
         @media only screen and (max-device-width: 767px){
           #about h1{
-            font-family: 'Abril Fatface', cursive;
             user-select: none;
-            padding: 0px 3vh;
+            padding: 0px 0vh;
           }
 
           #about h1 span{
@@ -163,7 +162,7 @@ const About = () => {
           }
 
           #about .box-1 .desc{
-            font-size: 15px;
+            font-size: 18px;
           }
 
           #about .box-1 .desc::before{
@@ -208,16 +207,14 @@ const About = () => {
         }
       `}
     </style>
-      <div>
-        <h1 className='text-center text-light text-opacity-75'>
-          A passionate <span className='text-light'>web developer</span> from Surabaya
-        </h1>
-      </div>
+      <h1 className='text-center text-black text-opacity-75'>
+        A passionate <span>web developer</span> from Surabaya
+      </h1>    
 
       <div className='wrapBox d-flex flex-wrap justify-content-center align-items-center'>
 
-        <div className='box-1 position-relative text-light text-end me-4'>
-          <p className='m-0 desc'>
+        <div className='box-1 position-relative text-end me-4'>
+          <p  className='m-0 desc'>
             Hello, I'm <b>Moch Khoirur Rozikin.</b>       
               <span style={{ userSelect: 'none' }} className='ms-1'>
                 I'm an Freelancer. 
@@ -226,26 +223,24 @@ const About = () => {
                 work, and let's embark on an amazing digital journey together.
             </span>
           </p>
-
-          <div className='text-light text-opacity-75 mt-5 info-slide'>Slide the image to the right.</div>
         </div>
 
         <div className='box-2 d-flex justify-content-center position-relative text-light'>
-          <div className='circle-top bg-black position-absolute rounded-circle'></div>
+          <div style={{ background: '#EAE0D5' }} className='circle-top position-absolute rounded-circle'></div>
           <div className='scroll'>
-            <img src={hikingAbout} alt='Weather App'></img>
-            <img src={bgHeader} alt='Weather App'></img>
-            <img src={snorkelingAbout} alt='Weather App'></img>
+            <img src={hikingAbout} className='shadow' alt='Weather App'></img>
+            <img src={bgHeader} className='shadow' alt='Weather App'></img>
+            <img src={snorkelingAbout} className='shadow' alt='Weather App'></img>
           </div>
-          <div className='circle-bottom bg-black position-absolute rounded-circle'></div>
+          <div style={{ background: '#EAE0D5' }} className='circle-bottom position-absolute rounded-circle'></div>
         </div>
 
       </div>
 
       <p style={{ userSelect: 'none', letterSpacing: '1px' }} className='bottom-0 m-0 mt-5 fs-5 text-center w-100 text-light'>
         
-        <a href='awdawd'>
-          View more Photos <i class="bi bi-box-arrow-up-right ms-2"></i>
+        <a href='#photos' style={{ opacity: '100' }} className='text-black btn border border-black border-opacity-75 shadow rounded-circle p-3'>
+          <span>View more Photos</span> <i class="bi bi-box-arrow-up-right ms-2"></i>
         </a>
       </p>
     </>
