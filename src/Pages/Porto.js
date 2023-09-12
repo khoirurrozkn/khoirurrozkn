@@ -118,7 +118,7 @@ const Porto = () => {
             title='Kuki Chat' 
             desc='This website is a real-time chat platform inspired by WhatsApp, 
               but you can log in using Google or create an account.' 
-            tech='Laravel | Pusher { Still in Development }'
+            tech='Laravel | Pusher // Still in Development //'
             development={true}
             img={kukiChat}
           />
