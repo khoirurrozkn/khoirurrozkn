@@ -6,6 +6,7 @@ import Porto from '../Sections/Home/Porto';
 import Contact from '../Sections/Home/Contact';
 import Footer from '../Sections/Home/Footer';
 import Aos from 'aos';
+import './Home.css';
 
 function Home(){
   const [scroll, setScroll] = useState(0);
@@ -64,51 +65,6 @@ function Home(){
 
   return(
     <>
-    <style>
-      {`
-        .btn{
-          opacity: 0.75;
-          transition: 0.5s;
-        }
-
-        .btn:hover{
-          transform: scale(1.1);
-          opacity: 100 !important;
-        }
-
-        .btn.active{
-          opacity: 1;
-          transform: scale(1.1);
-        }
-
-        #about{
-          padding-top: 12vh;
-          padding-bottom: 5vh;
-          border-top-right-radius: 25%;
-        }
-
-        #contact{
-          padding-top: 6vh;
-          padding-bottom: 4vh;
-        }
-
-        @media only screen and (min-width: 768px) and (max-width: 1024px){
-
-        }
-
-        @media only screen and (max-width: 767px){
-          #about{
-            padding-top: 10vh;
-            border-top-right-radius: 100px;
-          }
-
-          #contact{
-            padding-top: 8vh;
-          }
-
-        }
-      `}
-    </style>
 
       <div className='container-fluid position-relative m-0 p-0 overflow-hidden'>
 

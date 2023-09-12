@@ -1,0 +1,71 @@
+#porto .wrap-porto-radius{
+  border-bottom-left-radius: 20%;
+}
+
+#porto .wrap-title h1{
+  font-family: 'Oswald', sans-serif;
+  user-select: none;
+  font-weight: 200;
+  padding-right: 17%;
+  letter-spacing: 2px;
+  margin-bottom: -8px !important;
+  font-size: 40px;
+}
+
+#porto .wrap-title h5{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 50px;
+}
+
+#porto .wrap-title p{
+  letter-spacing: 1px;
+  padding-left: 10%;
+  font-size: 15px;
+}
+
+#porto .wrap-field{
+  padding-top: 80px !important;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+}
+
+@media only screen and (max-width: 767px){
+  #porto .wrap-title{
+    padding-left: 0%;
+    text-align: start !important;
+  }
+
+  #porto .wrap-porto-radius{
+    border-bottom-left-radius: 100px;
+  }
+
+  #porto .wrap-title h1{
+    margin-bottom: -2% !important;
+    padding-right: 0%;
+    padding-left: 5%;
+    font-size: 30px;
+  }
+  
+  #porto .wrap-title h5{
+    font-size: 35px;
+    padding-left: 7%;
+  }
+  
+  #porto .wrap-title p{
+    font-size: 14px;
+  }
+  
+  #porto .wrap-field{
+    padding-top: 40px !important;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  #porto a{
+    font-size: 14px;
+  }
+}

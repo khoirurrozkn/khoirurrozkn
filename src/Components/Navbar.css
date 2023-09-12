@@ -1,0 +1,149 @@
+#nav{
+  height: 9vh;
+  z-index: 900;
+  top: -100%;
+  transition: ease 1s;
+  padding: 0 60px;
+  backdrop-filter: blur(5px);
+}
+
+#nav.active{
+  top: 0;
+}
+
+#nav h4{
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: 1.5s;
+  left: 0;
+  font-size: 25px;
+}
+
+#nav .section{
+  letter-spacing: 1.5px;
+  font-weight: 200;
+  transition: 1s;
+  font-size: 18px;
+}
+
+#nav .section:hover{
+  transform: scale(1.2);
+}
+
+#nav li:not(:last-child){
+  margin-right: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  #nav.activeSp{
+    height: 100vh;
+    background-color: #EAE0D5;
+  }
+
+  #nav h4{
+    margin-left: 5% !important;
+  }
+
+  #nav h4.deactive{
+    left: -100%;
+  }
+
+  #nav div.deactive{
+    right: -100% !important;
+  }
+
+  #nav .wrapOptions{
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    bottom: 100%;
+    right: 0;
+    opacity: 0;
+    transition: ease 1s;
+  }
+
+  #nav .wrapOptions.active{
+    bottom: 0;
+    opacity: 100;
+  }
+
+  #nav .section{
+    font-size: 22px;
+  }
+
+  #nav ul{
+    display: block !important;
+  }
+
+  #nav li:not(:last-child){
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  #nav .bi-list{
+    margin-right: 20px;
+    font-size: 220%;
+  }
+
+  #nav .bi-x-lg{
+    margin-top: 4%;
+    margin-right: 4.5%;
+    font-size: 160%;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  #nav.activeSp{
+    height: 100vh;
+    background-color: #EAE0D5;
+  }
+
+  #nav h4.deactive{
+    left: -100%;
+  }
+
+  #nav div.deactive{
+    right: -100% !important;
+  }
+
+  #nav .wrapOptions{
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    bottom: 100%;
+    right: 0;
+    opacity: 0;
+    transition: ease 1s;
+  }
+
+  #nav .wrapOptions.active{
+    bottom: 0;
+    opacity: 100;
+  }
+
+  #nav .section{
+    font-size: 130%;
+  }
+
+  #nav ul{
+    display: block !important;
+  }
+
+  #nav li:not(:last-child){
+    margin-right: 0px;
+    margin-bottom: 5%;
+  }
+
+  #nav .bi-list{
+    font-size: 190%;
+  }
+
+  #nav .bi-x-lg{
+    margin-top: 4%;
+    margin-right: 4.5%;
+    font-size: 160%;
+  }
+}

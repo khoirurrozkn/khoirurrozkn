@@ -1,63 +1,10 @@
 import React from 'react'
+import './Contact.css';
 
 const Contact = () => {
 
   return (
     <>
-    <style>
-      {`
-        #contact{
-          letter-spacing: 1px;
-        }
-
-        #contact h5{
-          font-weight: 200;
-        }
-
-        #contact h5{
-          transition: 0.5s;
-        }
-
-        #contact h5:hover{
-          transform: scale(1.1);
-        }
-
-        @media only screen and (min-width: 768px) and (max-width: 1024px){
-          #contact .box-1{
-            width: 50%;
-            text-align: center;
-          }
-
-          #contact .box-2{
-            width: 50%;
-            text-align: center;
-            margin-top: 30px;
-          }
-        }
-
-        @media only screen and (max-width: 767px){
-          #contact h5{
-            font-size: 14px !important;
-          }
-
-          #contact .map{
-            width: 80%;
-            height: 100px;
-          }
-
-          #contact .box-1{
-            width: 50%;
-            text-align: center;
-          }
-
-          #contact .box-2{
-            width: 50%;
-            text-align: center;
-            margin-top: 30px;
-          }
-        }
-      `}
-    </style>
     <div className='text-light d-flex flex-wrap align-items-center justify-content-evenly'>
 
       <div className='box-1'>
