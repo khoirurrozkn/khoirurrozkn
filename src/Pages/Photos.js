@@ -41,7 +41,7 @@ const Photos = () => {
           }
 
           #photos .header{
-            background-image: url('../img/bromoPhotos.webp');
+            background-image: url(${hiking1});
             background-position: center;
             background-size: cover;
           }
@@ -349,8 +349,8 @@ const Photos = () => {
       </style>
       <div id='photos' className='overflow-hidden'>
 
-        <a href='http://localhost:3000/khoirurrozkn/' className='text-black'>
-        {/* <a href='https://khoirurrozkn.github.io/khoirurrozkn/' className='text-black'> */}
+        {/* <a href='http://localhost:3000/khoirurrozkn/' className='text-black'> */}
+        <a href='https://khoirurrozkn.github.io/khoirurrozkn/' className='text-black'>
           <i style={{ zIndex: '999' }} class="bi bi-arrow-left position-fixed top-0 left-0 fs-4 bg-black text-light bg-opacity-75 rounded-4 shadow"></i>
         </a>
 

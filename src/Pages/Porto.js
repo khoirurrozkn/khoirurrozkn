@@ -110,7 +110,7 @@ const Porto = () => {
             title='Kuki Auth' 
             desc='This website is dedicated to Google authentication.' 
             tech='Laravel | Google API'
-            href='https://kukigames.vercel.app/'
+            href='https://kukiauth2.000webhostapp.com/'
             img={kukiAuth}
           />
 
