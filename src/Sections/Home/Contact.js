@@ -37,7 +37,7 @@ const Contact = () => {
 
         @media only screen and (max-device-width: 767px){
           #contact h5{
-            font-size: 17px;
+            font-size: 14px !important;
           }
 
           #contact .map{

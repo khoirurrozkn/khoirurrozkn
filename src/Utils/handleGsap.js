@@ -15,8 +15,7 @@ const handleGsap = (ref, trigger, fromY = 0, toY, start, end) => {
       start: start,
       end: end,
       scrub: 4,
-      toggleActions: 'restart none none none',
-      markers: true
+      toggleActions: 'restart none none none'
     },
   });
 }

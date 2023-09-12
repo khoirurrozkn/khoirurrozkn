@@ -1,6 +1,7 @@
 import React from 'react';
 import weatherApp from '../../img/weatherApp.webp';
 import kukiGames from '../../img/kukiGames.png';
+import BoxPorto from '../../Components/BoxPorto';
 
 const Porto = () => {
   return(
@@ -19,6 +20,7 @@ const Porto = () => {
             padding-right: 17%;
             letter-spacing: 2px;
             margin-bottom: -8px !important;
+            font-size: 40px;
           }
 
           #porto .wrap-title h5{
@@ -38,71 +40,8 @@ const Porto = () => {
             padding-right: 10%;
           }
 
-          #porto .wrap-field .accord{
-            margin: 0px;
-            transition: 0.5s;
-          }
-
-          #porto .wrap-field .accord:hover{
-            transform: scale(1.03);
-          }
-
-          #porto .wrap-field .accord .desc{
-            width: 50%;
-            height: 100%;
-            padding-left: 5%;
-            letter-spacing: 1px;
-          }
-
-          #porto .wrap-field .accord .desc h5{
-            font-family: 'Abril Fatface', cursive;
-            font-size: 40px;
-          }
-
-          #porto .wrap-field .accord .desc .message{
-            font-size: 18px;
-          }
-
-          #porto .wrap-field .accord .desc .tech{
-            font-size: 15px;
-          }
-
-          #porto .wrap-field .accord .photo{
-            width: 50%;
-            padding: 10px 0px;
-            padding-right: 5%;
-          }
-
-          #porto .wrap-field .accord .photo img{
-            width: 60%;
-          }
-
           @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
-            #porto .wrap-field{
-              padding-left: 0%;
-              padding-right: 0%;
-              padding-top: 40% !important;
-            }
-            
-            #porto .wrap-porto-radius{
-              border-bottom-left-radius: 100px;
-            }
 
-            #porto .wrap-field .accord .desc .message{
-              font-size: 20px;
-              margin: 0;
-              margin-bottom: 10px;
-            }
-
-            #porto .wrap-field .accord .photo img{
-              width: 90%;
-            }
-
-            #porto .wrap-field .accord{
-              margin-bottom: 30px !important;
-              transition: 0.5s;
-              border: none !important;
-            }
           }
 
           @media only screen and (max-device-width: 767px){
@@ -119,6 +58,7 @@ const Porto = () => {
               margin-bottom: -2% !important;
               padding-right: 0%;
               padding-left: 5%;
+              font-size: 30px;
             }
             
             #porto .wrap-title h5{
@@ -135,41 +75,9 @@ const Porto = () => {
               padding-left: 0%;
               padding-right: 0%;
             }
-            
-            #porto .wrap-field .accord{
-              margin-bottom: 40px;
-              border: none !important;
-            }
-            
-            #porto .wrap-field .accord .desc{
-              width: 100%;
-              height: auto;
-              padding-left: 4%;
-            }
-            
-            #porto .wrap-field .accord .desc h5{
-              font-size: 25px;
-            }
 
-            #porto .wrap-field .accord .desc .message{
-              font-size: 15px;
-              letter-spacing: 1px;
-            }
-
-            #porto .wrap-field .accord .desc .tech{
+            #porto a{
               font-size: 14px;
-              letter-spacing: 1px;
-            }
-            
-            #porto .wrap-field .accord .photo{
-              width: 100%;
-              text-align: center !important;
-              padding: 10px 0px;
-              padding-right: 0%;
-            }
-            
-            #porto .wrap-field .accord .photo img{
-              width: 90%;
             }
           }
         `}
@@ -194,48 +102,25 @@ const Porto = () => {
 
         <div className='wrap-field'>
 
-          <div className='accord row p-0 border-top d-flex align-items-center justify-content-between flex-wrap border-black border-opacity-25'>
-            <div className='desc col col-12 order-2 order-lg-1 order-md-1'>
-              <h5 className='text-black text-opacity-75'>
-                Weather app
-              </h5>
-              <p className='message text-black'>
-                The weather information, including temperature and forecasts.
-              </p>
-              <p className='tech text-black text-opacity-75 m-0'>
-                React Js | open meteo API
-                <a href='https://weather-git-master-khoirurrozkn.vercel.app/' target='blank' className='ms-2 text-black text-opacity-75 border border-black border-opacity-25 rounded-circle px-3 py-1 shadow'>
-                  Go <i class="bi bi-box-arrow-up-right"></i>
-                </a>
-              </p>
-            </div>
-            <div className='photo col col-12 order-1 order-lg-2 order-md-2 text-end border-danger'>
-              <img src={weatherApp} style={{ border: 'solid 30px #F2F4F3' }} alt='Portofolio ss'></img>
-            </div>
-          </div>
+          <BoxPorto 
+            title='Weather App' 
+            desc='The weather information, including temperature and forecasts.' 
+            tech='React JS | Open meteo API'
+            href='https://weather-git-master-khoirurrozkn.vercel.app/'
+            img={weatherApp}
+          />
 
-          <div className='accord row m-0 p-0 border-top d-flex align-items-center justify-content-between flex-wrap border-black border-opacity-25'>
-            <div className='desc col col-12 order-2 order-lg-1 order-md-1'>
-              <h5 className='text-black text-opacity-75'>
-                Download games
-              </h5>
-              <p className='message text-black'>
-                Providing game download links and game recommendations.
-              </p>
-              <p className='tech text-black text-opacity-75 m-0'>
-                React Js | open meteo API
-                <a href='https://kukigames.vercel.app/' target='blank' className='ms-2 text-black text-opacity-75 border border-black border-opacity-25 rounded-circle px-3 py-1 shadow'>
-                  Go <i class="bi bi-box-arrow-up-right"></i>
-                </a>
-              </p>
-            </div>
-            <div className='photo col col-12 order-1 order-lg-2 order-md-2 text-end border-danger'>
-              <img src={kukiGames} style={{ border: 'solid 30px #A9927D' }} alt='Portofolio ss'></img>
-            </div>
-          </div>
+          <BoxPorto 
+            title='Kuki Games' 
+            desc='This website offers recommendations for games and provides download links for them.' 
+            tech='React JS | Rapid API'
+            href='https://kukigames.vercel.app/'
+            img={kukiGames}
+          />
 
           <p style={{ userSelect: 'none', letterSpacing: '1px' }} className='bottom-0 m-0 mt-5 fs-5 text-center w-100'>
-            <a href='awdawd' className='text-black btn border border-black border-opacity-25 shadow rounded-circle p-3' >
+            {/* <a href='http://localhost:3000/khoirurrozkn/#porto' style={{ background: '#5E503F' }} className='text-light btn shadow'> */}
+            <a href='http://khoirurrozkn.github.io/khoirurrozkn/#porto' style={{ background: '#5E503F' }} className='text-light btn shadow'>
               <span>View more Portofolio</span> <i class="bi bi-box-arrow-up-right ms-2"></i>
             </a>
           </p>

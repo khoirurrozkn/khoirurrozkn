@@ -95,6 +95,7 @@ const Header = (props) => {
         @media only screen and (max-device-width: 767px){
           #header .section{
             font-size: 200%;
+            margin-bottom: -5px;
           }  
 
           #header span{

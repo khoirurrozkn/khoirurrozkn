@@ -80,7 +80,6 @@ const About = () => {
 
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
           #about h1{
-            font-family: 'Abril Fatface', cursive;
             user-select: none;
             padding: 0px 10vh;
             font-size: 40px;
@@ -162,7 +161,7 @@ const About = () => {
           }
 
           #about .box-1 .desc{
-            font-size: 15px;
+            font-size: 17px;
           }
 
           #about .box-1 .desc::before{
@@ -204,6 +203,10 @@ const About = () => {
             width: 300px;
             height: auto;
           }
+
+          #about a span{
+            font-size: 14px;
+          }
         }
       `}
     </style>
@@ -238,9 +241,8 @@ const About = () => {
       </div>
 
       <p style={{ userSelect: 'none', letterSpacing: '1px' }} className='bottom-0 m-0 mt-5 fs-5 text-center w-100 text-light'>
-        
-        {/* <a href='https://khoirurrozkn.github.io/khoirurrozkn/#photos' style={{ opacity: '100' }} className='text-black btn border border-black border-opacity-75 shadow rounded-circle p-3'> */}
-        <a href='http://localhost:3000/khoirurrozkn/#photos' style={{ opacity: '100' }} className='goto text-black btn border border-black border-opacity-25 shadow rounded-circle p-3'>
+        {/* <a href='https://localhost:3000/khoirurrozkn/#photos' style={{ background: '#5E503F' }} className='text-light btn shadow'> */}
+        <a href='https://khoirurrozkn.github.io/khoirurrozkn/#photos' style={{ background: '#5E503F' }} className='text-light btn shadow'>
           <span>View more Photos</span> <i class="bi bi-box-arrow-up-right ms-2"></i>
         </a>
       </p>
