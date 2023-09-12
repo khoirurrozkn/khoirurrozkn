@@ -30,7 +30,10 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
-
+  #porto .wrap-field{
+    padding-left: 5%;
+    padding-right: 5%;
+  }  
 }
 
 @media only screen and (max-width: 767px){

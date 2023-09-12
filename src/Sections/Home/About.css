@@ -125,7 +125,7 @@
   }
   
   #about .box-2 img{
-    width: 450px;
+    width: 400px;
     height: auto;
   }
 }
@@ -177,7 +177,7 @@
   
   #about .box-2 .circle-bottom{
     height: 3.5vh;
-    bottom: -10%;
+    bottom: -6%;
     margin-left: 1.5%;
     width: 120%;
     z-index: 1;

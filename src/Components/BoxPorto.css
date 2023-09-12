@@ -42,10 +42,9 @@
     font-size: 35px;
     letter-spacing: 0px;
   }
-
+  
   #accord .photo img{
-    width: 70%;
-    border: solid 15px #F2F4F3;
+    width: 100%;
   }
 }
 
