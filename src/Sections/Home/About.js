@@ -78,7 +78,7 @@ const About = () => {
           margin-right: 30px;
         }
 
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+        @media only screen and (min-width: 768px) and (max-width: 1024px){
           #about h1{
             user-select: none;
             padding: 0px 10vh;
@@ -140,7 +140,7 @@ const About = () => {
           }
         }
 
-        @media only screen and (max-device-width: 767px){
+        @media only screen and (max-width: 767px){
           #about h1{
             user-select: none;
             padding: 0px 0vh;
@@ -241,8 +241,8 @@ const About = () => {
       </div>
 
       <p style={{ userSelect: 'none', letterSpacing: '1px' }} className='bottom-0 m-0 mt-5 fs-5 text-center w-100 text-light'>
-        {/* <a href='https://localhost:3000/khoirurrozkn/#photos' style={{ background: '#5E503F' }} className='text-light btn shadow'> */}
-        <a href='https://khoirurrozkn.github.io/khoirurrozkn/#photos' style={{ background: '#5E503F' }} className='text-light btn shadow'>
+        <a href='https://localhost:3000/khoirurrozkn/#photos' style={{ background: '#5E503F' }} className='text-light btn shadow'>
+        {/* <a href='https://khoirurrozkn.github.io/khoirurrozkn/#photos' style={{ background: '#5E503F' }} className='text-light btn shadow'> */}
           <span>View more Photos</span> <i class="bi bi-box-arrow-up-right ms-2"></i>
         </a>
       </p>

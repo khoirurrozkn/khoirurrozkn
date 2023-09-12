@@ -154,7 +154,7 @@ const Photos = () => {
             background-color: #EAE0D5;
           }
 
-          @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+          @media only screen and (min-width: 768px) and (max-width: 1024px){
             #photos i{
               font-size: 35px !important;
             }
@@ -244,7 +244,7 @@ const Photos = () => {
             } 
           }
 
-          @media only screen and (max-device-width: 767px){
+          @media only screen and (max-width: 767px){
             #photos i{
               margin: 20px;
             }
@@ -332,7 +332,7 @@ const Photos = () => {
             }  
           }
 
-          @media only screen and (max-device-width: 280px){
+          @media only screen and (max-width: 280px){
             #photos .circle-1{
               width: 80px;
               height: 80px;
@@ -349,8 +349,8 @@ const Photos = () => {
       </style>
       <div id='photos' className='overflow-hidden'>
 
-        {/* <a href='http://localhost:3000/khoirurrozkn/' className='text-black'> */}
-        <a href='https://khoirurrozkn.github.io/khoirurrozkn/' className='text-black'>
+        <a href='http://localhost:3000/khoirurrozkn/' className='text-black'>
+        {/* <a href='https://khoirurrozkn.github.io/khoirurrozkn/' className='text-black'> */}
           <i style={{ zIndex: '999' }} class="bi bi-arrow-left position-fixed top-0 left-0 fs-4 bg-black text-light bg-opacity-75 rounded-4 shadow"></i>
         </a>
 

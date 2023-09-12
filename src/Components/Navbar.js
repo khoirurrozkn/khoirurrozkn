@@ -45,7 +45,7 @@ const Navbar = (props) => {
           margin-right: 30px;
         }
 
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+        @media only screen and (min-width: 768px) and (max-width: 1024px){
           #nav.activeSp{
             height: 100vh;
             background-color: #EAE0D5;
@@ -104,7 +104,7 @@ const Navbar = (props) => {
           }
         }
 
-        @media only screen and (max-device-width: 767px){
+        @media only screen and (max-width: 767px){
           #nav.activeSp{
             height: 100vh;
             background-color: #EAE0D5;

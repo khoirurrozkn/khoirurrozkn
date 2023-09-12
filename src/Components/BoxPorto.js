@@ -40,7 +40,7 @@ const BoxPorto = (props) => {
             border: solid 20px #F2F4F3;
           }
 
-          @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+          @media only screen and (min-width: 768px) and (max-width: 1024px){
             #accord{
               margin-bottom: 20px;
             }
@@ -56,7 +56,7 @@ const BoxPorto = (props) => {
             }
           }
 
-          @media only screen and (max-device-width: 767px){
+          @media only screen and (max-width: 767px){
             #accord{
               margin-bottom: 40px;
               border: none !important;

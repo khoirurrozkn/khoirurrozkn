@@ -22,7 +22,7 @@ const Contact = () => {
           transform: scale(1.1);
         }
 
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+        @media only screen and (min-width: 768px) and (max-width: 1024px){
           #contact .box-1{
             width: 50%;
             text-align: center;
@@ -35,7 +35,7 @@ const Contact = () => {
           }
         }
 
-        @media only screen and (max-device-width: 767px){
+        @media only screen and (max-width: 767px){
           #contact h5{
             font-size: 14px !important;
           }

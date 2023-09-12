@@ -40,11 +40,11 @@ const Porto = () => {
             padding-right: 10%;
           }
 
-          @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+          @media only screen and (min-width: 768px) and (max-width: 1024px){
 
           }
 
-          @media only screen and (max-device-width: 767px){
+          @media only screen and (max-width: 767px){
             #porto .wrap-title{
               padding-left: 0%;
               text-align: start !important;
@@ -119,8 +119,8 @@ const Porto = () => {
           />
 
           <p style={{ userSelect: 'none', letterSpacing: '1px' }} className='bottom-0 m-0 mt-5 fs-5 text-center w-100'>
-            {/* <a href='http://localhost:3000/khoirurrozkn/#porto' style={{ background: '#5E503F' }} className='text-light btn shadow'> */}
-            <a href='http://khoirurrozkn.github.io/khoirurrozkn/#porto' style={{ background: '#5E503F' }} className='text-light btn shadow'>
+            <a href='http://localhost:3000/khoirurrozkn/#porto' style={{ background: '#5E503F' }} className='text-light btn shadow'>
+            {/* <a href='http://khoirurrozkn.github.io/khoirurrozkn/#porto' style={{ background: '#5E503F' }} className='text-light btn shadow'> */}
               <span>View more Portofolio</span> <i class="bi bi-box-arrow-up-right ms-2"></i>
             </a>
           </p>

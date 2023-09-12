@@ -50,11 +50,11 @@ const Porto = () => {
           margin-bottom: 40px;
         }
 
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+        @media only screen and (min-width: 768px) and (max-width: 1024px){
 
         }
 
-        @media only screen and (max-device-width: 767px){
+        @media only screen and (max-width: 767px){
           #page-porto .wrap-porto{
             padding-left: 0%;
             padding-right: 0%;
@@ -77,8 +77,8 @@ const Porto = () => {
       `}
     </style>
       <div id='page-porto' className='position-relative'>
-        {/* <a href='http://localhost:3000/khoirurrozkn/' className='text-black back'> */}
-        <a href='https://khoirurrozkn.github.io/khoirurrozkn/' className='text-black back'>
+        <a href='http://localhost:3000/khoirurrozkn/' className='text-black back'>
+        {/* <a href='https://khoirurrozkn.github.io/khoirurrozkn/' className='text-black back'> */}
           <i style={{ zIndex: '999' }} class="bi bi-arrow-left position-fixed top-0 left-0 fs-4 bg-black text-light bg-opacity-75 rounded-4 shadow"></i>
         </a>
 
