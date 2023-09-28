@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './Pages/Home';
+import HomeOld from './Pages/HomeOld';
 import Photos from './Pages/Photos';
 import Porto from './Pages/Porto';
 import './App.css';
@@ -10,7 +10,7 @@ function App(){
     <>
       <HashRouter>
         <Routes>
-          <Route exact path='/' element={<Home />}></Route>
+          <Route exact path='/' element={<HomeOld />}></Route>
           <Route exact path='/photos' element={<Photos />}></Route>
           <Route exact path='/porto' element={<Porto />}></Route>
         </Routes>
