@@ -1,0 +1,55 @@
+#home .navbar{
+    height: 9%;
+    z-index: 2;
+}
+
+#home .navbar div:nth-child(2) a:not(:last-child){
+    margin-right: 40px;
+}
+
+#home .navbar div:nth-child(2) a:first-child{
+    /* background-color: white; */
+}
+
+#home .btn-nav{
+    width: 50px;
+    height: 50px;
+    transform: scale(0.0);
+    transition: ease-in-out 0.5s;
+    top: 20%;
+    right: 3%;
+    z-index: 1;
+}
+
+#home .btn-nav.active{
+    top: 5%;
+    transform: scale(1.5);
+}
+
+#home .btn-nav.active:hover{
+    transform: scale(1.7);
+}
+
+#home .wrap-sidebar{
+    right: -100%;
+    z-index: 2;
+    transition: ease-in-out 0.6s;
+}
+
+#home .wrap-sidebar.active{
+    right: 0%;
+}
+
+#home .sidebar{
+    width: 30%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+   
+}
+
+@media only screen and (max-width: 767px){
+    #home .navbar div:nth-child(2){
+        display: none;
+    }
+}

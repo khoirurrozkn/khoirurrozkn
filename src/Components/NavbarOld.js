@@ -1,5 +1,5 @@
 import React,{ useState } from 'react'
-import handleSection from './../Utils/handleSection.js';
+import handleSection from '../Utils/handleSection.js';
 import './Navbar.css';
 
 const Navbar = (props) => {

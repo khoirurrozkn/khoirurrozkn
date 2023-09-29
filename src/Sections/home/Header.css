@@ -1,0 +1,41 @@
+#home .header{
+    background-color: #BFC0C0;
+    filter: brightness(90%);
+}
+
+#home .header .wrap-profile{
+    width: 11.5em;
+    height: 11.5em;
+    z-index: 2;
+}
+
+#home .header .background{
+    margin: 0px 0px 17% -30px;
+}
+
+#home .header .background h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 10em;
+    margin-bottom: -5%;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.500);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    #home .header .wrap-profile{
+        width: 180px;
+        height: 180px;
+    }
+   
+}
+
+@media only screen and (max-width: 767px){
+    #home .header .wrap-profile{
+        width: 140px;
+        height: 150px;
+    }
+
+    #home .header .background{
+        display: none;
+    }
+}

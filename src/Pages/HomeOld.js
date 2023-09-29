@@ -1,12 +1,12 @@
 import React,{ useState, useEffect, useRef } from 'react';
-import Navbar from '../Components/Navbar';
-import Header from '../Sections/Home/Header';
-import About from '../Sections/Home/About';
-import Porto from '../Sections/Home/Porto';
-import Contact from '../Sections/Home/Contact';
-import Footer from '../Sections/Home/Footer';
+import Navbar from '../Components/NavbarOld';
+import Header from '../Sections/HomeOld/Header';
+import About from '../Sections/HomeOld/About';
+import Porto from '../Sections/HomeOld/Porto';
+import Contact from '../Sections/HomeOld/Contact';
+import Footer from '../Sections/HomeOld/Footer';
 import Aos from 'aos';
-import './Home.css';
+import './HomeOld.css';
 
 function Home(){
   const [scroll, setScroll] = useState(0);
