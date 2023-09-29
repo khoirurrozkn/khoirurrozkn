@@ -6,11 +6,14 @@ const Navbar = () => {
     const [wrapSideBar, setwrapSideBar] = useState(false);
     const [btnContent, setBtnContent] = useState(<i className="bi bi-ui-radios-grid text-light"></i>);
 
-    useEffect(() =>{
-        function handleScroll() {
-          const scrollTop = window.scrollY;
-          if(scrollTop > 200) setActiveBtnNav(true);
-          else setActiveBtnNav(false);
+    useEffect(() => {
+
+        const handleScroll = () => {
+
+            const scrollTop = window.scrollY;
+            if(scrollTop > 200) setActiveBtnNav(true);
+            else setActiveBtnNav(false);
+
         }
 
         window.addEventListener('scroll', handleScroll);
@@ -35,7 +38,7 @@ const Navbar = () => {
         <>
             <div className='navbar px-5 position-absolute w-100 top-0 d-flex align-items-end justify-content-between'>
                 <div>
-                    <i className="bi bi-credit-card-2-front me-1"></i> Created by Khoirurrozkn
+                    <i className="bi bi-credit-card-2-front me-1"></i> Created by Krzkn
                 </div>
                 <div>
                     <a href='#awdc' className='bg-dark shadow text-light p-1 px-2 rounded-4'>Home</a>
