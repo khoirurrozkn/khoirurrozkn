@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0px;
   height: 10px;
 }
 
@@ -15,23 +15,13 @@
   background-color: transparent; 
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: gray;
-  border-radius: 10px;
-}
-
 ::-moz-scrollbar {
-  width: 5px;
+  width: 0px;
   height: 10px;
 }
 
 ::-moz-scrollbar-track {
   background-color: transparent; 
-}
-
-::-moz-scrollbar-thumb {
-  background-color: gray;
-  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-corner {

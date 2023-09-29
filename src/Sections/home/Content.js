@@ -3,7 +3,7 @@ import './Content.css'
 
 const Content = () => {
     return (
-        <div className='vh-100'>
+        <div className='content vh-100 position-relative bg-light'>
             Content
         </div>
     )

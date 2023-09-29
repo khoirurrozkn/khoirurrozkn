@@ -1,6 +1,7 @@
 #home .header{
     background-color: #BFC0C0;
     filter: brightness(90%);
+    z-index: 10;
 }
 
 #home .header .wrap-profile{
@@ -10,15 +11,32 @@
 }
 
 #home .header .background{
-    margin: 0px 0px 17% -30px;
+    width: 90%;
+    margin-bottom: 4%;
 }
 
 #home .header .background h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    font-size: 10em;
-    margin-bottom: -5%;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.500);
+    margin: 0;
+}
+
+#home .header .background h1:nth-child(1){
+    margin-left: -45%;
+    font-size: 8em;
+}
+
+#home .header .background h1:nth-child(2){
+    font-size: 9em;
+    margin-right: 2%;
+    margin-top: -3%;
+    margin-bottom: -2%;
+}
+
+#home .header .background h1:nth-child(3){
+    margin-right: -50%;
+    font-size: 5em;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
