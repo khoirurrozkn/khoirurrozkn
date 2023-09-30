@@ -35,13 +35,14 @@
 
 #home .wrap-sidebar.active{
     z-index: 888;
-    background-color: rgba(0,0,0,0.200);
+    background-color: rgba(0,0,0,0.250);
+    backdrop-filter: blur(5px);
 }
 
 #home .wrap-sidebar .sidebar{
     width: 35%;
     right: -100%;
-    background-color: rgb(25, 25, 25);
+    background-color: #1C1D20;
     transition: all ease-in-out 0.9s;
     border-top-left-radius: 100%;
     border-bottom-left-radius: 100%;

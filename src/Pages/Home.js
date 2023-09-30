@@ -3,6 +3,7 @@ import "./Home.css"
 import Navbar from "../Sections/home/Navbar"
 import Header from "../Sections/home/Header"
 import Content from "../Sections/home/Content"
+import Footer from "../Sections/home/Footer"
 import Aos from 'aos';
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
             <Navbar />
             <Header />
             <Content />
+            <Footer />
 
         </div>
     )

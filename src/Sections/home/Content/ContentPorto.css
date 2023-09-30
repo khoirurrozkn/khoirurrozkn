@@ -1,13 +1,14 @@
 #home .content .porto{
     background-color: #00171F;
-    padding: 40px 0px;
-    border-bottom-right-radius: 5em;
-    border-bottom-left-radius: 5em;
+    padding-top: 40px;
+    padding-bottom: 10px;
 }
 
 #home .content .porto .some-porto{
     overflow: scroll;
     white-space: nowrap;
+    margin-bottom: 30px;
+    pointer-events: none;
 }
 
 #home .content .porto .some-porto div div{
@@ -34,4 +35,9 @@
 #home .content .porto .programming a{
     width: 120px;
     height: 120px;
+    transition: ease-in-out 0.5s;
+}
+
+#home .content .porto .programming a:hover{
+    transform: scale(1.1);
 }

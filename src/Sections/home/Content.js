@@ -6,8 +6,10 @@ import ContentPorto from './Content/ContentPorto'
 const Content = () => {
     return (
         <div className='content'>
+
             <ContentAbout />
             <ContentPorto />
+
         </div>
     )
 }

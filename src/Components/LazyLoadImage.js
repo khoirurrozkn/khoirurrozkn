@@ -10,6 +10,7 @@ const LazyLoadImageComponent = (props) => {
         src={props.src}
         width={'100%'}
         className={props.className}
+        style={{userSelect: 'none'}}
     />
   )
 }

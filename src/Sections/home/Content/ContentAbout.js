@@ -20,8 +20,8 @@ const ContentAbout = () => {
                 </p>
             </div>
             <div className='goto-about position-relative w-100 d-flex justify-content-between'>
-                <a href='#awdaw' className='position-relative text-light text-center d-flex align-items-center rounded-circle shadow'>
-                    More About Me ?
+                <a href='#awdaw' className='position-relative text-light d-flex align-items-center justify-content-center rounded-circle shadow'>
+                    About Me ?
                 </a>
                 <div className='position-relative text-black d-flex justify-content-center align-items-center rounded-circle'>
                     Some Porto
