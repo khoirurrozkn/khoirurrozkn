@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/khoirurrozkn/static/css/main.ba215d35.css",
-    "main.js": "/khoirurrozkn/static/js/main.e9e963bf.js",
+    "main.css": "/khoirurrozkn/static/css/main.bdeb0e4a.css",
+    "main.js": "/khoirurrozkn/static/js/main.381876b7.js",
     "static/media/profile.png": "/khoirurrozkn/static/media/profile.d96acfb10bab8ed4ac33.png",
     "static/media/diving2.webp": "/khoirurrozkn/static/media/diving2.af88d61b73acda9036ab.webp",
     "static/media/kukiGames.png": "/khoirurrozkn/static/media/kukiGames.25379638f0009d364c3f.png",
@@ -13,11 +13,11 @@
     "static/media/weatherApp.webp": "/khoirurrozkn/static/media/weatherApp.22bb9dbd019225fcac1d.webp",
     "static/media/kukiChat.webp": "/khoirurrozkn/static/media/kukiChat.520b63e3151ec881db12.webp",
     "index.html": "/khoirurrozkn/index.html",
-    "main.ba215d35.css.map": "/khoirurrozkn/static/css/main.ba215d35.css.map",
-    "main.e9e963bf.js.map": "/khoirurrozkn/static/js/main.e9e963bf.js.map"
+    "main.bdeb0e4a.css.map": "/khoirurrozkn/static/css/main.bdeb0e4a.css.map",
+    "main.381876b7.js.map": "/khoirurrozkn/static/js/main.381876b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba215d35.css",
-    "static/js/main.e9e963bf.js"
+    "static/css/main.bdeb0e4a.css",
+    "static/js/main.381876b7.js"
   ]
 }
