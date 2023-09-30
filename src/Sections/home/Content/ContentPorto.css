@@ -1,0 +1,37 @@
+#home .content .porto{
+    background-color: #00171F;
+    padding: 40px 0px;
+    border-bottom-right-radius: 5em;
+    border-bottom-left-radius: 5em;
+}
+
+#home .content .porto .some-porto{
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+#home .content .porto .some-porto div div{
+    width: 400px;
+    height: 280px;
+    padding: 30px;
+    display: inline-block;
+}
+
+#home .content .porto .some-porto div div:not(:last-child){
+    margin-right: 40px;
+}
+
+#home .content .porto .programming{
+    margin-top: 30px;
+    padding: 0px 10%;
+}
+
+#home .content .porto .programming p{
+    font-size: 1.2em;
+    width: 70%;
+}
+
+#home .content .porto .programming a{
+    width: 120px;
+    height: 120px;
+}

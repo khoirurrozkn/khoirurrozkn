@@ -1,0 +1,48 @@
+#home .content .about{
+    z-index: 10;
+    background-color: white !important;
+    padding: 10% 10% 0% 10%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+}
+
+#home .content .about .desc-1{
+    width: 60%;
+}
+
+#home .content .about .desc-1 p{
+    font-size: 2em;
+}
+
+#home .content .about .desc-2{
+    width: 20%;
+}
+
+#home .content .about .goto-about{
+    height: 40vh;
+    margin-top: 30px;
+}
+
+#home .content .about .goto-about a{
+    background-color: #00171F;
+    z-index: 2;
+    transition: ease-in-out 0.5s;
+}
+
+#home .content .about .goto-about a{
+    width: 110px;
+    height: 110px;
+}
+
+#home .content .about .goto-about div{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    border: solid 5px #00171F;
+    background-color: white;
+    z-index: 2;
+}
+
+#home .content .about .goto-about a:hover{
+    transform: scale(1.05);
+}

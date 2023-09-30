@@ -24,12 +24,12 @@ const Header = () => {
                 <LazyLoadImage placeholderSrc={profileBlur} src={profile} className='rounded-5'/>
             </div>
             <div ref={background} className='background text-center position-absolute'>
-                <h1>PORTO</h1>
+                <h1 data-aos='fade-left' >PORTO</h1>
 
-                <h1>AB o UT</h1>
-                <h1>ABOUT</h1>
+                <h1 data-aos='fade-right'>AB o UT</h1>
+                <h1 data-aos='fade-right'>ABOUT</h1>
 
-                <h1 className='position-relative'>CONTACT</h1>
+                <h1 data-aos='fade-left' className='position-relative'>CONTACT</h1>
             </div>
             <div ref={desc} className='desc position-absolute bottom-0 mb-5'>
                 Moch Khoirur Rozikin | Frelancer | Web Developer

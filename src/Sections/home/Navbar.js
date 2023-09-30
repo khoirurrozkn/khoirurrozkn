@@ -38,7 +38,7 @@ const Navbar = () => {
         <>
             <div className='navbar px-5 position-absolute w-100 top-0 d-flex align-items-end justify-content-between'>
                 <div>
-                    <i className="bi bi-credit-card-2-front me-1"></i> Created by Krzkn
+                    <i class="bi bi-braces-asterisk"></i> Created by Krzkn
                 </div>
                 <div>
                     <a href='#awdc' className='bg-dark shadow text-light p-1 px-2 rounded-4'>Home</a>

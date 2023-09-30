@@ -1,6 +1,4 @@
 #home .header{
-    background-color: #BFC0C0;
-    filter: brightness(90%);
     z-index: 10;
 }
 
@@ -17,7 +15,7 @@
 
 #home .header .background h1{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.500);
     margin: 0;
 }
@@ -43,6 +41,7 @@
     margin-right: -630px;
     font-size: 5em;
     z-index: 2;
+    font-weight: 500;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){    
@@ -83,7 +82,7 @@
 @media only screen and (max-width: 767px){
     #home .header{
         flex-wrap: wrap;
-        padding-bottom: 5vh;
+        padding-bottom: 7vh;
     }
 
     #home .header div:not(:last-child){

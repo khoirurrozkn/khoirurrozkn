@@ -1,10 +1,13 @@
 import React from 'react'
 import './Content.css'
+import ContentAbout from './Content/ContentAbout'
+import ContentPorto from './Content/ContentPorto'
 
 const Content = () => {
     return (
-        <div className='content vh-100 position-relative bg-light'>
-            Content
+        <div className='content'>
+            <ContentAbout />
+            <ContentPorto />
         </div>
     )
 }
