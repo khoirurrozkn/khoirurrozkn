@@ -3,23 +3,23 @@
   "name": "Portofolio || Blog pribadi",
   "icons": [
     {
-      "src": "",
+      "src": "profile.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "",
+      "src": "profile.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "",
+      "src": "profile.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#EAE0D5",
-  "background_color": "#EAE0D5"
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF"
 }
