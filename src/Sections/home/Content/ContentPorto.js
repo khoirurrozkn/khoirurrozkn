@@ -1,10 +1,10 @@
 import React, { useRef, useEffect } from 'react'
 import './ContentPorto.css'
-import kukiGames from './../../../img/kukiGames.png'
-import weatherApp from './../../../img/weatherApp.webp'
-import kukiAuth from './../../../img/kukiAuth.webp'
-import kukiChat from './../../../img/kukiChat.webp'
-import LazyLoadImage from './../../../Components/LazyLoadImage'
+// import kukiGames from './../../../img/kukiGames.png'
+// import weatherApp from './../../../img/weatherApp.webp'
+// import kukiAuth from './../../../img/kukiAuth.webp'
+// import kukiChat from './../../../img/kukiChat.webp'
+// import LazyLoadImage from './../../../Components/LazyLoadImage'
 import handleGsap from '../../../Utils/handleGsap'
 
 const ContentPorto = () => {
@@ -22,19 +22,19 @@ const ContentPorto = () => {
 
     const somePorto = [
         {
-            'image': kukiGames,
-            'backgroundColor': '#E7E7E7'
-        },
-        {
-            'image': weatherApp,
-            'backgroundColor': '#D1CFE2'
-        },
-        {
-            'image': kukiAuth,
+            'image': process.env.PUBLIC_URL + '/kukiGames.png',
             'backgroundColor': '#D7D4CF'
         },
         {
-            'image': kukiChat,
+            'image': process.env.PUBLIC_URL + '/weatherApp.webp',
+            'backgroundColor': '#D1CFE2'
+        },
+        {
+            'image': process.env.PUBLIC_URL + '/kukiAuth.webp',
+            'backgroundColor': '#E7E7E7'
+        },
+        {
+            'image': process.env.PUBLIC_URL + '/kukiChat.webp',
             'backgroundColor': '#D6D7DD'
         },
     ];
@@ -45,10 +45,13 @@ const ContentPorto = () => {
         <div className='porto position-relative text-light'>
             <div className='some-porto'>
                 <div ref={wrapSomePorto1}>
-                    {somePorto.map((v,i) => (
-                        <div key={i} style={{backgroundColor: v.backgroundColor}}>
-                            <LazyLoadImage placeholderSrc={v.image} src={v.image}/>
-                        </div>
+                    {somePorto.map((v, i) => (
+                        (window.innerWidth > 1024 || i < 2) && (
+                            <div key={i} style={{backgroundColor: v.backgroundColor}}>
+                                {/* <img src={v.image} loading='lazy' width='400' style={{maxWidth: '100%', height: 'auto', width: '100%'}} height='280' title='Front-end' alt='FrontEnd'></img> */}
+                                <div style={{backgroundImage: `url('${v.image}')`}}></div>
+                            </div>
+                        )
                     ))}
                 </div>
             </div>
@@ -56,7 +59,8 @@ const ContentPorto = () => {
                 <div ref={wrapSomePorto2}>
                     {somePorto.map((v,i) => (
                         <div key={i} style={{backgroundColor: v.backgroundColor}}>
-                            <LazyLoadImage placeholderSrc={v.image} src={v.image}/>
+                            {/* <img src={v.image} loading='lazy' width='400' style={{maxWidth: '100%', height: 'auto', width: '100%'}} height='280' title='Back-end' alt='BackEnd'></img> */}
+                            <div style={{backgroundImage: `url('${v.image}')`}}></div>
                         </div>
                     ))}
                 </div>
@@ -66,12 +70,12 @@ const ContentPorto = () => {
                 <div className='w-100 d-flex justify-content-center'>
                     <p>
                         More of my portfolio, including 
-                        descriptions and feature explanations? <br/>  
-                        Click the " More Porto " button.
+                        descriptions and feature explanations? {window.innerWidth > 1024 && <br />}
+                        Click the "More Porto" button.
                     </p>
                 </div>
 
-                <a href='#adawdw' className='border border-2 rounded-circle d-flex align-items-center justify-content-center shadow text-light'>
+                <a href='http://localhost:3000/khoirurrozkn/#porto' className='border border-2 rounded-circle d-flex align-items-center justify-content-center shadow text-light'>
                     More Porto ?
                 </a>
             </div>

@@ -45,4 +45,67 @@
 
 #home .footer .bottom{
     height: 100px;
+    padding: 0px 4%;
+}
+
+#home .footer .bottom .title{
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){    
+    
+}
+
+@media only screen and (max-width: 767px){    
+    #home .footer svg{
+        margin-bottom: -40px;
+    }
+    
+    #home .footer .collaborate{
+        height: 100vh;
+    }
+    
+    #home .footer .collaborate .wrap-contact{
+        width: 90%;
+        height: auto;
+    }
+
+    #home .footer .collaborate .wrap-contact a{
+        width: 100%;
+        font-weight: 300;
+    }
+    
+    #home .footer .collaborate .wrap-contact p:nth-child(1),
+    #home .footer .collaborate .wrap-contact p:nth-child(2){
+        font-size: 2.5em;
+    }
+    
+    #home .footer .collaborate .wrap-contact p:nth-child(2){
+        margin-left: 43px;
+        margin-top: -30px;
+    }
+    
+    #home .footer .collaborate .wrap-contact .wrap-nav-contact{
+        width: 100%;
+        position: static !important;
+    }
+    
+    #home .footer .collaborate .wrap-contact .wrap-nav-contact a{
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    #home .footer .collaborate .wrap-contact .wrap-nav-contact div{
+        font-weight: 300;
+    }
+    
+    #home .footer .bottom{
+        height: 100px;
+        padding: 0px 4%;
+    }
+    
+    #home .footer .bottom .title{
+        font-size: 14px;
+    }
 }

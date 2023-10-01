@@ -8,6 +8,14 @@
     z-index: 2;
 }
 
+/* .wrap-profile div{
+    width: 100%;
+    height: 150%;
+    background-position: center;
+    background-size: cover;
+
+} */
+
 #home .header .background{
     width: 90%;
     margin-bottom: 4%;
@@ -90,8 +98,8 @@
     }
 
     #home .header .wrap-profile{
-        width: 10.5em;
-        height: 10.5em;
+        width: 9.5em;
+        height: 9.5em;
     }
 
     #home .header .background{
@@ -119,6 +127,7 @@
     
     #home .header .background h1:nth-child(4){
         margin-right: 0px;
+        font-weight: 400;
     }
 
     #home .desc{
