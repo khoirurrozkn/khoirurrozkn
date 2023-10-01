@@ -38,7 +38,7 @@ const Navbar = () => {
         <>
             <div className='navbar px-5 position-absolute w-100 top-0 d-flex align-items-end justify-content-between'>
                 <div>
-                    <i className="bi bi-braces-asterisk"></i> Created by Krzkn
+                    Created by Krzkn
                 </div>
                 <div>
                     <a href='http://localhost:3000/khoirurrozkn' className='bg-dark shadow text-light p-1 px-2 rounded-4'>Home</a>
@@ -56,7 +56,6 @@ const Navbar = () => {
                 <div className='h-100 w-100 position-relative'>
                     <div className={`sidebar ${wrapSideBar && 'active'} d-flex justify-content-center align-items-center position-absolute h-100`}>
                         <div className='box-sidebar text-light'>
-                            {/* <p className='text-light text-opacity-75 m-0 border-bottom border-secondary border-opacity-50'> */}
                             <p className='text-light text-opacity-75 m-0'>
                                 Navigation
                             </p>

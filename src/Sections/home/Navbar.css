@@ -1,45 +1,45 @@
-#home .navbar{
+.navbar{
     height: 9%;
     z-index: 999;
 }
 
-#home .navbar div:nth-child(2) a:not(:last-child){
+.navbar div:nth-child(2) a:not(:last-child){
     margin-right: 40px;
 }
 
-#home .btn-nav{
+.btn-nav{
     width: 53px;
     height: 53px;
     transform: scale(0.0);
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.2s;
     top: 20%;
     right: 2.5%;
     z-index: 999;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(20, 20, 20) !important;
 }
 
-#home .btn-nav.active{
+.btn-nav.active{
     top: 5%;
     transform: scale(1.5);
 }
 
-#home .btn-nav.active:hover{
+.btn-nav.active:hover{
     transform: scale(1.7);
 }
 
-#home .wrap-sidebar{
+.wrap-sidebar{
     z-index: 0;
     transition: all ease-in-out 1s;
     background-color: transparent;
 }
 
-#home .wrap-sidebar.active{
+.wrap-sidebar.active{
     z-index: 888;
     background-color: rgba(0,0,0,0.250);
     backdrop-filter: blur(5px);
 }
 
-#home .wrap-sidebar .sidebar{
+.sidebar{
     width: 38%;
     right: -100%;
     background-color: #1C1D20;
@@ -49,7 +49,7 @@
     z-index: 900;
 }
 
-#home .wrap-sidebar .sidebar.active{
+.sidebar.active{
     right: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -92,47 +92,47 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
-    #home .navbar{
+    .navbar{
         height: 7%;
     }
     
-    #home .btn-nav{
+    .btn-nav{
         right: 6%;
         top: 5%;
     }
 
-    #home .wrap-sidebar{
+    .wrap-sidebar{
         transition: all 0s;
     }
     
-    #home .wrap-sidebar .sidebar{
+    .sidebar{
         width: 100%;
         transition: all 0s;
     }
 }
 
 @media only screen and (max-width: 767px){
-    #home .navbar div:nth-child(2){
+    .navbar div:nth-child(2){
         display: none;
     }
 
-    #home .navbar{
+    .navbar{
         height: 8%;
         padding: 0px 5% !important;
     }
     
-    #home .btn-nav{
+    .btn-nav{
         width: 30px;
         height: 30px;
         right: 7%;
         top: 5%;
     }
 
-    #home .wrap-sidebar{
+    .wrap-sidebar{
         transition: all 0s;
     }
 
-    #home .wrap-sidebar .sidebar{
+    .sidebar{
         width: 100%;
         transition: all 0s;
         border-top-left-radius: 0;

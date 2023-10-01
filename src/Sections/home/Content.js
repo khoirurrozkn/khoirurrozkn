@@ -1,5 +1,4 @@
 import React from 'react'
-import './Content.css'
 import ContentAbout from './Content/ContentAbout'
 import ContentPorto from './Content/ContentPorto'
 

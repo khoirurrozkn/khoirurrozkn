@@ -20,21 +20,40 @@ const ContentPorto = () => {
     
     },[]);
 
+    // const somePorto = [
+    //     {
+    //         'image': process.env.PUBLIC_URL + '/kukiGames.png',
+    //         'backgroundColor': '#D7D4CF'
+    //     },
+    //     {
+    //         'image': process.env.PUBLIC_URL + '/weatherApp.webp',
+    //         'backgroundColor': '#D1CFE2'
+    //     },
+    //     {
+    //         'image': process.env.PUBLIC_URL + '/kukiAuth.webp',
+    //         'backgroundColor': '#E7E7E7'
+    //     },
+    //     {
+    //         'image': process.env.PUBLIC_URL + '/kukiChat.webp',
+    //         'backgroundColor': '#D6D7DD'
+    //     },
+    // ];
+
     const somePorto = [
         {
-            'image': process.env.PUBLIC_URL + '/kukiGames.png',
+            'image': 'asd',
             'backgroundColor': '#D7D4CF'
         },
         {
-            'image': process.env.PUBLIC_URL + '/weatherApp.webp',
+            'image': 'asd',
             'backgroundColor': '#D1CFE2'
         },
         {
-            'image': process.env.PUBLIC_URL + '/kukiAuth.webp',
+            'image': 'asd',
             'backgroundColor': '#E7E7E7'
         },
         {
-            'image': process.env.PUBLIC_URL + '/kukiChat.webp',
+            'image': 'asd',
             'backgroundColor': '#D6D7DD'
         },
     ];

@@ -1,4 +1,4 @@
-#home .content .about{
+.about{
     z-index: 10;
     background-color: rgba(255,255,255,0.750);
     padding: 10% 10% 0% 10%;
@@ -6,34 +6,34 @@
     border-top-right-radius: 15%;
 }
 
-#home .content .about .desc-1{
+.desc-1{
     width: 60%;
 }
 
-#home .content .about .desc-1 p{
-    font-size: 2em;
+.desc-1 p{
+    font-size: 1.7em;
 }
 
-#home .content .about .desc-2{
-    width: 20%;
+.desc-2{
+    width: 25%;
 }
 
-#home .content .about .goto-about{
+.goto-about{
     height: 40vh;
     margin-top: 30px;
 }
 
-#home .content .about .goto-about a{
+.goto-about a{
     background-color: #00171F;
     z-index: 2;
 }
 
-#home .content .about .goto-about a{
+.goto-about a{
     width: 110px;
     height: 110px;
 }
 
-#home .content .about .goto-about div{
+.goto-about div{
     width: 150px;
     height: 150px;
     margin-top: 30px;
@@ -47,53 +47,53 @@
 }
 
 @media only screen and (max-width: 767px){
-    #home .content .about{
+    .about{
         justify-content: start !important;
         padding: 20% 0% 0% 0%;
         border-top-left-radius: 3em;
         border-top-right-radius: 3em;
     }
     
-    #home .content .about .desc-1{
+    .desc-1{
         width: 90%;
         margin-bottom: 10%;
         padding-left: 6%;
     }
     
-    #home .content .about .desc-1 p{
+    .desc-1 p{
         font-size: 24px;
     }
     
-    #home .content .about .desc-2{
+    .desc-2{
         width: 70%;
         padding-left: 6%;
     }
 
-    #home .content .about .desc-2 p{
+    .desc-2 p{
         font-size: 15px;
         font-weight: 300;
     }
     
-    #home .content .about .goto-about{
+    .goto-about{
         height: 22vh;
         margin-top: 30px;
         padding: 0px 3%;
     }
     
-    #home .content .about .goto-about a{
+    .goto-about a{
         width: 90px;
         height: 90px;
         font-size: 14px;
     }
     
-    #home .content .about .goto-about div{
+    .goto-about div{
         width: 120px;
         height: 120px;
         margin-top: auto;
         font-size: 14px;
     }
     
-    #home .content .about .goto-about a:hover{
+    .goto-about a:hover{
         transform: scale(1.05);
     }
 }
