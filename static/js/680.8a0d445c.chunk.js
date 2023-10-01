@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkkhoirurrozkn=self.webpackChunkkhoirurrozkn||[]).push([[680],{680:function(n,r,e){e.r(r),e.d(r,{default:function(){return s}});var i=e(791),u=e(184),t=e(331),o=e(681);t.ZP.registerPlugin(o.i);var f=e(945),c=e.n(f),s=function(){return(0,i.useEffect)((function(){c().init({duration:1e3})}),[]),(0,u.jsx)("div",{id:"home",className:"container-fluid overflow-hidden m-0 p-0"})}}}]);
+//# sourceMappingURL=680.8a0d445c.chunk.js.map
