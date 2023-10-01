@@ -11,8 +11,10 @@ const Navbar = () => {
         const handleScroll = () => {
 
             const scrollTop = window.scrollY;
-            if(scrollTop > 200) setActiveBtnNav(true);
-            else setActiveBtnNav(false);
+            // if(window.innerWidth < 766){
+                if(scrollTop > 200) setActiveBtnNav(true);
+                else setActiveBtnNav(false);
+            // }
 
         }
 

@@ -65,9 +65,8 @@ const ContentPorto = () => {
             <div className='some-porto'>
                 <div ref={wrapSomePorto1}>
                     {somePorto.map((v, i) => (
-                        (window.innerWidth > 1024 || i < 2) && (
+                        (window.innerWidth >767 || i < 2) && (
                             <div key={i} style={{backgroundColor: v.backgroundColor}}>
-                                {/* <img src={v.image} loading='lazy' width='400' style={{maxWidth: '100%', height: 'auto', width: '100%'}} height='280' title='Front-end' alt='FrontEnd'></img> */}
                                 <div style={{backgroundImage: `url('${v.image}')`}}></div>
                             </div>
                         )
@@ -78,7 +77,6 @@ const ContentPorto = () => {
                 <div ref={wrapSomePorto2}>
                     {somePorto.map((v,i) => (
                         <div key={i} style={{backgroundColor: v.backgroundColor}}>
-                            {/* <img src={v.image} loading='lazy' width='400' style={{maxWidth: '100%', height: 'auto', width: '100%'}} height='280' title='Back-end' alt='BackEnd'></img> */}
                             <div style={{backgroundImage: `url('${v.image}')`}}></div>
                         </div>
                     ))}

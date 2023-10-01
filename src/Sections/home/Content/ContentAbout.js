@@ -5,14 +5,14 @@ const ContentAbout = () => {
     return (
         <div className='about overflow-hidden position-relative d-flex flex-wrap justify-content-evenly align-items-start'>
             <div className='desc-1'>
-                <p className='m-0' data-aos={window.innerWidth > 1024 && 'fade-up'}>
+                <p className='m-0' data-aos={window.innerWidth > 767 && 'fade-up'}>
                     Empowering <b>brands to shine</b> in the digital age. 
                     Together we will establish the new norm. 
                     No frills, always at the forefront.
                 </p>
             </div>
             <div className='desc-2'>
-                <p className='m-0' data-aos={window.innerWidth > 1024 && 'fade-up'}>
+                <p className='m-0' data-aos={window.innerWidth > 767 && 'fade-up'}>
                     The fusion of my enthusiasm for <b>design</b>, 
                     <b> coding</b>, and <b>interaction</b> places me in a 
                     distinctive position in the realm of 

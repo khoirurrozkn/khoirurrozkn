@@ -46,13 +46,37 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){    
+    .some-porto{
+        overflow: auto;
+        white-space:unset;
+        pointer-events: none;
+    }
+
+    .some-porto:nth-child(2){
+        display: none;
+    }
+
+    .some-porto div{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
     
+    .some-porto div div{
+        width: 45%;
+        display: block;
+        margin-bottom: 30px ;
+    }
+    
+    .some-porto div div:not(:last-child){
+        margin-right: 0px;
+    }
 }
 
 @media only screen and (max-width: 767px){    
     .some-porto{
         overflow:auto;
-        white-space: nowrap;
+        white-space:unset;
         margin-bottom: 0px;
         pointer-events: none;
     }

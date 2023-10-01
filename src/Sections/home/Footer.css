@@ -51,7 +51,22 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){    
+    .footer{
+        height: 60vh;
+    }
     
+    .footer svg{
+        top: 0%;
+    }
+    
+    .wrap-contact{
+        width: 90%;
+        margin-top: 0;
+    }
+    
+    .wrap-contact .wrap-nav-contact{
+        right: 0;
+    }
 }
 
 @media only screen and (max-width: 767px){ 

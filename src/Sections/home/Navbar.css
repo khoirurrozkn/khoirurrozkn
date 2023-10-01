@@ -100,25 +100,25 @@
         right: 6%;
         top: 5%;
     }
-
-    .wrap-sidebar{
-        transition: all 0s;
-    }
     
     .sidebar{
-        width: 100%;
-        transition: all 0s;
+        width: 70%;
     }
 }
 
 @media only screen and (max-width: 767px){
-    .navbar div:nth-child(2){
+    .navbar a:not(:nth-child(1)){
         display: none;
+    }
+
+    .navbar a:nth-child(1){
+        margin-right: 0 !important;
     }
 
     .navbar{
         height: 8%;
         padding: 0px 5% !important;
+        z-index: 700;
     }
     
     .btn-nav{

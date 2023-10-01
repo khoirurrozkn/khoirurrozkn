@@ -3,13 +3,13 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className={`header border overflow-hidden position-relative d-flex flex-wrap justify-content-evenly ${window.innerWidth <= 1024 ? 'align-content-center' : 'align-items-center'}`}>
+        <div className={`header overflow-hidden position-relative d-flex flex-wrap justify-content-evenly ${window.innerWidth <= 1024 ? 'align-content-center' : 'align-items-center'}`}>
             <div className='photo-opening rounded-circle shadow'>
             </div>
 
             <div className='opening'>
                 <h1><b>
-                    A passionate web developer from indonesia
+                    An enthusiastic  web developer from indonesia
                 </b></h1>
                 <p>
                     Enthusiastic web developer hailing from Indonesia, 

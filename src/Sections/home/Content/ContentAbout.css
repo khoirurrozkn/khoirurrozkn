@@ -43,7 +43,15 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){    
+    .about{
+        z-index: 10;
+        background-color: rgba(255,255,255,0.750);
+        padding: 10% 5% 0% 5%;
+    }
     
+    .goto-about{
+        height: 20vh;
+    }
 }
 
 @media only screen and (max-width: 767px){
