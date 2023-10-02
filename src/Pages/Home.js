@@ -1,25 +1,20 @@
-import React, { useEffect } from "react"
-import Navbar from "../Sections/home/Navbar"
-import Header from "../Sections/home/Header"
-import Content from "../Sections/home/Content"
-import Footer from "../Sections/home/Footer"
-import Aos from 'aos';
+import React, { lazy, Suspense } from "react";
+const Loading = lazy(() => import("../Components/Loading"));
+const Navbar = lazy(() => import("../Components/Navbar"));
+const Header = lazy(() => import("../Sections/home/Header"));
+const Content = lazy(() => import("../Sections/home/Content"));
+const Footer = lazy(() => import("../Components/Footer"));
 
 const Home = () => {
-
-    useEffect(() => {
-        Aos.init({
-          duration: 1000,
-        });
-    },[])
-
     return(
         <div id="home" style={{backgroundColor: '#adadad'}} className="container-fluid overflow-hidden m-0 p-0">
 
-            <Navbar />
-            <Header />
-            <Content />
-            <Footer />
+            <Suspense fallback={<Loading />}>
+                <Navbar page='home' />
+                <Header />
+                <Content />
+                <Footer />
+            </Suspense>
 
         </div>
     )

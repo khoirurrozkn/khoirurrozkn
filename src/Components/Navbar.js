@@ -1,7 +1,7 @@
 import React,{ useState, useEffect } from 'react'
 import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = (props) => {
     const [activeBtnNav, setActiveBtnNav] = useState(false);
     const [wrapSideBar, setwrapSideBar] = useState(false);
     const [btnContent, setBtnContent] = useState(<i className="bi bi-list text-light"></i>);
@@ -36,6 +36,8 @@ const Navbar = () => {
         }
     }
 
+    const isPage = 'bg-dark shadow text-light p-1 px-2 rounded-4';
+
     return (
         <>
             <div className='navbar px-5 position-absolute w-100 top-0 d-flex align-items-end justify-content-between'>
@@ -43,10 +45,10 @@ const Navbar = () => {
                     Created by Krzkn
                 </div>
                 <div>
-                    <a href='http://localhost:3000/khoirurrozkn' className='bg-dark shadow text-light p-1 px-2 rounded-4'>Home</a>
-                    <a href='http://localhost:3000/khoirurrozkn/#about' className='text-black'>About</a>
-                    <a href='http://localhost:3000/khoirurrozkn/#porto' className='text-black'>Porto</a>
-                    <a href='http://localhost:3000/khoirurrozkn/#contact' className='text-black'>Contact</a>
+                    <a href='http://localhost:3000/khoirurrozkn' className={`${props.page === 'home' ? isPage : 'text-black'}`}>Home</a>
+                    <a href='http://localhost:3000/khoirurrozkn/#about' className={`${props.page === 'about' ? isPage : 'text-black'}`}>About</a>
+                    <a href='http://localhost:3000/khoirurrozkn/#porto' className={`${props.page === 'porto' ? isPage : 'text-black'}`}>Porto</a>
+                    <a href='http://localhost:3000/khoirurrozkn/#contact' className={`${props.page === 'contact' ? isPage : 'text-black'}`}>Contact</a>
                 </div>
             </div>
 
@@ -61,16 +63,16 @@ const Navbar = () => {
                             <p className='text-light text-opacity-75 m-0'>
                                 Navigation
                             </p>
-                            <a href='http://localhost:3000/khoirurrozkn' className='active'>
+                            <a href='http://localhost:3000/khoirurrozkn' className={`${props.page === 'home' && 'active'}`}>
                                 Home
                             </a>
-                            <a href='http://localhost:3000/khoirurrozkn/#about'>
+                            <a href='http://localhost:3000/khoirurrozkn/#about' className={`${props.page === 'about' && 'active'}`}>
                                 About
                             </a>
-                            <a href='http://localhost:3000/khoirurrozkn/#porto'>
+                            <a href='http://localhost:3000/khoirurrozkn/#porto' className={`${props.page === 'porto' && 'active'}`}>
                                 Porto
                             </a>
-                            <a href='http://localhost:3000/khoirurrozkn/#contact'>
+                            <a href='http://localhost:3000/khoirurrozkn/#contact' className={`${props.page === 'contact' && 'active'}`}>
                                 Contact
                             </a>
                             <p className='text-light text-opacity-75'>
