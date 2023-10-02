@@ -3,8 +3,8 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className={`header overflow-hidden position-relative d-flex flex-wrap justify-content-evenly ${window.innerWidth <= 1024 ? 'align-content-center' : 'align-items-center'}`}>
-            <div className='photo-opening rounded-circle shadow'>
+        <div className='header overflow-hidden position-relative d-flex flex-wrap justify-content-evenly'>
+            <div className='photo-opening shadow'>
             </div>
 
             <div className='opening'>

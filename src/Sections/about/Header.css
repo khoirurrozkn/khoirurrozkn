@@ -1,21 +1,48 @@
-.header{
-    /* background: linear-gradient(#FFFFFF, #999C9F); */
-    background-color: #E5E6E7;
-    padding: 0 10%;
-}
-
-.header div:nth-child(1){
+.desc-opening{
     width: 30%;
+    font-size: 1.7em;
 }
 
-.header div:nth-child(2){
-    width: 60%;
+.photo-opening{
+    width: 600px;
+    height: 600px;
+    background-image: url('./../../img/bgHeader.webp');
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){    
-
+    .desc-opening{
+        width: 40%;
+    }
+    
+    .photo-opening{
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @media only screen and (max-width: 767px){
+    .header{
+        align-content: center;
+    }
+    
+    .photo-opening{
+        width: 90%;
+        /* aspect-ratio: 1/1; */
+        height: 270px;
+        border-bottom-left-radius: 0%;
+        border-top-right-radius: 0%;
 
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 50%;
+    }
+
+    .desc-opening{
+        width: 90%;
+        font-size: 20px;
+        margin-top: 20px;
+    }
 }

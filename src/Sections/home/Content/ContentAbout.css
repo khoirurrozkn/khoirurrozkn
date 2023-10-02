@@ -1,6 +1,5 @@
 .about{
     z-index: 10;
-    background-color: rgba(255,255,255,0.750);
     padding: 10% 10% 0% 10%;
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
@@ -34,12 +33,11 @@
     height: 110px;
 }
 
-.goto-about div{
+.this-porto{
     width: 150px;
     height: 150px;
     /* margin-top: 30px; */
     border: solid 5px #00171F;
-    background-color: white;
     z-index: 99;
 }
 
@@ -95,7 +93,7 @@
         font-size: 14px;
     }
     
-    .goto-about div{
+    .this-porto{
         width: 120px;
         height: 120px;
         /* margin-top: au; */

@@ -3,8 +3,8 @@ import './App.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import Aos from 'aos';
-import Loading from './Components/Loading'
 
+const Loading = lazy(() => import("./Components/Loading"))
 const Home = lazy(() => import("./Pages/Home"));
 const About = lazy(() => import("./Pages/About"));
 const Porto = lazy(() => import("./Pages/Porto"));
