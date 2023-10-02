@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/387.62626b3c.chunk.js","mappings":"2IAQA,UANgB,WACd,OACEA,EAAAA,EAAAA,KAAA,OAAAC,SAAK,WAET,C","sources":["Sections/about/Content.js"],"sourcesContent":["import React from 'react'\n\nconst Content = () => {\n  return (\n    <div>Content</div>\n  )\n}\n\nexport default Content"],"names":["_jsx","children"],"sourceRoot":""}
