@@ -107,12 +107,8 @@
 }
 
 @media only screen and (max-width: 767px){
-    .navbar a:not(:nth-child(1)){
+    .navbar a{
         display: none;
-    }
-
-    .navbar a:nth-child(1){
-        margin-right: 0 !important;
     }
 
     .navbar{
@@ -125,7 +121,8 @@
         width: 30px;
         height: 30px;
         right: 7%;
-        top: 5%;
+        top: 4%;
+        transform: scale(1.5);
     }
 
     .wrap-sidebar{

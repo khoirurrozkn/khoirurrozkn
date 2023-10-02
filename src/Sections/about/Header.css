@@ -1,0 +1,21 @@
+.header{
+    /* background: linear-gradient(#FFFFFF, #999C9F); */
+    background-color: #E5E6E7;
+    padding: 0 10%;
+}
+
+.header div:nth-child(1){
+    width: 30%;
+}
+
+.header div:nth-child(2){
+    width: 60%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){    
+
+}
+
+@media only screen and (max-width: 767px){
+
+}

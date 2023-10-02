@@ -19,7 +19,8 @@
 }
 
 .goto-about{
-    height: 40vh;
+    /* height: 30vh; */
+    /* padding-bottom: 20px; */
     margin-top: 30px;
 }
 
@@ -36,10 +37,10 @@
 .goto-about div{
     width: 150px;
     height: 150px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     border: solid 5px #00171F;
     background-color: white;
-    z-index: 2;
+    z-index: 99;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){    
@@ -49,9 +50,9 @@
         padding: 10% 5% 0% 5%;
     }
     
-    .goto-about{
+    /* .goto-about{
         height: 20vh;
-    }
+    } */
 }
 
 @media only screen and (max-width: 767px){
@@ -83,8 +84,8 @@
     }
     
     .goto-about{
-        height: 22vh;
-        margin-top: 30px;
+        /* height: 22vh; */
+        /* margin-top: 50px; */
         padding: 0px 3%;
     }
     
@@ -97,7 +98,7 @@
     .goto-about div{
         width: 120px;
         height: 120px;
-        margin-top: auto;
+        /* margin-top: au; */
         font-size: 14px;
     }
     

@@ -36,7 +36,7 @@ const Navbar = (props) => {
         }
     }
 
-    const isPage = 'bg-dark shadow text-light p-1 px-2 rounded-4';
+    const isPage = 'active bg-dark shadow text-light p-1 px-2 rounded-4';
 
     return (
         <>

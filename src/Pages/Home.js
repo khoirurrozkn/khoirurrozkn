@@ -7,13 +7,16 @@ const Footer = lazy(() => import("../Components/Footer"));
 
 const Home = () => {
     return(
-        <div id="home" style={{backgroundColor: '#adadad'}} className="container-fluid overflow-hidden m-0 p-0">
+        <div id="home" 
+            style={{backgroundColor: '#999C9F'}} 
+            className="container-fluid overflow-hidden m-0 p-0"
+            >
 
             <Suspense fallback={<Loading />}>
                 <Navbar page='home' />
                 <Header />
                 <Content />
-                <Footer />
+                <Footer page='home'/>
             </Suspense>
 
         </div>

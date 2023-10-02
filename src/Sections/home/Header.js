@@ -9,7 +9,7 @@ const Header = () => {
 
             <div className='opening'>
                 <h1><b>
-                    An enthusiastic  web developer from indonesia
+                    An enthusiastic <b>web developer</b> from indonesia
                 </b></h1>
                 <p>
                     Enthusiastic web developer hailing from Indonesia, 

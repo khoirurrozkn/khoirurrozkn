@@ -1,16 +1,10 @@
 .footer{
     background-color: #1C1D20;
-    height: 80vh;
     z-index: 2;
-}
-
-.footer svg{
-    top: -10%;
 }
 
 .wrap-contact{
     width: 60%;
-    margin-top: 7%;
 }
 
 .wrap-contact p:nth-child(1),
@@ -44,6 +38,7 @@
 .bottom{
     height: 100px;
     padding: 0px 4%;
+    background-color: #1C1D20;
 }
 
 .bottom .title{
@@ -51,17 +46,8 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){    
-    .footer{
-        height: 60vh;
-    }
-    
-    .footer svg{
-        top: 0%;
-    }
-    
     .wrap-contact{
         width: 90%;
-        margin-top: 0;
     }
     
     .wrap-contact .wrap-nav-contact{
@@ -69,19 +55,9 @@
     }
 }
 
-@media only screen and (max-width: 767px){ 
-    .footer{
-        height: 100vh;
-    }   
-
-    .footer svg{
-        /* margin-bottom: -40px; */
-        top: 0;
-    }
-    
+@media only screen and (max-width: 767px){     
     .wrap-contact{
         width: 60%;
-        margin-top: 7%;
     }
     
     .wrap-contact{
@@ -117,11 +93,6 @@
 
     .wrap-contact .wrap-nav-contact div{
         font-weight: 300;
-    }
-    
-    .bottom{
-        height: 100px;
-        padding: 0px 4%;
     }
     
     .bottom .title{
