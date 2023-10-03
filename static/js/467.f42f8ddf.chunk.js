@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkkhoirurrozkn=self.webpackChunkkhoirurrozkn||[]).push([[467],{467:function(r,n,o){o.r(n);o(791);var e=o(184);n.default=function(){return(0,e.jsx)("div",{id:"contact",style:{backgroundColor:"#999C9F"},className:"container-fluid overflow-hidden m-0 p-0"})}}}]);
-//# sourceMappingURL=467.f42f8ddf.chunk.js.map
