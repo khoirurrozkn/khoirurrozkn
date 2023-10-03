@@ -99,3 +99,10 @@
         font-size: 14px;
     }
 }
+
+@media only screen and (max-width: 280px){
+    .wrap-contact p:nth-child(1),
+    .wrap-contact p:nth-child(2){
+        font-size: 2em;
+    }
+}

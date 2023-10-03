@@ -4,7 +4,7 @@
 *{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  user-select: text;
+  user-select: none;
 }
 
 ::-webkit-scrollbar {

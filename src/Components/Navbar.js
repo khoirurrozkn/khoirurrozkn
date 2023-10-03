@@ -38,6 +38,8 @@ const Navbar = (props) => {
 
     const isPage = 'active bg-dark shadow text-light p-1 px-2 rounded-4';
 
+    const url = 'https://khoirurrozkn.github.io/khoirurrozkn/#';
+
     return (
         <>
             <div className='navbar px-5 position-absolute w-100 top-0 d-flex align-items-end justify-content-between'>
@@ -45,10 +47,10 @@ const Navbar = (props) => {
                     Created by Krzkn
                 </div>
                 <div>
-                    <a href='http://localhost:3000/khoirurrozkn' className={`${props.page === 'home' ? isPage : 'text-black'}`}>Home</a>
-                    <a href='http://localhost:3000/khoirurrozkn/#about' className={`${props.page === 'about' ? isPage : 'text-black'}`}>About</a>
+                    <a href={`${url}`} className={`${props.page === 'home' ? isPage : 'text-black'}`}>Home</a>
+                    <a href={`${url}about`} className={`${props.page === 'about' ? isPage : 'text-black'}`}>About</a>
                     <a href='http://localhost:3000/khoirurrozkn/#porto' className={`${props.page === 'porto' ? isPage : 'text-black'}`}>Porto</a>
-                    <a href='http://localhost:3000/khoirurrozkn/#contact' className={`${props.page === 'contact' ? isPage : 'text-black'}`}>Contact</a>
+                    <a href={`${url}contact`} className={`${props.page === 'contact' ? isPage : 'text-black'}`}>Contact</a>
                 </div>
             </div>
 
@@ -63,16 +65,16 @@ const Navbar = (props) => {
                             <p className='text-light text-opacity-75 m-0'>
                                 Navigation
                             </p>
-                            <a href='http://localhost:3000/khoirurrozkn' className={`${props.page === 'home' && 'active'}`}>
+                            <a href={`${url}`} className={`${props.page === 'home' && 'active'}`}>
                                 Home
                             </a>
-                            <a href='http://localhost:3000/khoirurrozkn/#about' className={`${props.page === 'about' && 'active'}`}>
+                            <a href={`${url}about`} className={`${props.page === 'about' && 'active'}`}>
                                 About
                             </a>
                             <a href='http://localhost:3000/khoirurrozkn/#porto' className={`${props.page === 'porto' && 'active'}`}>
                                 Porto
                             </a>
-                            <a href='http://localhost:3000/khoirurrozkn/#contact' className={`${props.page === 'contact' && 'active'}`}>
+                            <a href={`${url}contact`} className={`${props.page === 'contact' && 'active'}`}>
                                 Contact
                             </a>
                             <p className='text-light text-opacity-75'>

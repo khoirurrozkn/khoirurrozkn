@@ -13,6 +13,7 @@ const Content = () => {
         }
     
     },[]);
+    
 
     return (
         <>
@@ -21,24 +22,29 @@ const Content = () => {
                 Available to help you with...
             </h1>
             <div className='wrap-desc d-flex flex-wrap w-100 justify-content-evenly'>
-                <div data-aos='fade-up'>
-                    <p>01</p>
+                <div className='wrap-photo wrap-photo-1' data-aos='fade-up'>
+                    
+                    <div className='shadow'></div>
                     <h2>Styling</h2>
                     With a strong website, I create robust and user-friendly digital designs. 
                     Building a strong company brand is the foundation of every successful website.
                 </div>
-                <div data-aos='fade-up'>
-                    <p>02</p>
+                <div className='wrap-photo wrap-photo-2' data-aos='fade-up'>
+                    
+                    <div className='shadow'></div>
+
                     <h2>Development</h2>
                     I build expandable websites from the ground up that are integrated with 
                     responsiveness. My focus is on both user interface and data management.
                 </div>
-                <div data-aos='fade-up'>
-                    <p>03</p>
+                <div className='wrap-photo wrap-photo-3' data-aos='fade-up'>
+                    
+                    <div className='shadow'></div>
+
                     <h2>Marketing</h2>
                     My strategies are tailored to effectively reach your target market. 
                     Through responsive client-side and robust server-side approaches, I aim to maximize 
-                    the visibility and impact of your brand."
+                    the visibility and impact of your brand.
                 </div>
             </div>
             <div ref={boxIcon} className='icon d-flex flex-wrap justify-content-evenly'>
