@@ -1,7 +1,7 @@
 <h1 align="center">Hallo 👋, Saya Moch Khoirur Rozikin</h1>
 <h3 align="center">Masih dalam tahap pemula dan dengan antusiasme ingin terus belajar dalam bidang pengembangan web</h3>
 
-- 📝 Portofolio saya https://khoirurrozkn.github.io
+- 📝 Portofolio saya https://khoirurrozkn.github.io/khoirurrozkn
 
 - 📫 Hubungi saya? **khoirurrozkn@gmail.com**
 
