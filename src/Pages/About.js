@@ -10,6 +10,7 @@ const About = () => {
     return(
         <div id="about"
             className="container-fluid overflow-hidden m-0 p-0"
+            style={{backgroundColor: '#E9EBEA'}}
             >
 
             <Suspense fallback={<Loading />}>

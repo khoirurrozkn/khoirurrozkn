@@ -25,7 +25,7 @@ const ContentPorto = () => {
                     {porto.map((v, i) => (
                         (window.innerWidth >767 || i < 2) && (
                             <div key={i} style={{backgroundColor: v.backgroundColor}}>
-                                <div style={{backgroundImage: `url('${v.image}')`}}></div>
+                                <div style={{backgroundImage: `url('${v.backgroundImage}')`}}></div>
                             </div>
                         )
                     ))}
@@ -35,7 +35,7 @@ const ContentPorto = () => {
                 <div ref={wrapSomePorto2}>
                     {porto.map((v,i) => (
                         <div key={i} style={{backgroundColor: v.backgroundColor}}>
-                            <div style={{backgroundImage: `url('${v.image}')`}}></div>
+                            <div style={{backgroundImage: `url('${v.backgroundImage}')`}}></div>
                         </div>
                     ))}
                 </div>
@@ -50,7 +50,7 @@ const ContentPorto = () => {
                     </p>
                 </div>
 
-                <a href='http://localhost:3000/khoirurrozkn/#porto' className='border border-2 rounded-circle d-flex align-items-center justify-content-center shadow text-light'>
+                <a href='https//khoirurrozkn.github.io/khoirurrozkn/#porto' className='border border-2 rounded-circle d-flex align-items-center justify-content-center shadow text-light'>
                     More Porto ?
                 </a>
             </div>

@@ -18,7 +18,7 @@ const Footer = (props) => {
                     </svg>
                 }
 
-                {props.page !== 'contact' &&
+                {/* {props.page !== 'contact' && */}
                     <div className='wrap-contact position-relative text-light'>
                         <p>
                             Shall we 
@@ -48,7 +48,8 @@ const Footer = (props) => {
                             </div>
                         </div>
                     </div>
-                }
+                {/* } */}
+
                 <div className='bottom d-flex justify-content-between align-items-center w-100 text-secondary'>
                     <div>
                         <p className='title m-0 text-light text-opacity-75'>Socials</p>

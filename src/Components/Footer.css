@@ -35,6 +35,10 @@
     margin-top: 20px;
 }
 
+.wrap-all-info{
+    border: solid 3px green;
+}
+
 .bottom{
     height: 100px;
     padding: 0px 4%;
