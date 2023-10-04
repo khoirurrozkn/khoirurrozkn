@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/301.55735927.chunk.js","mappings":"2IAQA,UANiB,WACf,OACEA,EAAAA,EAAAA,KAAA,OAAAC,SAAK,eAET,C","sources":["Pages/Selected.js"],"sourcesContent":["import React from 'react'\n\nconst Selected = () => {\n  return (\n    <div>Hallo gengs</div>\n  )\n}\n\nexport default Selected"],"names":["_jsx","children"],"sourceRoot":""}

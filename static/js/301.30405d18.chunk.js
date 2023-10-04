@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkkhoirurrozkn=self.webpackChunkkhoirurrozkn||[]).push([[301],{301:function(r,o,a){a.r(o);var n=a(791),i=a(184);o.default=function(){var r=window.location.hash.split("?")[1],o=new URLSearchParams(r).get("awd");return(0,n.useEffect)((function(){o?console.log("Nilai dari parameter 'awd' adalah: ".concat(o)):window.location.href="https://khoirurrozkn.github.io/khoirurrozkn"}),[]),(0,i.jsx)("div",{children:"Hallo gengs"})}}}]);
+//# sourceMappingURL=301.30405d18.chunk.js.map

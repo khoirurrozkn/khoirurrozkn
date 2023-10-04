@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkkhoirurrozkn=self.webpackChunkkhoirurrozkn||[]).push([[301],{301:function(r,n,u){u.r(n);u(791);var e=u(184);n.default=function(){return(0,e.jsx)("div",{children:"Hallo gengs"})}}}]);
-//# sourceMappingURL=301.55735927.chunk.js.map
