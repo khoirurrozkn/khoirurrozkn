@@ -1,10 +1,10 @@
-.header{
+#home .header{
     z-index: 10;
     min-height: 100vh;
     align-items: center;
 }
 
-.photo-opening{
+#home .photo-opening{
     width: 300px;
     height: 300px;
     background-image: url('https://res.cloudinary.com/dobjgx7ps/image/upload/v1696186831/Portofolio/ezgif.com-crop_r8kksk.webp');
@@ -14,64 +14,64 @@
     border-bottom-right-radius: 50%;
 }
 
-.opening{
+#home .opening{
     width: 45%;
 }
 
-.opening h1{
+#home .opening h1{
     font-size: 3em;
     font-weight: 300;
     padding-bottom: 20px;
     border-bottom: solid 5px #1D1D1F;
 }
 
-.header .info{
+#home .header .info{
     bottom: 2%;
     text-align: center;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){    
-    .header{
+    #home .header{
         align-content: center;
     }
 
-    .photo-opening{
+    #home .photo-opening{
         width: 250px;
         height: 250px;
     }
     
-    .opening{
+    #home .opening{
         width: 50%;
     }
 }
 
 @media only screen and (max-width: 767px){
-    .header{
+    #home .header{
         align-content: center;
     }
     
-    .photo-opening{
+    #home .photo-opening{
         width: 200px;
         height: 200px;
         margin-bottom: 20px;
     }
     
-    .opening{
+    #home .opening{
         width: 90%;
     }
     
-    .opening h1{
+    #home .opening h1{
         font-size: 1.8em;
         padding-bottom: 5px;
         text-align: center;
         border: none;
     }
 
-    .opening p{
+    #home .opening p{
         display: none;
     }
     
-    .header .info{
+    #home .header .info{
         font-size: 12.5px;
     }
 }

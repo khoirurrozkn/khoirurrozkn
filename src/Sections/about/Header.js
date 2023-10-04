@@ -3,7 +3,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className='header d-flex flex-wrap justify-content-evenly align-items-center'>
+        <div data-aos='fade-up' className='header d-flex flex-wrap justify-content-evenly align-items-center'>
             <div className='desc-opening border-black'>
                 <p className='title'>My name is</p>
                 <p className='title'>Moch Khoirur Rozikin</p>

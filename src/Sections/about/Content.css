@@ -1,64 +1,64 @@
-.content{
+#about .content{
     /* padding-top: 60px; */
     padding-top: 0 !important;
     /* border: solid 1px red; */
 }
 
-.content h1{
+#about .content h1{
     margin-bottom: 60px;
     font-size: 2.7em;
 }
 
-.wrap-photo{
+#about .wrap-photo{
     width: 25%;
 }
 
-.wrap-photo h2{
+#about .wrap-photo h2{
     margin-top: 30px;
 }
 
-.wrap-photo div{
+#about .wrap-photo div{
     width: 100%;
     aspect-ratio: 16/10;
 }
 
-.wrap-desc h2{
+#about .wrap-desc h2{
     /* border-top: solid 0.5px black; */
     padding-bottom: 5px;
     /* padding-top: 30px; */
 }
 
-.wrap-desc p{
+#about .wrap-desc p{
     color: rgba(0,0,0,0.550);
 }
 
-.icon{
+#about .icon{
     margin-top: 40px;
 }
 
-.icon svg{
+#about .icon svg{
     height: 80px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){        
-    .wrap-photo{
+    #about .wrap-photo{
         width: 40%;
     }
 
-    .wrap-photo:last-child{
+    #about .wrap-photo:last-child{
         margin-top: 30px;
     }
 }
 
 @media only screen and (max-width: 767px){
-    .content h1{
+    #about .content h1{
         font-size: 2em;
         padding: 0px 15%;
         margin-bottom: 30px;
     }
     
     
-    .wrap-photo{
+    #about .wrap-photo{
         width: 90%;
         margin-bottom: 25px;
         padding-bottom: 25px;
@@ -66,15 +66,15 @@
         padding-top: 0px;
     }
     
-    .wrap-desc p{
+    #about .wrap-desc p{
         display: none;
     }
     
-    .icon{
+    #about .icon{
         margin-top: 40px;
     }
     
-    .icon svg{
+    #about .icon svg{
         height: 50px;
         margin: 0px 20px;
         margin-bottom: 10px;
@@ -82,13 +82,13 @@
 }
 
 @media only screen and (max-width: 280px){
-    .content h1{
+    #about .content h1{
         margin-bottom: 60px;
         font-size: 2em;
         padding: 0px 5%;
     }
 
-    .icon svg{
+    #about .icon svg{
         height: 30px;
     }
 }

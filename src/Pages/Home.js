@@ -6,6 +6,7 @@ const Content = lazy(() => import("../Sections/home/Content"));
 const Footer = lazy(() => import("../Components/Footer"));
 
 const Home = () => {
+    document.body.classList.remove('overflow-hidden');
     return(
         <div id="home" 
             style={{backgroundColor: '#999C9F'}} 

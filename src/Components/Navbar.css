@@ -21,6 +21,7 @@
 .btn-nav.active{
     top: 5%;
     transform: scale(1.5);
+    transition: 0.5s;
 }
 
 .btn-nav.active:hover{

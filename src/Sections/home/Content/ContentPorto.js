@@ -1,11 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import './ContentPorto.css'
-// import kukiGames from './../../../img/kukiGames.png'
-// import weatherApp from './../../../img/weatherApp.webp'
-// import kukiAuth from './../../../img/kukiAuth.webp'
-// import kukiChat from './../../../img/kukiChat.webp'
-// import LazyLoadImage from './../../../Components/LazyLoadImage'
 import handleGsap from '../../../Utils/handleGsap'
+import porto from '../../../Constant'
 
 const ContentPorto = () => {
 
@@ -20,51 +16,13 @@ const ContentPorto = () => {
     
     },[]);
 
-    // const somePorto = [
-    //     {
-    //         'image': process.env.PUBLIC_URL + '/kukiGames.png',
-    //         'backgroundColor': '#D7D4CF'
-    //     },
-    //     {
-    //         'image': process.env.PUBLIC_URL + '/weatherApp.webp',
-    //         'backgroundColor': '#D1CFE2'
-    //     },
-    //     {
-    //         'image': process.env.PUBLIC_URL + '/kukiAuth.webp',
-    //         'backgroundColor': '#E7E7E7'
-    //     },
-    //     {
-    //         'image': process.env.PUBLIC_URL + '/kukiChat.webp',
-    //         'backgroundColor': '#D6D7DD'
-    //     },
-    // ];
-
-    const somePorto = [
-        {
-            'image': 'asd',
-            'backgroundColor': '#D7D4CF'
-        },
-        {
-            'image': 'asd',
-            'backgroundColor': '#D1CFE2'
-        },
-        {
-            'image': 'asd',
-            'backgroundColor': '#E7E7E7'
-        },
-        {
-            'image': 'asd',
-            'backgroundColor': '#D6D7DD'
-        },
-    ];
-
     return (
         <>
 
         <div className='porto position-relative text-light'>
             <div className='some-porto'>
                 <div ref={wrapSomePorto1}>
-                    {somePorto.map((v, i) => (
+                    {porto.map((v, i) => (
                         (window.innerWidth >767 || i < 2) && (
                             <div key={i} style={{backgroundColor: v.backgroundColor}}>
                                 <div style={{backgroundImage: `url('${v.image}')`}}></div>
@@ -75,7 +33,7 @@ const ContentPorto = () => {
             </div>
             <div className='some-porto'>
                 <div ref={wrapSomePorto2}>
-                    {somePorto.map((v,i) => (
+                    {porto.map((v,i) => (
                         <div key={i} style={{backgroundColor: v.backgroundColor}}>
                             <div style={{backgroundImage: `url('${v.image}')`}}></div>
                         </div>

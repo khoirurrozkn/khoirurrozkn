@@ -1,39 +1,39 @@
-.about{
+#home .about{
     z-index: 10;
     padding: 10% 10% 0% 10%;
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
 }
 
-.desc-1{
+#home .desc-1{
     width: 60%;
 }
 
-.desc-1 p{
+#home .desc-1 p{
     font-size: 1.7em;
 }
 
-.desc-2{
+#home .desc-2{
     width: 25%;
 }
 
-.goto-about{
+#home .goto-about{
     /* height: 30vh; */
     /* padding-bottom: 20px; */
     margin-top: 30px;
 }
 
-.goto-about a{
+#home .goto-about a{
     background-color: #00171F;
     z-index: 2;
 }
 
-.goto-about a{
+#home .goto-about a{
     width: 110px;
     height: 110px;
 }
 
-.this-porto{
+#home .this-porto{
     width: 150px;
     height: 150px;
     /* margin-top: 30px; */
@@ -42,65 +42,65 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){    
-    .about{
+    #home .about{
         z-index: 10;
         background-color: rgba(255,255,255,0.750);
         padding: 10% 5% 0% 5%;
     }
     
-    /* .goto-about{
+    /* #home .goto-about{
         height: 20vh;
     } */
 }
 
 @media only screen and (max-width: 767px){
-    .about{
+    #home .about{
         justify-content: start !important;
         padding: 20% 0% 0% 0%;
         border-top-left-radius: 3em;
         border-top-right-radius: 3em;
     }
     
-    .desc-1{
+    #home .desc-1{
         width: 90%;
         margin-bottom: 10%;
         padding-left: 6%;
     }
     
-    .desc-1 p{
+    #home .desc-1 p{
         font-size: 24px;
     }
     
-    .desc-2{
+    #home .desc-2{
         width: 70%;
         padding-left: 6%;
     }
 
-    .desc-2 p{
+    #home .desc-2 p{
         font-size: 15px;
         font-weight: 300;
     }
     
-    .goto-about{
+    #home .goto-about{
         /* height: 22vh; */
         /* margin-top: 50px; */
         padding: 0px 3%;
     }
     
-    .goto-about a{
+    #home .goto-about a{
         width: 90px;
         height: 90px;
         font-size: 14px;
     }
     
-    .this-porto{
+    #home .this-porto{
         width: 120px;
         height: 120px;
         /* margin-top: au; */
         font-size: 14px;
     }
     
-    .goto-about a:hover{
+    #home .goto-about a:hover{
         transform: scale(1.05);
     }
 }

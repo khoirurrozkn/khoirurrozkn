@@ -12,8 +12,8 @@ const Footer = (props) => {
                     </svg>
                 }
 
-                {props.page === 'contact' &&
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                {props.page === 'porto' && 
+                    <svg xmlns="http://www.w3.org/2000/svg" className='w-100' viewBox="0 0 1440 320">
                         <path fill="#FFFFFF" fillOpacity="1" d="M0,96L48,128C96,160,192,224,288,218.7C384,213,480,139,576,133.3C672,128,768,192,864,224C960,256,1056,256,1152,229.3C1248,203,1344,149,1392,122.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
                     </svg>
                 }
@@ -27,7 +27,7 @@ const Footer = (props) => {
                             collaborate? 
                         </p>
                         <div>
-                            <a href='http://localhost:3000/khoirurrozkn/#contact'  className='border border-warning btn rounded-5 text-light shadow'>
+                            <a href='https://khoirurrozkn.github.io/khoirurrozkn/#contact'  className='border border-warning btn rounded-5 text-light shadow'>
                                 khoirurrozkn@gmail.com
                             </a> 
                         </div>
@@ -42,7 +42,7 @@ const Footer = (props) => {
                                 Send an email directly, through the contact page.
                             </div>
                             <div className='d-flex w-100 justify-content-center'>
-                                <a href='http://localhost:3000/khoirurrozkn/#contact' className='bg-warning btn d-flex align-items-center rounded-circle text-black shadow'>
+                                <a href='https://khoirurrozkn.github.io/khoirurrozkn/#contact' className='bg-warning btn d-flex align-items-center rounded-circle text-black shadow'>
                                     Go to Contact
                                 </a>
                             </div>

@@ -3,7 +3,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className='header overflow-hidden position-relative d-flex flex-wrap justify-content-evenly'>
+        <div data-aos={window.innerWidth > 1024 && 'fade-up'} className='header overflow-hidden position-relative d-flex flex-wrap justify-content-evenly'>
             <div className='photo-opening shadow'>
             </div>
 

@@ -1,0 +1,109 @@
+#porto .content{
+    padding-top: 30vh;
+    min-height: 100vh;
+}
+
+#porto .wrap-title{
+    width: 70%;
+}
+
+#porto .wrap-title p{
+    font-size: 4.5em;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1;
+}
+
+#porto .wrap-porto i{
+    padding: 20px 25px;
+    font-size: 1.2em;
+    margin: 0px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#porto .box-porto{
+    width: 580px;
+    margin: 100px 30px 0px 30px;
+}
+
+#porto .box-porto.first{
+    margin-top: 30px;
+}
+
+#porto .wrap-image{
+    margin-bottom: 20px;
+    padding: 30px;
+    height: 580px;
+}
+
+#porto .wrap-image div{
+    aspect-ratio: 16/10;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(90%);
+}
+
+#porto .wrap-porto div h1{
+    padding-bottom: 15px;
+}
+
+#porto .wrap-desc{
+    margin: 0;
+    padding-top: 15px;
+}
+
+#porto .btn-feature{
+    transition: 0.5s;
+}
+
+#porto .btn-feature:hover{
+    transform: scale(1.1);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){    
+    #porto .wrap-title{
+        width: 90%;
+    }
+    
+    #porto .wrap-title p{
+        font-size: 4.5em;
+    }
+
+    #porto .box-porto{
+        width: 43%;
+        margin: 60px 1.4% 0px 1.4%;
+    }
+    
+    #porto .wrap-image{
+        margin-bottom: 20px;
+        padding: 20px;
+        height: 30vh;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #porto .content{
+        padding-top: 20vh;
+        padding-bottom: 5vh;
+    }
+
+    #porto .wrap-title{
+        width: 90%;
+    }
+
+    #porto .wrap-title p{
+        font-size: 2.5em;
+    }
+    
+    #porto .box-porto{
+        width: 90%;
+        margin: 30px 0px 0px 0px;
+    }
+    
+    #porto .wrap-image{
+        margin-bottom: 20px;
+        padding: 10px;
+        height: 40vh;
+    }
+}

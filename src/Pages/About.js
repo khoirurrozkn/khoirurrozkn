@@ -6,6 +6,7 @@ const Content = lazy(() => import("../Sections/about/Content"));
 const Footer = lazy(() => import("../Components/Footer"));
 
 const About = () => {
+    document.body.classList.remove('overflow-hidden');
     return(
         <div id="about"
             className="container-fluid overflow-hidden m-0 p-0"
