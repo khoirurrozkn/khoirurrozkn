@@ -9,8 +9,7 @@ const About = () => {
     document.body.classList.remove('overflow-hidden');
     return(
         <div id="about"
-            className="container-fluid overflow-hidden m-0 p-0"
-            style={{backgroundColor: '#E9EBEA'}}
+            className="container-fluid overflow-hidden m-0 p-0 bg-white"
             >
 
             <Suspense fallback={<Loading />}>

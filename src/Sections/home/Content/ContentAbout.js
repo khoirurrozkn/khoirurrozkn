@@ -22,11 +22,11 @@ const ContentAbout = () => {
             </div>
 
             <div className='goto-about w-100 position-relative d-flex justify-content-between'>
-                <a href='http://localhost:3000/khoirurrozkn/#about' className='position-relative text-light d-flex align-items-center justify-content-center rounded-circle shadow'>
+                <a href='https://khoirurrozkn.github.io/khoirurrozkn/#about' className='position-relative text-light d-flex align-items-center justify-content-center rounded-circle shadow'>
                     About Me ?
                 </a>
 
-                <div className='this-porto position-relative text-black d-flex justify-content-center align-items-center rounded-circle'>
+                <div style={{userSelect: 'none'}} className='this-porto position-relative text-black d-flex justify-content-center align-items-center rounded-circle'>
                     Some Porto
                     <i className="bi bi-arrow-down-left ms-1"></i>
                 </div>

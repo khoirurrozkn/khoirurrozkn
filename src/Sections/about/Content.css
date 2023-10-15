@@ -56,6 +56,12 @@
     #about .wrap-box:last-child{
         margin-top: 30px;
     }
+
+    #about .content h1{
+        margin-bottom: 60px;
+        font-size: 2em;
+        padding-left: 6%;
+    }    
 }
 
 @media only screen and (max-width: 767px){

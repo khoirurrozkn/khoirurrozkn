@@ -38,10 +38,10 @@ const Content = () => {
     <div data-aos='fade-up' className='content position-relative d-flex justify-content-center'>
         <div className='wrap-content'>
             <p>
-                Let's embark on
-            </p>
-            <p>
-                a project together.
+                Let's embark on a project together
+            {/* </p>
+            <p> */}
+                {/* a project together. */}
             </p>
 
             <form onSubmit={FetchMessages} className='d-flex flex-wrap'>

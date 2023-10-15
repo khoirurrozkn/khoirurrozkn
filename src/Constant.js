@@ -8,7 +8,8 @@ const porto = [
             'Search by Category',
             'Link to original website'
         ],
-        'backgroundColor': '#D7D4CF'
+        'backgroundColor': '#D7D4CF',
+        'year': '2023',
     },
     {
         'backgroundImage': 'https://res.cloudinary.com/dobjgx7ps/image/upload/v1696436594/Portofolio/kukiAuth_yuq2fv.webp',
@@ -20,7 +21,8 @@ const porto = [
             'Remember me',
             'Verify Email'
         ],
-        'backgroundColor': '#D1CFE2'
+        'backgroundColor': '#D1CFE2',
+        'year': '2023',
     },
     {
         'backgroundImage': 'https://res.cloudinary.com/dobjgx7ps/image/upload/v1696436643/Portofolio/weatherApp_wy8uwh.webp',
@@ -30,7 +32,8 @@ const porto = [
             'Search by city',
             'Forecast'
         ],
-        'backgroundColor': '#E7E7E7'
+        'backgroundColor': '#E7E7E7',
+        'year': '2023',
     },    
     {
         'backgroundImage': '',
@@ -41,7 +44,8 @@ const porto = [
             'register',
             'awdawd'
         ],
-        'backgroundColor': '#D6D7DD'
+        'backgroundColor': '#D6D7DD',
+        'year': '2023',
     },
 ]
 

@@ -4,17 +4,19 @@
 }
 
 .wrap-contact{
-    width: 60%;
+    width: 80%;
 }
 
 .wrap-contact p:nth-child(1),
 .wrap-contact p:nth-child(2){
     font-size: 4em;
+    line-height: 0.7;
 }
 
 .wrap-contact p:nth-child(2){
     margin-left: 70px;
-    margin-top: -40px;
+    /* margin-top: -40px; */
+    margin-bottom: 30px;
 }
 
 .wrap-contact .btn{
@@ -51,8 +53,14 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){    
     .wrap-contact{
-        width: 90%;
+        width: 80%;
     }
+
+    .wrap-contact p:nth-child(1),
+    .wrap-contact p:nth-child(2){
+        font-size: 3em;
+    }
+
     
     .wrap-contact .wrap-nav-contact{
         right: 0;
@@ -81,7 +89,7 @@
     
     .wrap-contact p:nth-child(2){
         margin-left: 43px;
-        margin-top: -30px;
+        /* margin-top: -30px; */
     }
     
     .wrap-contact .wrap-nav-contact{

@@ -39,7 +39,7 @@
 }
 
 #porto .box-porto{
-    width: 580px;
+    width: 40%;
     margin: 100px 30px 0px 30px;
 }
 
@@ -54,7 +54,7 @@
 }
 
 #porto .wrap-image div{
-    aspect-ratio: 16/10;
+    aspect-ratio: 16/10.6;
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -71,10 +71,54 @@
     /* padding-bottom: 15px; */
 }
 
+#porto .table{
+    width: 84%;
+    border-collapse: collapse;
+}
+
+#porto tr{
+    height: 15vh;
+    padding: 0 5vh !important;
+    border-bottom: solid 1px rgba(0,0,0,0.250);
+}
+
+#porto thead tr th:first-child,
+#porto tbody tr th{
+    padding-left: 5%;
+}
+
+#porto tbody h1{
+    font-size: 33px;
+}
+
+#porto tbody td{
+    font-size: 17px;
+}
+
+#porto tbody a{
+    width: 50%;
+    aspect-ratio: 1/1;
+    display: block;
+    font-size: 15px;
+}
+
+
+#porto thead tr th:last-child,
+#porto thead tr td:last-child{
+    padding-right: 5%;
+}
+
+#porto th,
+#porto td{
+    vertical-align: middle;
+    /* padding: 0 5vh; */
+    /* border: solid 1px red; */
+}
+
 #porto .btn-feature{
     /* width: 100px; */
     /* aspect-ratio: 1/1; */
-    padding: 35px 10px;
+    padding: 10px 10px;
     transition: 0.5s;
 }
 
@@ -82,23 +126,33 @@
     transform: scale(1.1);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){    
+@media only screen and (min-width: 768px) and (max-width: 1024px){ 
+    #porto .content{
+        padding-top: 20vh;
+    }
+       
     #porto .wrap-title{
         width: 90%;
     }
     
     #porto .wrap-title p{
-        font-size: 4.5em;
-        padding-right: 0%;
+        font-size: 3.5em;
+        padding-right: 10%;
     }
 
     #porto .box-porto{
         width: 43%;
         margin: 60px 1.4% 0px 1.4%;
     }
+
+    #porto .layout{
+        margin-top: 2vh;
+        margin-bottom: 3vh;
+    }
     
     #porto .wrap-image{
         margin-bottom: 20px;
+        padding: 75px 21px;
     }
 }
 
@@ -123,12 +177,20 @@
     }
 
     #porto .btn-feature{
-        font-size: 12px;
-        padding: 30px 10px;
+        font-size: 15px;
+        /* padding: 30px 10px; */
     }
     
     #porto .wrap-image{
         margin-bottom: 20px;
         padding: 45px 10px;
+    }
+
+    #porto .layout{
+        display: none !important;
+    }
+
+    #porto .table{
+        display: none !important;
     }
 }

@@ -42,7 +42,9 @@ const Navbar = (props) => {
 
     return (
         <>
+            {/* <div className='navbar px-5 position-absolute w-100 top-0 d-flex align-items-end justify-content-between'> */}
             <div className='navbar px-5 position-absolute w-100 top-0 d-flex align-items-end justify-content-between'>
+
                 <div>
                     Created by Krzkn
                 </div>

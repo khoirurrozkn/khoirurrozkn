@@ -21,10 +21,10 @@ const ContentPorto = () => {
 
         <div className='porto position-relative text-light'>
             <div className='some-porto'>
-                <div ref={wrapSomePorto1}>
+                <div className='wrap-porto' ref={wrapSomePorto1}>
                     {porto.map((v, i) => (
-                        (window.innerWidth >767 || i < 2) && (
-                            <div key={i} style={{backgroundColor: v.backgroundColor}}>
+                        (window.innerWidth > 767 || i < 2) && (
+                            <div className='box-porto' key={i} style={{backgroundColor: v.backgroundColor}}>
                                 <div style={{backgroundImage: `url('${v.backgroundImage}')`}}></div>
                             </div>
                         )
@@ -32,9 +32,9 @@ const ContentPorto = () => {
                 </div>
             </div>
             <div className='some-porto'>
-                <div ref={wrapSomePorto2}>
+                <div className='wrap-porto' ref={wrapSomePorto2}>
                     {porto.map((v,i) => (
-                        <div key={i} style={{backgroundColor: v.backgroundColor}}>
+                        <div className='box-porto' key={i} style={{backgroundColor: v.backgroundColor}}>
                             <div style={{backgroundImage: `url('${v.backgroundImage}')`}}></div>
                         </div>
                     ))}

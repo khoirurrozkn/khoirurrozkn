@@ -17,7 +17,6 @@ const Header = () => {
                     Let's turn your vision into reality
                 </p>
             </div>
-            
 
             <div className='info m-0 position-absolute translate-middle start-50 w-100'>
                 Moch Khoirur Rozikin | Freelancer | Website developer
