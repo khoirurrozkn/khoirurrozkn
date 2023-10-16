@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-/* :root{
-  --background_color: white;
-  --text_color: black;
-  --text_opacity: rgba(0,0,0,0.700);
+:root{
+  --background_color: #F9F6EE;
+  --text_color: #0B2240;
+  --bg_radius: rgba(0,0,0,0.2);
 }
 
 [data-theme="dark"]{
-  --background_color: black;
+  --background_color: #151419;
   --text_color: white;
-  --text_opacity: rgba(255,255,255,255.700);
+  --bg_radius: rgba(255,255,255,0.1);
 }
 
 .container-fluid{
   background: var(--background_color);
   color: var(--text_color);
-} */
+}
 
 *{
   font-family: 'Poppins', sans-serif;
@@ -35,6 +35,7 @@
 a{
   text-decoration: none !important;
   transition: 0.5s;
+  color: var(--text_color) !important;
 }
 
 a:hover{

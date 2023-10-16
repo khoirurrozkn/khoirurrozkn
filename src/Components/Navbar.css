@@ -1,5 +1,5 @@
 .navbar{
-    height: 9%;
+    height: 70px;
     z-index: 999;
 }
 
@@ -7,28 +7,19 @@
     margin-right: 40px;
 }
 
+.navbar a.active{
+    background: var(--text_color) !important;
+    color: var(--background_color) !important;
+}
+
 .btn-nav{
-    width: 53px;
-    height: 53px;
-    transform: scale(0.0);
-    transition: ease-in-out 0.2s;
-    top: 20%;
-    right: 2.5%;
-    z-index: 999;
-    background-color: rgb(20, 20, 20) !important;
+    display: none;
 }
 
-.btn-nav.active{
-    top: 5%;
-    transform: scale(1.5);
-    transition: 0.5s;
+.box-sidebar{
+    display: none;
 }
-
-.btn-nav.active:hover{
-    transform: scale(1.7);
-}
-
-.wrap-sidebar{
+/* .wrap-sidebar{
     z-index: 0;
     transition: all ease-in-out 1s;
     background-color: transparent;
@@ -86,7 +77,7 @@
 
 .box-sidebar a:nth-child(7){
     font-size: 15px;
-}
+} */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     .navbar{
@@ -96,6 +87,7 @@
     .btn-nav{
         right: 6%;
         top: 5%;
+        display: block;
     }
     
     .sidebar{
@@ -109,32 +101,61 @@
     }
 
     .navbar{
-        height: 8vh;
+        height: 60px;
         padding: 0px 5% !important;
         z-index: 700;
     }
     
     .btn-nav{
-        width: 30px;
-        height: 30px;
+        /* width: 30px;
+        height: 30px; */
         right: 7%;
-        top: 4%;
-        transform: scale(1.5);
+        top: 4.5%;
+        /* transform: scale(1.5); */
+        display: block;
+        z-index: 999;
     }
 
     .wrap-sidebar{
-        transition: all 0s;
+        transition: ease-out 0.5s;
+        z-index: 888;
+        top: -300%;
     }
 
-    .sidebar{
-        width: 100%;
-        transition: all 0s;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+    .wrap-sidebar.active{
+        top: 0;
+        background-color: #1D1D21;
     }
 
     .box-sidebar{
         width: 90%;
+        overflow: scroll;
+        display: block;
     }
-    
+
+    .box-sidebar p,
+    .box-sidebar a{
+        color: white !important;
+    }
+/* 
+    .box-sidebar a.active{
+        text-decoration: !important;
+    } */
+
+    /* .box-sidebar p:nth-child(1){
+        font-size: 15px;
+        margin-bottom: 80px !important;
+        font-weight: 300;
+    }
+
+    .box-sidebar p:nth-child(6){
+        font-size: 15px;
+        margin-top: 80px !important;
+        font-weight: 300;
+    } */
+
+    .box-sidebar a:not(:last-child){
+        font-size: 3em;
+        font-weight: 500;
+    }
 }
