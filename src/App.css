@@ -1,43 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-:root{
-  --background_color: #F9F6EE;
-  --text_color: #0B2240;
-  --bg_radius: rgba(0,0,0,0.2);
-}
-
-[data-theme="dark"]{
-  --background_color: #151419;
-  --text_color: white;
-  --bg_radius: rgba(255,255,255,0.1);
-}
-
 .container-fluid{
-  background: var(--background_color);
-  color: var(--text_color);
+  /* background-color: #B9BAA3; */
+  background-color: #FFFEFE;
 }
 
 *{
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   user-select: text;
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 0;
 }
 
 ::-moz-scrollbar {
-  width: 0px;
+  width: 0;
 }
+
+
 
 a{
   text-decoration: none !important;
-  transition: 0.5s;
-  color: var(--text_color) !important;
+  transition: ease 0.5s !important;
 }
 
 a:hover{
-  transform: scale(1.05);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.534);
 }

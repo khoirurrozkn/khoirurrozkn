@@ -1,15 +1,18 @@
 .navbar{
-    height: 70px;
     z-index: 999;
+}
+
+.navbar a{
+    color: black;
 }
 
 .navbar div:nth-child(2) a:not(:last-child){
     margin-right: 40px;
 }
 
-.navbar a.active{
-    background: var(--text_color) !important;
-    color: var(--background_color) !important;
+.navbar a.active,
+.box-sidebar a.active{
+    text-decoration: underline !important;
 }
 
 .btn-nav{
@@ -19,80 +22,9 @@
 .box-sidebar{
     display: none;
 }
-/* .wrap-sidebar{
-    z-index: 0;
-    transition: all ease-in-out 1s;
-    background-color: transparent;
-}
-
-.wrap-sidebar.active{
-    z-index: 888;
-    background-color: rgba(0,0,0,0.250);
-    backdrop-filter: blur(5px);
-}
-
-.sidebar{
-    width: 38%;
-    right: -100%;
-    background-color: #1C1D20;
-    transition: all ease-in-out 0.9s;
-    z-index: 900;
-}
-
-.sidebar.active{
-    right: 0;
-}
-
-.box-sidebar{
-    width: 70%;
-}
-
-.box-sidebar a.active{
-    border-bottom: solid 1px white;
-}
-
-.box-sidebar p:nth-child(1){
-    font-size: 13px;
-    padding-bottom: 25px;
-    font-weight: 300;
-}
-
-.box-sidebar a:nth-child(2){
-    margin-top: 40px;
-}
-
-.box-sidebar a{
-    font-size: 3.5em;
-    margin: 0;
-    display: block;
-    color: white;
-}
-
-.box-sidebar p:nth-child(6){
-    margin-top: 120px;
-    font-size: 13px;
-    margin-bottom: 5px;
-    font-weight: 300;
-}
-
-.box-sidebar a:nth-child(7){
-    font-size: 15px;
-} */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
-    .navbar{
-        height: 7%;
-    }
-    
-    .btn-nav{
-        right: 6%;
-        top: 5%;
-        display: block;
-    }
-    
-    .sidebar{
-        width: 70%;
-    }
+
 }
 
 @media only screen and (max-width: 767px){
@@ -101,34 +33,31 @@
     }
 
     .navbar{
-        height: 60px;
         padding: 0px 5% !important;
         z-index: 700;
     }
     
     .btn-nav{
-        /* width: 30px;
-        height: 30px; */
         right: 7%;
-        top: 4.5%;
-        /* transform: scale(1.5); */
+        top: 0;
         display: block;
         z-index: 999;
     }
 
     .wrap-sidebar{
-        transition: ease-out 0.5s;
+        transition: ease 0.8s;
         z-index: 888;
         top: -300%;
     }
 
     .wrap-sidebar.active{
         top: 0;
-        background-color: #1D1D21;
+        background-color: #0A100D;
     }
 
     .box-sidebar{
         width: 90%;
+        height: 80%;
         overflow: scroll;
         display: block;
     }
@@ -136,13 +65,10 @@
     .box-sidebar p,
     .box-sidebar a{
         color: white !important;
+        font-weight: 300 !important;
     }
-/* 
-    .box-sidebar a.active{
-        text-decoration: !important;
-    } */
 
-    /* .box-sidebar p:nth-child(1){
+    .box-sidebar p:nth-child(1){
         font-size: 15px;
         margin-bottom: 80px !important;
         font-weight: 300;
@@ -152,7 +78,7 @@
         font-size: 15px;
         margin-top: 80px !important;
         font-weight: 300;
-    } */
+    }
 
     .box-sidebar a:not(:last-child){
         font-size: 3em;

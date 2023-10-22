@@ -1,27 +1,29 @@
-import React from 'react'
-import "./NHome.css";
-import DarkMode from './../Components/DarkMode';
+// import React,{ lazy, Suspense } from 'react'
+import React,{ useRef } from 'react';
 import Navbar from '../Components/Navbar';
+import Header from '../Sections/Nhome/Header';
+import Content from '../Sections/Nhome/Content';
+import NFooter from '../Components/NFooter';
+// const Loading = lazy(() => import("../Components/Loading"));
+// const Navbar = lazy(() => import("../Components/Navbar"));
+// const Header = lazy(() => import("../Sections/Nhome/Header"));
+// const Content = lazy(() => import("../Sections/Nhome/Content"));
 
 const NHome = () => {
+  const content = useRef(null);
+  const promotion = useRef(null);
+  const footer = useRef(null);
+
   return (
     <div id='NHome' className='container-fluid m-0 p-0'>
         {/* <DarkMode /> */}
-        <Navbar page='home'/>
-        <div className='header position-relative d-flex justify-content-center'>
+        {/* <Suspense fallback={<Loading />}> */}
+            <Navbar page='home' content={content} promotion={promotion} footer={footer}/>
+            <Header />
+            <Content content={content} promotion={promotion} />
+            <NFooter footer={footer}/>
+        {/* </Suspense> */}
 
-            {/* <img className='wrap-photo-header'>
-            </img> */}
-
-            <div className='wrap-title'>
-                <h1 className='title-header'>An enthusiastic</h1>
-                <h1 className='title-header'>website developer</h1>
-                <h1 className='title-header'>from Indonesia.</h1>
-            </div>
-
-            <div className='blur-circle rounded-circle position-absolute'></div>
-
-        </div>
     </div>
   )
 }
