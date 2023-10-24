@@ -3,6 +3,7 @@ import './App.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import Aos from 'aos';
+import Testing from './Testing';
 
 const Loading = lazy(() => import("./Components/Loading"))
 const Home = lazy(() => import("./Pages/NHome"));
@@ -15,7 +16,7 @@ const Home = lazy(() => import("./Pages/NHome"));
 function App(){
   useEffect(() => {
       Aos.init({
-        duration: 1000,
+        duration: 1000
       });
   },[])
 
@@ -24,6 +25,7 @@ function App(){
       <HashRouter>
         <Routes>
         <Route exact path='/' element={<Suspense fallback={<Loading />}><Home /></Suspense>}></Route>
+        <Route exact path='/abc' element={<Testing />} />
           {/* <Route exact path='/' element={<Suspense fallback={<Loading />}><Home /></Suspense>}></Route>
           <Route exact path='/about' element={<Suspense fallback={<Loading />}><About /></Suspense>}></Route>
           <Route exact path='/porto' element={<Suspense fallback={<Loading />}><Porto /></Suspense>}></Route>

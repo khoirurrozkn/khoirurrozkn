@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+body{
+  /* cursor: none; */
+}
 
 .container-fluid{
   /* background-color: #B9BAA3; */
@@ -20,14 +24,31 @@
   width: 0;
 }
 
-
-
 a{
   text-decoration: none !important;
-  transition: ease 0.5s !important;
+  /* transition: ease 0.5s !important; */
+  /* cursor: none !important; */
 }
 
 a:hover{
-  transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.534);
+  /* transform: scale(1.1); */
+}
+
+.circle{
+  width: 110px !important;
+  padding: 10px;
+  font-size: 15px;
+  aspect-ratio: 1/1;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .circle{
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .circle{
+    position: static;
+  }
 }

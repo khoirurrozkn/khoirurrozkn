@@ -4,6 +4,7 @@ import Navbar from '../Components/Navbar';
 import Header from '../Sections/Nhome/Header';
 import Content from '../Sections/Nhome/Content';
 import NFooter from '../Components/NFooter';
+import Cursor from '../Components/Cursor';
 // const Loading = lazy(() => import("../Components/Loading"));
 // const Navbar = lazy(() => import("../Components/Navbar"));
 // const Header = lazy(() => import("../Sections/Nhome/Header"));
@@ -18,6 +19,7 @@ const NHome = () => {
     <div id='NHome' className='container-fluid m-0 p-0'>
         {/* <DarkMode /> */}
         {/* <Suspense fallback={<Loading />}> */}
+            <Cursor />
             <Navbar page='home' content={content} promotion={promotion} footer={footer}/>
             <Header />
             <Content content={content} promotion={promotion} />

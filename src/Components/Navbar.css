@@ -1,18 +1,33 @@
 .navbar{
-    z-index: 999;
+    z-index: 900;
 }
 
 .navbar a{
     color: black;
 }
 
-.navbar div:nth-child(2) a:not(:last-child){
+.navbar .wrap-href:nth-child(2) div:not(:last-child){
     margin-right: 40px;
 }
 
 .navbar a.active,
-.box-sidebar a.active{
-    text-decoration: underline !important;
+.navbar a:hover {
+    position: relative;
+    z-index: 2;
+}
+
+.navbar a.active::before,
+.navbar a.active:hover::before {
+    content: "";
+    position: absolute;
+    bottom: -15px; /* Sesuaikan nilai ini untuk mengontrol jarak di bawah tautan */
+    left: 50%; /* Pusatkan lingkaran */
+    transform: translateX(-50%); /* Pusatkan lingkaran secara horizontal */
+    width: 10px; /* Atur lebar lingkaran */
+    height: 10px; /* Atur tinggi lingkaran */
+    background-color: #FFD100;
+    border-radius: 50%; /* Buat lingkaran */
+    z-index: 1;
 }
 
 .btn-nav{
@@ -30,6 +45,10 @@
 @media only screen and (max-width: 767px){
     .navbar a{
         display: none;
+    }
+
+    .box-sidebar a.active{
+        text-decoration: underline !important;
     }
 
     .navbar{

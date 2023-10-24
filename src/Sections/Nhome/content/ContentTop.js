@@ -2,6 +2,7 @@ import React,{ useRef, useEffect } from 'react'
 import "./ContentTop.css"
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Magnetic from '../../../Components/Magnetic';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -91,7 +92,11 @@ const ContentTop = () => {
             <b> web developer</b>.
 
             <br></br>
-            <a href='#awda' className='mt-4 btn text-black'>About me ?</a>
+            <Magnetic>
+              <div style={{backgroundColor: "#B9EE4A"}} className='d-inline-block circle mt-4 rounded-circle d-flex align-items-center justify-content-center'>
+                <a href='#awda' className='text-black'>About me</a>
+              </div>
+            </Magnetic>
         </p>
 
 
@@ -99,31 +104,40 @@ const ContentTop = () => {
         <div className='some-porto-top d-flex flex-wrap align-items-center justify-content-center'>
 
             <div className='middle-sp-porto'>
-                <p data-aos={`${window.innerWidth > 1024 ? 'fade-down' : 'fade-up'}`} className='ms-auto text-light'>
+                <p className='ms-auto text-light'>
                     Some porto <i className='bi bi-arrow-down d-inline-block'></i>
                 </p>
-                <img ref={imgTopLeft} alt='some-porto' className='some-porto-top-left-image rounded-4' src='https://imgs.search.brave.com/0oulHxCyLMVw7IwoWDvrU2toZWRvbrteAm4xGVA1lhk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzkyMTcz/L3NjcmVlbnNob3Rz/LzM5MTQ5NTAvZnJl/ZWFuaW1hdGVkaXBo/b25leC1jb3B5Lmdp/Zg.jpeg'>
+                <img ref={imgTopLeft} alt='some-porto' className='some-porto-top-left-image hover view rounded-4' src='https://assets.awwwards.com/awards/media/cache/thumb_880_660/submissions/2023/02/63fd2837bf14b765408264.jpg'>
                 </img>
             </div>
 
-            <img ref={imgTopRight} alt='some-porto' className='some-porto-top-right-image rounded-4' src='https://imgs.search.brave.com/0oulHxCyLMVw7IwoWDvrU2toZWRvbrteAm4xGVA1lhk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzkyMTcz/L3NjcmVlbnNob3Rz/LzM5MTQ5NTAvZnJl/ZWFuaW1hdGVkaXBo/b25leC1jb3B5Lmdp/Zg.jpeg'>
+            <img ref={imgTopRight} alt='some-porto' className='some-porto-top-right-image hover view rounded-4' src='https://assets.awwwards.com/awards/media/cache/thumb_880_660/submissions/2021/07/60def8feee177853360403.png'>
             </img>
 
         </div>
 
         <div style={{zIndex: '4', backgroundColor: "#0A100D"}} className='some-porto-bottom position-relative d-flex flex-wrap align-items-top justify-content-center'>
 
-            <img ref={imgBottomLeft} alt='some-porto' className='some-porto-bottom-left-image rounded-4' src='https://imgs.search.brave.com/0oulHxCyLMVw7IwoWDvrU2toZWRvbrteAm4xGVA1lhk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzkyMTcz/L3NjcmVlbnNob3Rz/LzM5MTQ5NTAvZnJl/ZWFuaW1hdGVkaXBo/b25leC1jb3B5Lmdp/Zg.jpeg'>
+            <img ref={imgBottomLeft} alt='some-porto' className='some-porto-bottom-left-image hover view rounded-4' src='https://assets.awwwards.com/awards/media/cache/thumb_880_660/submissions/2018/06/5b1e640dad5b3.jpg'>
             </img>
 
-            <div data-aos='fade-up'>
+            <div>
                 <p className='text-light'>
                     Still craving more?
                     Prepare to experience even more.
                 </p>
-                <a href='#awdaw' className='btn'>
-                    More porto ?
-                </a>
+                <p className='text-light'>
+                  Click 'More Porto' if you want to 
+                  view the portfolio along with its description.
+                </p>
+
+                <Magnetic >
+                <div style={{backgroundColor: "#CEE2FB"}} className='d-inline-block circle mt-2 rounded-circle d-flex align-items-center justify-content-center'>
+                    <a href='#awdaw' className='text-black'>
+                        More porto
+                    </a>
+                  </div>
+                </Magnetic>
             </div>
 
         </div>

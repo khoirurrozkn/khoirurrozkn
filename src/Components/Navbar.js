@@ -1,5 +1,6 @@
 import React,{ useState, useEffect } from 'react'
 import './Navbar.css'
+import Magnetic from './Magnetic';
 
 const Navbar = (props) => {
     // const [activeBtnNav, setActiveBtnNav] = useState(false);
@@ -53,16 +54,33 @@ const Navbar = (props) => {
                 <div className={`${colorNav}`}>
                     <i className="bi bi-c-circle"></i> khoirurrozkn
                 </div>
-                <div className='d-flex align-items-center'>
-                    <a href={`${url}`} className={`${props.page === 'home' && "active" } ${colorNav}`}>Home</a>
-                    {/* <a href='http://localhost:3000/khoirurrozkn/' className={`${props.page === 'home' ? isPage : 'text-black'}`}>Home</a> */}
-                    <a href={`${url}about`} className={`${props.page === 'about' && "active"} ${colorNav}`}>About</a>
+                <div className='d-flex wrap-href align-items-center'>
+                    <Magnetic >
+                        <div>
+                            <a href={`${url}`} className={`${props.page === 'home' && "active" } ${colorNav} hover`}>Home</a>
+                        </div>
+                        {/* <a href='http://localhost:3000/khoirurrozkn/' className={`${props.page === 'home' ? isPage : 'text-black'}`}>Home</a> */}
+                    </Magnetic>
+
+                    <Magnetic>
+                        <div>
+                            <a href={`${url}about`} className={`${props.page === 'about' && "active"} ${colorNav} hover`}>About</a>
+                        </div>
+                    </Magnetic>
                     {/* <a href='http://localhost:3000/khoirurrozkn/#about' className={`${props.page === 'about' && isPage}`}>About</a> */}
 
-                    <a href={`${url}porto`} className={`${props.page === 'porto' && "active"} ${colorNav}`}>Porto</a>
+                    <Magnetic>
+                        <div>
+                            <a href={`${url}porto`} className={`${props.page === 'porto' && "active"} ${colorNav} hover`}>Porto</a>
+                        </div>
+                    </Magnetic>
                     {/* <a href='http://localhost:3000/khoirurrozkn/#porto' className={`${props.page === 'porto' && isPage}`}>Porto</a> */}
 
-                    <a href={`${url}contact`} className={`${props.page === 'contact' && "active"} ${colorNav}`}>Contact</a>
+                    <Magnetic>
+                        <div>
+                            <a href={`${url}contact`} className={`${props.page === 'contact' && "active"} ${colorNav} hover`}>Contact</a>
+                        </div>
+                    </Magnetic>
                     {/* <a href='http://localhost:3000/khoirurrozkn/#contact' className={`${props.page === 'contact' && isPage}`}>Contact</a> */}
                     
                 </div>

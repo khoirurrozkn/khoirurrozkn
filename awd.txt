@@ -1,0 +1,57 @@
+import React, { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import './Cursor.css';
+
+gsap.registerPlugin(ScrollTrigger);
+
+const Cursor = () => {
+    const cursorRef = useRef(null);
+    const followerRef = useRef(null);
+
+    const moveCursor = 
+
+    useEffect(() => {
+        if(cursorRef.current && followerRef.current){
+            gsap.set(cursorRef.current, {
+                xPercent: 100,
+                yPercent: 100
+            });
+            gsap.set(followerRef.current, {
+                xPercent: -20,
+                yPercent: -20
+            })
+        }
+
+    },[]);
+    return (
+        <div>
+            <div className='cursor'></div>
+            <div className='follower-cursor'></div>
+        </div>
+    );
+};
+
+export default Cursor;
+
+
+
+
+
+.cursor{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+    background-color: black;
+}
+
+.follower-cursor{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: solid 1px black;
+    position: fixed;
+    z-index: 999;
+}
