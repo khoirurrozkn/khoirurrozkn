@@ -6,19 +6,19 @@ const Navbar = (props) => {
     // const [activeBtnNav, setActiveBtnNav] = useState(false);
     const [wrapSideBar, setwrapSideBar] = useState(false);
     const [btnContent, setBtnContent] = useState("menu");
-    const [colorNav, setColorNav] = useState('');
+    const [colorNav, setColorNav] = useState('text-light');
 
     useEffect(() => {    
         const handleScroll = () => {
             const scrollTop = window.scrollY;
-            if(props.content.current && props.promotion.current){
+            // if(props.content.current && props.promotion.current){
 
-                if(scrollTop >= (props.footer.current.offsetTop - 40)) setColorNav('text-light')
-                else if(scrollTop >= (props.promotion.current.offsetTop + 750)) setColorNav('text-black');
-                else if(scrollTop >= (props.content.current.offsetTop - 150)) setColorNav('text-light');
-                else setColorNav('text-black');
+                // if(scrollTop >= (props.footer.current.offsetTop - 40)) setColorNav('text-light')
+                // else if(scrollTop >= (props.promotion.current.offsetTop + 750)) setColorNav('text-black');
+                // else if(scrollTop >= (props.content.current.offsetTop - 150)) setColorNav('text-black');
+                setColorNav('text-light');
 
-            }
+            // }
         }
 
         
@@ -57,28 +57,28 @@ const Navbar = (props) => {
                 <div className='d-flex wrap-href align-items-center'>
                     <Magnetic >
                         <div>
-                            <a href={`${url}`} className={`${props.page === 'home' && "active" } ${colorNav} hover`}>Home</a>
+                            <a href={`${url}`} className={`${props.page === 'home' && "active" } ${colorNav} normal`}>Home</a>
                         </div>
                         {/* <a href='http://localhost:3000/khoirurrozkn/' className={`${props.page === 'home' ? isPage : 'text-black'}`}>Home</a> */}
                     </Magnetic>
 
                     <Magnetic>
                         <div>
-                            <a href={`${url}about`} className={`${props.page === 'about' && "active"} ${colorNav} hover`}>About</a>
+                            <a href={`${url}about`} className={`${props.page === 'about' && "active"} ${colorNav} normal`}>About</a>
                         </div>
                     </Magnetic>
                     {/* <a href='http://localhost:3000/khoirurrozkn/#about' className={`${props.page === 'about' && isPage}`}>About</a> */}
 
                     <Magnetic>
                         <div>
-                            <a href={`${url}porto`} className={`${props.page === 'porto' && "active"} ${colorNav} hover`}>Porto</a>
+                            <a href={`${url}porto`} className={`${props.page === 'porto' && "active"} ${colorNav} normal`}>Porto</a>
                         </div>
                     </Magnetic>
                     {/* <a href='http://localhost:3000/khoirurrozkn/#porto' className={`${props.page === 'porto' && isPage}`}>Porto</a> */}
 
                     <Magnetic>
                         <div>
-                            <a href={`${url}contact`} className={`${props.page === 'contact' && "active"} ${colorNav} hover`}>Contact</a>
+                            <a href={`${url}contact`} className={`${props.page === 'contact' && "active"} ${colorNav} normal`}>Contact</a>
                         </div>
                     </Magnetic>
                     {/* <a href='http://localhost:3000/khoirurrozkn/#contact' className={`${props.page === 'contact' && isPage}`}>Contact</a> */}

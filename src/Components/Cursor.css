@@ -11,16 +11,18 @@
     /* padding: 0px; */
     justify-content: center;
     align-items: center;
-    color: black;
-    background-color: white;
     display: none;
+    mix-blend-mode: normal !important;
+    background-position: center;
+    background-size: cover;
 }
 
 .cursor-text{
     font-size: 5px;
-    font-weight: 900;
+    /* position: absolute; */
     /* letter-spacing: 1px; */
     display: none;
+    font-size: 4px;
 }
 
 @media only screen and (max-width: 1024px){

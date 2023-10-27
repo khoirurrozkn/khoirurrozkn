@@ -34,49 +34,53 @@
     background-color: #FFFEFE;
 }
 
-#NHome .help-title{
-    font-size: 2.5em;
+#NHome .info-title{
+    font-size: 3em;
     padding-left: 5%;
-    padding-right: 20%;
-    margin-bottom: 20px;
+    padding-right: 40%;
+    line-height: 1.2;
+    /* margin-bottom: 20px; */
 }
 
-#NHome .promotion-title{
-    font-size: 4em;
+#NHome .info-body{
+    font-size: 18px;
+    padding-left: 5%;
+    padding-right: 60%;
+    /* margin-bottom: 100px; */
 }
 
-#NHome .promotion-body{
-    font-size: 2em;
-    padding: 0 20%;
+/* #NHome .field-special{
+    padding: 0 5%;
+    font-size: 25px;
 }
 
-#NHome .field-promotion{
-    margin-bottom: 100px;
+#NHome .box-special{
+    padding: 0 10%;
+    height: 120px;
+} */
+
+/* #NHome .field-promotion{
+    margin-top: 60px;
 }
 
-#NHome .box-promotion{
-    width: 27%;
-    /* padding: 20px; */
-    /* border: solid 1px #9C7843; */
+#NHome .title-promotion{
+    padding: 3% 0;
+    margin: 0 5%;
+    font-size: 2.1em;
 }
 
-#NHome .box-promotion i{
-    font-size: 70px;
-    color: #9C7843;
-}
+#NHome .image-promotion{
+    right: 5%;
+    top: 0;
+    width: 45%;
+    aspect-ratio: 16/10;
+    border: solid 1px black;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://assets.awwwards.com/awards/media/cache/thumb_880_660/submissions/2023/02/63fd2837bf14b765408264.jpg");
+} */
 
-#NHome .special-title{
-    font-size: 20px;
-    font-weight: bold;
-}
 
-#NHome .promotion a{
-    background-color: #0A100D;
-}
-
-#NHome .promotion a:hover{
-    box-shadow: 0 0 5px black;
-}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     #NHome .promotion{
@@ -97,7 +101,7 @@
         padding: 0 10%;
     }
 
-    #NHome .help-title{
+    #NHome .info-title{
         font-size: 2em;
         padding-right: 5%;
     }
@@ -131,7 +135,7 @@
         padding-bottom: 70px;
     }
 
-    #NHome .help-title{
+    #NHome .info-title{
         font-size: 24px;
         padding-left: 5%;
         padding-right: 5%;
@@ -146,7 +150,8 @@
     }
     
     #NHome .promotion-body{
-        font-size: 15px;
+        font-size: 16px;
+        border: solid 1px red;
         padding: 0 5%;
     }
     

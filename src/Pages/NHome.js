@@ -16,14 +16,14 @@ const NHome = () => {
   const footer = useRef(null);
 
   return (
-    <div id='NHome' className='container-fluid m-0 p-0'>
+    <div id='NHome'>
         {/* <DarkMode /> */}
         {/* <Suspense fallback={<Loading />}> */}
             <Cursor />
             <Navbar page='home' content={content} promotion={promotion} footer={footer}/>
             <Header />
-            <Content content={content} promotion={promotion} />
-            <NFooter footer={footer}/>
+            {/* <Content content={content} promotion={promotion} />
+            <NFooter footer={footer}/> */}
         {/* </Suspense> */}
 
     </div>

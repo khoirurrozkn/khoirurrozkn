@@ -85,19 +85,22 @@ const ContentTop = () => {
             No frills, always at the forefront.
         </p>
 
-        <p data-aos='fade-up' className='m-0 mt-4 title-about d-block'>
+        <div data-aos='fade-up' className='m-0 mt-4 title-about d-block'>
             The fusion of my enthusiasm for  
             <b> coding</b>, and <b>interaction</b> places me in a 
             distinctive position in the realm of 
             <b> web developer</b>.
 
+
             <br></br>
             <Magnetic>
-              <div style={{backgroundColor: "#B9EE4A"}} className='d-inline-block circle mt-4 rounded-circle d-flex align-items-center justify-content-center'>
-                <a href='#awda' className='text-black'>About me</a>
+              <div className='d-inline-block circle mt-4 rounded-circle d-flex align-items-center justify-content-center'>
+                <a href='#awda' className='text-black'>
+                  About me
+                </a>
               </div>
             </Magnetic>
-        </p>
+        </div>
 
 
 
@@ -110,7 +113,7 @@ const ContentTop = () => {
                 <img ref={imgTopLeft} alt='some-porto' className='some-porto-top-left-image hover view rounded-4' src='https://assets.awwwards.com/awards/media/cache/thumb_880_660/submissions/2023/02/63fd2837bf14b765408264.jpg'>
                 </img>
             </div>
-
+            
             <img ref={imgTopRight} alt='some-porto' className='some-porto-top-right-image hover view rounded-4' src='https://assets.awwwards.com/awards/media/cache/thumb_880_660/submissions/2021/07/60def8feee177853360403.png'>
             </img>
 
@@ -132,7 +135,7 @@ const ContentTop = () => {
                 </p>
 
                 <Magnetic >
-                <div style={{backgroundColor: "#CEE2FB"}} className='d-inline-block circle mt-2 rounded-circle d-flex align-items-center justify-content-center'>
+                <div className='d-inline-block circle mt-2 rounded-circle d-flex align-items-center justify-content-center'>
                     <a href='#awdaw' className='text-black'>
                         More porto
                     </a>

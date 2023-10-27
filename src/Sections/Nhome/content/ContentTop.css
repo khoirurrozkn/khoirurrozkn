@@ -18,10 +18,12 @@
     padding-left: 5%;
     font-weight: 300;
     /* color: ; */
+
+    
 }
 
 #NHome .title-about:nth-child(1){
-    font-size: 2.3em;
+    font-size: 2em;
     width: 53%;
     line-height: 1.4;
 }
@@ -76,7 +78,11 @@
 }
 
 #NHome .some-porto-bottom p:nth-child(1){
-    font-size: 1.5em;
+    font-size: 1.8em;
+}
+
+#NHome .some-porto-bottom p:nth-child(2){
+    font-size: 1.1em;
 }
 
 #NHome .some-porto-bottom div{
@@ -173,7 +179,7 @@
     }
     
     #NHome .title-about:nth-child(2){
-        font-size: 15px;
+        font-size: 16px;
         width: 100%;
         color: rgba(255, 255, 255, 0.900);
     }
@@ -201,7 +207,7 @@
         padding-bottom: 0;
         text-align: center;
         padding-right: 10%;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     #NHome .title-porto{
@@ -229,7 +235,7 @@
     }
 
     #NHome .some-porto-bottom p:nth-child(2){
-        font-size: 15px;
+        font-size: 16px;
     }
     
     #NHome .some-porto-bottom div{
@@ -241,9 +247,5 @@
         aspect-ratio: 16/11;
         margin-right: 0;
         margin-bottom: 30px;
-    }
-
-    #NHome .featured p:first-child{
-        font-size: 15px;
     }
 }

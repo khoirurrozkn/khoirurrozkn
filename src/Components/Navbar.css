@@ -3,7 +3,7 @@
 }
 
 .navbar a{
-    color: black;
+    color: white;
 }
 
 .navbar .wrap-href:nth-child(2) div:not(:last-child){
@@ -71,7 +71,7 @@
 
     .wrap-sidebar.active{
         top: 0;
-        background-color: #0A100D;
+        background-color: #1D1C20;
     }
 
     .box-sidebar{

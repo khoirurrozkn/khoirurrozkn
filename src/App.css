@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 body{
-  /* cursor: none; */
-}
-
-.container-fluid{
-  /* background-color: #B9BAA3; */
   background-color: #FFFEFE;
 }
 
@@ -33,13 +28,14 @@ a{
 a:hover{
   /* transform: scale(1.1); */
 }
-
+/* 
 .circle{
   width: 110px !important;
   padding: 10px;
   font-size: 15px;
   aspect-ratio: 1/1;
-}
+  background-color: white;
+} */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
   .circle{

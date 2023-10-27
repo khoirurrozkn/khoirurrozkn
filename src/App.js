@@ -4,6 +4,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import Aos from 'aos';
 import Testing from './Testing';
+import Pengembangan from './Pages/Pengembangan';
 
 const Loading = lazy(() => import("./Components/Loading"))
 const Home = lazy(() => import("./Pages/NHome"));
@@ -24,7 +25,9 @@ function App(){
     <>
       <HashRouter>
         <Routes>
-        <Route exact path='/' element={<Suspense fallback={<Loading />}><Home /></Suspense>}></Route>
+        <Route exact path='/' element={<Pengembangan />}></Route>
+
+        <Route exact path='/v' element={<Suspense fallback={<Loading />}><Home /></Suspense>}></Route>
         <Route exact path='/abc' element={<Testing />} />
           {/* <Route exact path='/' element={<Suspense fallback={<Loading />}><Home /></Suspense>}></Route>
           <Route exact path='/about' element={<Suspense fallback={<Loading />}><About /></Suspense>}></Route>
