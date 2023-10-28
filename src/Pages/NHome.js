@@ -20,10 +20,10 @@ const NHome = () => {
         {/* <DarkMode /> */}
         {/* <Suspense fallback={<Loading />}> */}
             <Cursor />
-            <Navbar page='home' content={content} promotion={promotion} footer={footer}/>
+            <Navbar page='home' content={content} footer={footer}/>
             <Header />
-            {/* <Content content={content} promotion={promotion} />
-            <NFooter footer={footer}/> */}
+            <Content content={content} />
+            {/* <NFooter footer={footer}/> */}
         {/* </Suspense> */}
 
     </div>

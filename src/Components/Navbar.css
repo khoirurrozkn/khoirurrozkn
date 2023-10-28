@@ -3,7 +3,7 @@
 }
 
 .navbar a{
-    color: white;
+    color: black;
 }
 
 .navbar .wrap-href:nth-child(2) div:not(:last-child){
@@ -25,7 +25,7 @@
     transform: translateX(-50%); /* Pusatkan lingkaran secara horizontal */
     width: 10px; /* Atur lebar lingkaran */
     height: 10px; /* Atur tinggi lingkaran */
-    background-color: #FFD100;
+    background-color: #1D1C20;
     border-radius: 50%; /* Buat lingkaran */
     z-index: 1;
 }

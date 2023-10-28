@@ -6,19 +6,19 @@ const Navbar = (props) => {
     // const [activeBtnNav, setActiveBtnNav] = useState(false);
     const [wrapSideBar, setwrapSideBar] = useState(false);
     const [btnContent, setBtnContent] = useState("menu");
-    const [colorNav, setColorNav] = useState('text-light');
+    const [colorNav, setColorNav] = useState('');
 
     useEffect(() => {    
         const handleScroll = () => {
             const scrollTop = window.scrollY;
-            // if(props.content.current && props.promotion.current){
+            if(props.content.current){
 
                 // if(scrollTop >= (props.footer.current.offsetTop - 40)) setColorNav('text-light')
                 // else if(scrollTop >= (props.promotion.current.offsetTop + 750)) setColorNav('text-black');
-                // else if(scrollTop >= (props.content.current.offsetTop - 150)) setColorNav('text-black');
-                setColorNav('text-light');
+                // if(scrollTop >= (props.content.current.offsetTop - 50)) setColorNav('text-black');
+                // else setColorNav('text-light');
 
-            // }
+            }
         }
 
         

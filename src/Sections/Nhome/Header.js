@@ -60,61 +60,54 @@ const Header = () => {
     // },[]);
 
     return (
-        <div className='header d-flex position-relative text-light align-items-center'>
-          <div className='container position-relative d-flex justify-content-between'>
-            <div className='wrap-title d-block'>
-              <h1 className='title'>
-                Meet the mastermind behind your website
-              </h1>
-              <p className='body'>
-                Dedicated web developer committed
-                to turning exciting ideas into reality.
-              </p>
+        <div className='header d-flex flex-wrap text-black justify-content-center align-items-center'>
 
-            </div>
-            
-            <Magnetic>
-              <a href='awdaw' className='ig position-absolute rounded-circle'>
-                <i className="bi bi-instagram text-black"></i>
-              </a>
-            </Magnetic>
+          <div className='container'>
 
-            <Magnetic>
-              <a href='awdawd' className='github position-absolute rounded-circle'>
-                <i className="bi bi-github text-black"></i>
-              </a>
-            </Magnetic>
+            <div className='top d-flex flex-wrap justify-content-between'>
+              
+              <div className='wrap-title position-relative'>
+                <h1 className='title'>
+                  Meet the mastermind behind your website
+                </h1>
+                <p className='body'>
+                  Dedicated web developer committed
+                  to turning exciting ideas into reality,
+                  aiming to leave a lasting impression.
+                </p>
 
-            <div className='photo position-relative'>
+                <Magnetic>
+                  <a className='ig position-absolute rounded-circle'>
+                    <i className='bi bi-instagram text-light'></i>
+                  </a>
+                </Magnetic>
+
+                <Magnetic>
+                  <a className='github position-absolute rounded-circle'>
+                    <i className='bi bi-github text-light'></i>
+                  </a>
+                </Magnetic>
+
+                <Magnetic>
+                  <a className='twitter position-absolute rounded-circle'>
+                    <i className='bi bi-twitter text-light'></i>
+                  </a>
+                </Magnetic>
+              </div>
+
+              <div className='photo rounded-5'></div>
 
             </div>
 
           </div>
-        
-          <div className='circle rounded-circle position-absolute'></div>
 
-            {/* <div className='wrap-title text-center'>
-                <h1 className='title-header'>An enthusiastic website</h1>
-                <h1 className='title-header'>website developer</h1>
-                <h1 className='title-header'>developer from Indonesia</h1>
+          {/* <div className='position-absolute bottom-0 d-flex flex-wrap justify-content-evenly featured'>
+                <p className='text-center w-100' style={{fontFamily: 'font-title'}}>Featured by</p>
+                  <div className='awwwards rounded-4'>Awwwards</div>
+                  <div className='behance rounded-4'>Behance</div>
+                  <div className='behance rounded-4'>Dribble</div>
+          </div> */}
 
-                <h1 className='title-header'>Meet the mastermind</h1>
-                <h1 className='title-header'>Behind your Website</h1>    
-                <p className='body-header'>Dedicated web developer committed 
-                  to turning exciting ideas into reality.</p>            
-            </div> */}
-
-            {/* <img ref={wrapPhoto} src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8fHww" alt='Coding' className='wrap-photo-header hover view position-relative rounded-4'>
-            </img> */}
-
-            {/* <div className='from-indo position-absolute'>
-              <p className='m-0 text-light'>Located</p>
-              <p className='m-0 text-light'>In the</p>
-              <p className='m-0 text-light'>Indonesian</p>
-            </div> */}
-
-            {/* <div ref={wrap1} className='wrap-1 position-absolute'></div>
-            <div ref={wrap2} className='wrap-2 position-absolute'></div> */}
         </div>
     )
 }

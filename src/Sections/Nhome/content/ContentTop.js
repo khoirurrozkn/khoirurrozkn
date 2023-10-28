@@ -7,145 +7,105 @@ import Magnetic from '../../../Components/Magnetic';
 gsap.registerPlugin(ScrollTrigger);
 
 const ContentTop = () => {
-    const imgTopLeft = useRef(null);
-    const imgTopRight = useRef(null);
-    const imgBottomLeft = useRef(null);
+    const aboutMe = useRef(null);
 
     useEffect(() => {
-        if (window.innerWidth > 1025 && imgTopLeft.current && imgTopRight.current && imgBottomLeft.current) {
-          gsap.fromTo(imgTopLeft.current, 
+        if (window.innerWidth > 1025 && aboutMe.current) {
+          gsap.fromTo(aboutMe.current, 
               {
-                y: -100,
-                x: -100,
-                scale: 0.5,
+                x: 0,
               },
               {
-                y: 0,
-                x: 0,
-                scale: 1,
+                x: -200,
                 duration: 8,
                 scrollTrigger: {
-                    trigger: imgTopLeft.current,
+                    trigger: aboutMe.current,
                     start: 'top 100%',
-                    end: 'top 70%',
+                    end: 'top 0%',
                     scrub: 4,
                     toggleActions: 'restart none none none',
                 }
               }
-            );    
-            
-            gsap.fromTo(imgTopRight.current, 
-                {
-                  y: -100,
-                  x: 100,
-                  scale: 0.5,
-                },
-                {
-                  y: 0,
-                  x: 0,
-                  scale: 1,
-                  duration: 8,
-                  scrollTrigger: {
-                      trigger: imgTopRight.current,
-                      start: 'top 100%',
-                      end: 'top 70%',
-                      scrub: 4,
-                      toggleActions: 'restart none none none',
-                  }
-                }
-              );  
-
-              gsap.fromTo(imgBottomLeft.current, 
-                {
-                  y: 100,
-                  x: -100,
-                  scale: 0.5,
-                },
-                {
-                  y: 0,
-                  x: 0,
-                  scale: 1,
-                  duration: 8,
-                  scrollTrigger: {
-                      trigger: imgBottomLeft.current,
-                      start: 'top 100%',
-                      end: 'top 70%',
-                      scrub: 4,
-                      toggleActions: 'restart none none none',
-                  }
-                }
-              ); 
+          );    
         }
     },[]);
+
     return (
-        <>
-        <p data-aos='fade-up' className='m-0 text-light title-about d-block'>
-            Empowering <b>brands to shine</b> in the digital age. 
+      <div className='container overflow-hidden'>
+        <div className='wrap-title w-100 d-flex justify-content-evenly'>
+          <p className='m-0 text-light title d-block'>
+            Empowering brands to shine in the digital age. 
             Together we will establish the new norm. 
             No frills, always at the forefront.
-        </p>
+          </p>
 
-        <div data-aos='fade-up' className='m-0 mt-4 title-about d-block'>
+          <p className='body text-light d-block'>
             The fusion of my enthusiasm for  
             <b> coding</b>, and <b>interaction</b> places me in a 
             distinctive position in the realm of 
             <b> web developer</b>.
+          </p>
+        </div>
 
+        <div ref={aboutMe} className='wrap-circle-about-me position-relative'>
+          <div className='line-about-me position-absolute'></div>
+          <Magnetic>
+            <a href='awd' className='circle-about-me position-absolute m-0 text-black rounded-circle'>
+                About me
+            </a>
+          </Magnetic>
+        </div>
 
-            <br></br>
-            <Magnetic>
-              <div className='d-inline-block circle mt-4 rounded-circle d-flex align-items-center justify-content-center'>
-                <a href='#awda' className='text-black'>
-                  About me
-                </a>
+        <div className='wrap-selected-porto'>
+          <p className='title text-light'>Selected porto</p>
+          <div className='row m-0 justify-content-evenly'>
+            <div className='col-lg-6 rounded-4 porto porto-1'>
+              <div className='photo-porto' style={{backgroundImage: 'url("https://cdn.dribbble.com/userupload/3537346/file/original-a21f8fa25aaf13526fe11e0d94271d1d.png?resize=2048x1536")'}}>
+
               </div>
-            </Magnetic>
-        </div>
-
-
-
-        <div className='some-porto-top d-flex flex-wrap align-items-center justify-content-center'>
-
-            <div className='middle-sp-porto'>
-                <p className='ms-auto text-light'>
-                    Some porto <i className='bi bi-arrow-down d-inline-block'></i>
-                </p>
-                <img ref={imgTopLeft} alt='some-porto' className='some-porto-top-left-image hover view rounded-4' src='https://assets.awwwards.com/awards/media/cache/thumb_880_660/submissions/2023/02/63fd2837bf14b765408264.jpg'>
-                </img>
             </div>
-            
-            <img ref={imgTopRight} alt='some-porto' className='some-porto-top-right-image hover view rounded-4' src='https://assets.awwwards.com/awards/media/cache/thumb_880_660/submissions/2021/07/60def8feee177853360403.png'>
-            </img>
+            <div className='col-lg-6 rounded-4 porto porto-2'>
+              <div className='photo-porto' style={{backgroundImage: 'url("https://cdn.dribbble.com/userupload/3537346/file/original-a21f8fa25aaf13526fe11e0d94271d1d.png?resize=2048x1536")'}}>
 
-        </div>
-
-        <div style={{zIndex: '4', backgroundColor: "#0A100D"}} className='some-porto-bottom position-relative d-flex flex-wrap align-items-top justify-content-center'>
-
-            <img ref={imgBottomLeft} alt='some-porto' className='some-porto-bottom-left-image hover view rounded-4' src='https://assets.awwwards.com/awards/media/cache/thumb_880_660/submissions/2018/06/5b1e640dad5b3.jpg'>
-            </img>
-
-            <div>
-                <p className='text-light'>
-                    Still craving more?
-                    Prepare to experience even more.
-                </p>
-                <p className='text-light'>
-                  Click 'More Porto' if you want to 
-                  view the portfolio along with its description.
-                </p>
-
-                <Magnetic >
-                <div className='d-inline-block circle mt-2 rounded-circle d-flex align-items-center justify-content-center'>
-                    <a href='#awdaw' className='text-black'>
-                        More porto
-                    </a>
-                  </div>
-                </Magnetic>
+              </div>
             </div>
+            <div className='col-lg-6 rounded-4 porto porto-3'>
+              <div className='photo-porto' style={{backgroundImage: 'url("https://cdn.dribbble.com/userupload/3537346/file/original-a21f8fa25aaf13526fe11e0d94271d1d.png?resize=2048x1536")'}}>
 
+              </div>
+            </div>
+            <div className='col-lg-6 rounded-4 porto porto-4'>
+              <div className='photo-porto' style={{backgroundImage: 'url("https://cdn.dribbble.com/userupload/3537346/file/original-a21f8fa25aaf13526fe11e0d94271d1d.png?resize=2048x1536")'}}>
+
+              </div>
+            </div>
+          </div>
         </div>
-        </>
+      </div>
     )
 }
 
 export default ContentTop
+
+{/* <p data-aos='fade-up' className='m-0 text-black title-about d-block'>
+Empowering <b>brands to shine</b> in the digital age. 
+Together we will establish the new norm. 
+No frills, always at the forefront.
+</p>
+
+<div data-aos='fade-up' className='m-0 mt-4 title-about text-black d-block'>
+The fusion of my enthusiasm for  
+<b> coding</b>, and <b>interaction</b> places me in a 
+distinctive position in the realm of 
+<b> web developer</b>.
+
+
+<br></br>
+<Magnetic>
+  <div className='d-inline-block circle mt-4 rounded-circle d-flex align-items-center justify-content-center'>
+    <a href='#awda' className='text-black'>
+      About me
+    </a>
+  </div>
+</Magnetic>
+</div> */}
